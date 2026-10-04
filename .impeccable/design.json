@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T13:17:14.949258+00:00",
+  "title": "Design System: House Checklist",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Light · Cool field",
+        "tonalRamp": [
+          "oklch(15.00% 0.00213 197.12)",
+          "oklch(26.43% 0.00213 197.12)",
+          "oklch(37.86% 0.00213 197.12)",
+          "oklch(49.29% 0.00213 197.12)",
+          "oklch(60.71% 0.00213 197.12)",
+          "oklch(72.14% 0.00213 197.12)",
+          "oklch(83.57% 0.00213 197.12)",
+          "oklch(95.00% 0.00213 197.12)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Light · Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "surface-soft": {
+        "role": "neutral",
+        "displayName": "Light · Soft inset",
+        "tonalRamp": [
+          "oklch(15.00% 0.00427 197.09)",
+          "oklch(26.43% 0.00427 197.09)",
+          "oklch(37.86% 0.00427 197.09)",
+          "oklch(49.29% 0.00427 197.09)",
+          "oklch(60.71% 0.00427 197.09)",
+          "oklch(72.14% 0.00427 197.09)",
+          "oklch(83.57% 0.00427 197.09)",
+          "oklch(95.00% 0.00427 197.09)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Light · Graphite text",
+        "tonalRamp": [
+          "oklch(15.00% 0.01479 217.92)",
+          "oklch(26.43% 0.01479 217.92)",
+          "oklch(37.86% 0.01479 217.92)",
+          "oklch(49.29% 0.01479 217.92)",
+          "oklch(60.71% 0.01479 217.92)",
+          "oklch(72.14% 0.01479 217.92)",
+          "oklch(83.57% 0.01479 217.92)",
+          "oklch(95.00% 0.01479 217.92)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Light · Secondary text",
+        "tonalRamp": [
+          "oklch(15.00% 0.01741 212.05)",
+          "oklch(26.43% 0.01741 212.05)",
+          "oklch(37.86% 0.01741 212.05)",
+          "oklch(49.29% 0.01741 212.05)",
+          "oklch(60.71% 0.01741 212.05)",
+          "oklch(72.14% 0.01741 212.05)",
+          "oklch(83.57% 0.01741 212.05)",
+          "oklch(95.00% 0.01741 212.05)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Light · Fine divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.00754 197.02)",
+          "oklch(26.43% 0.00754 197.02)",
+          "oklch(37.86% 0.00754 197.02)",
+          "oklch(49.29% 0.00754 197.02)",
+          "oklch(60.71% 0.00754 197.02)",
+          "oklch(72.14% 0.00754 197.02)",
+          "oklch(83.57% 0.00754 197.02)",
+          "oklch(95.00% 0.00754 197.02)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Light · Teal action",
+        "tonalRamp": [
+          "oklch(15.00% 0.07470 184.98)",
+          "oklch(26.43% 0.07470 184.98)",
+          "oklch(37.86% 0.07470 184.98)",
+          "oklch(49.29% 0.07470 184.98)",
+          "oklch(60.71% 0.07470 184.98)",
+          "oklch(72.14% 0.07470 184.98)",
+          "oklch(83.57% 0.07470 184.98)",
+          "oklch(95.00% 0.07470 184.98)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Light · Teal action hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.06473 184.49)",
+          "oklch(26.43% 0.06473 184.49)",
+          "oklch(37.86% 0.06473 184.49)",
+          "oklch(49.29% 0.06473 184.49)",
+          "oklch(60.71% 0.06473 184.49)",
+          "oklch(72.14% 0.06473 184.49)",
+          "oklch(83.57% 0.06473 184.49)",
+          "oklch(95.00% 0.06473 184.49)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Light · Quiet teal fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.01281 172.36)",
+          "oklch(26.43% 0.01281 172.36)",
+          "oklch(37.86% 0.01281 172.36)",
+          "oklch(49.29% 0.01281 172.36)",
+          "oklch(60.71% 0.01281 172.36)",
+          "oklch(72.14% 0.01281 172.36)",
+          "oklch(83.57% 0.01281 172.36)",
+          "oklch(95.00% 0.01281 172.36)"
+        ]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Light · Teal state text",
+        "tonalRamp": [
+          "oklch(15.00% 0.06741 183.67)",
+          "oklch(26.43% 0.06741 183.67)",
+          "oklch(37.86% 0.06741 183.67)",
+          "oklch(49.29% 0.06741 183.67)",
+          "oklch(60.71% 0.06741 183.67)",
+          "oklch(72.14% 0.06741 183.67)",
+          "oklch(83.57% 0.06741 183.67)",
+          "oklch(95.00% 0.06741 183.67)"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Light · Danger text",
+        "tonalRamp": [
+          "oklch(15.00% 0.14306 23.99)",
+          "oklch(26.43% 0.14306 23.99)",
+          "oklch(37.86% 0.14306 23.99)",
+          "oklch(49.29% 0.14306 23.99)",
+          "oklch(60.71% 0.14306 23.99)",
+          "oklch(72.14% 0.14306 23.99)",
+          "oklch(83.57% 0.14306 23.99)",
+          "oklch(95.00% 0.14306 23.99)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "danger-soft": {
+        "role": "neutral",
+        "displayName": "Light · Danger fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.01650 26.65)",
+          "oklch(26.43% 0.01650 26.65)",
+          "oklch(37.86% 0.01650 26.65)",
+          "oklch(49.29% 0.01650 26.65)",
+          "oklch(60.71% 0.01650 26.65)",
+          "oklch(72.14% 0.01650 26.65)",
+          "oklch(83.57% 0.01650 26.65)",
+          "oklch(95.00% 0.01650 26.65)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "amber": {
+        "role": "neutral",
+        "displayName": "Light · Warning text",
+        "tonalRamp": [
+          "oklch(15.00% 0.09109 68.55)",
+          "oklch(26.43% 0.09109 68.55)",
+          "oklch(37.86% 0.09109 68.55)",
+          "oklch(49.29% 0.09109 68.55)",
+          "oklch(60.71% 0.09109 68.55)",
+          "oklch(72.14% 0.09109 68.55)",
+          "oklch(83.57% 0.09109 68.55)",
+          "oklch(95.00% 0.09109 68.55)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "amber-soft": {
+        "role": "neutral",
+        "displayName": "Light · Warning fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.03248 85.48)",
+          "oklch(26.43% 0.03248 85.48)",
+          "oklch(37.86% 0.03248 85.48)",
+          "oklch(49.29% 0.03248 85.48)",
+          "oklch(60.71% 0.03248 85.48)",
+          "oklch(72.14% 0.03248 85.48)",
+          "oklch(83.57% 0.03248 85.48)",
+          "oklch(95.00% 0.03248 85.48)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "dark-bg": {
+        "role": "neutral",
+        "displayName": "Dark · Cool field",
+        "tonalRamp": [
+          "oklch(15.00% 0.01235 214.67)",
+          "oklch(26.43% 0.01235 214.67)",
+          "oklch(37.86% 0.01235 214.67)",
+          "oklch(49.29% 0.01235 214.67)",
+          "oklch(60.71% 0.01235 214.67)",
+          "oklch(72.14% 0.01235 214.67)",
+          "oklch(83.57% 0.01235 214.67)",
+          "oklch(95.00% 0.01235 214.67)"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark · Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.01516 218.04)",
+          "oklch(26.43% 0.01516 218.04)",
+          "oklch(37.86% 0.01516 218.04)",
+          "oklch(49.29% 0.01516 218.04)",
+          "oklch(60.71% 0.01516 218.04)",
+          "oklch(72.14% 0.01516 218.04)",
+          "oklch(83.57% 0.01516 218.04)",
+          "oklch(95.00% 0.01516 218.04)"
+        ]
+      },
+      "dark-surface-soft": {
+        "role": "neutral",
+        "displayName": "Dark · Soft inset",
+        "tonalRamp": [
+          "oklch(15.00% 0.01713 214.68)",
+          "oklch(26.43% 0.01713 214.68)",
+          "oklch(37.86% 0.01713 214.68)",
+          "oklch(49.29% 0.01713 214.68)",
+          "oklch(60.71% 0.01713 214.68)",
+          "oklch(72.14% 0.01713 214.68)",
+          "oklch(83.57% 0.01713 214.68)",
+          "oklch(95.00% 0.01713 214.68)"
+        ]
+      },
+      "dark-text": {
+        "role": "neutral",
+        "displayName": "Dark · Graphite text",
+        "tonalRamp": [
+          "oklch(15.00% 0.00857 197.01)",
+          "oklch(26.43% 0.00857 197.01)",
+          "oklch(37.86% 0.00857 197.01)",
+          "oklch(49.29% 0.00857 197.01)",
+          "oklch(60.71% 0.00857 197.01)",
+          "oklch(72.14% 0.00857 197.01)",
+          "oklch(83.57% 0.00857 197.01)",
+          "oklch(95.00% 0.00857 197.01)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark · Secondary text",
+        "tonalRamp": [
+          "oklch(15.00% 0.01728 211.05)",
+          "oklch(26.43% 0.01728 211.05)",
+          "oklch(37.86% 0.01728 211.05)",
+          "oklch(49.29% 0.01728 211.05)",
+          "oklch(60.71% 0.01728 211.05)",
+          "oklch(72.14% 0.01728 211.05)",
+          "oklch(83.57% 0.01728 211.05)",
+          "oklch(95.00% 0.01728 211.05)"
+        ]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Dark · Fine divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.01824 218.40)",
+          "oklch(26.43% 0.01824 218.40)",
+          "oklch(37.86% 0.01824 218.40)",
+          "oklch(49.29% 0.01824 218.40)",
+          "oklch(60.71% 0.01824 218.40)",
+          "oklch(72.14% 0.01824 218.40)",
+          "oklch(83.57% 0.01824 218.40)",
+          "oklch(95.00% 0.01824 218.40)"
+        ]
+      },
+      "dark-accent": {
+        "role": "primary",
+        "displayName": "Dark · Teal action",
+        "tonalRamp": [
+          "oklch(15.00% 0.08139 180.56)",
+          "oklch(26.43% 0.08139 180.56)",
+          "oklch(37.86% 0.08139 180.56)",
+          "oklch(49.29% 0.08139 180.56)",
+          "oklch(60.71% 0.08139 180.56)",
+          "oklch(72.14% 0.08139 180.56)",
+          "oklch(83.57% 0.08139 180.56)",
+          "oklch(95.00% 0.08139 180.56)"
+        ]
+      },
+      "dark-accent-hover": {
+        "role": "primary",
+        "displayName": "Dark · Teal action hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.06626 181.48)",
+          "oklch(26.43% 0.06626 181.48)",
+          "oklch(37.86% 0.06626 181.48)",
+          "oklch(49.29% 0.06626 181.48)",
+          "oklch(60.71% 0.06626 181.48)",
+          "oklch(72.14% 0.06626 181.48)",
+          "oklch(83.57% 0.06626 181.48)",
+          "oklch(95.00% 0.06626 181.48)"
+        ]
+      },
+      "dark-accent-soft": {
+        "role": "primary",
+        "displayName": "Dark · Quiet teal fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.03835 177.11)",
+          "oklch(26.43% 0.03835 177.11)",
+          "oklch(37.86% 0.03835 177.11)",
+          "oklch(49.29% 0.03835 177.11)",
+          "oklch(60.71% 0.03835 177.11)",
+          "oklch(72.14% 0.03835 177.11)",
+          "oklch(83.57% 0.03835 177.11)",
+          "oklch(95.00% 0.03835 177.11)"
+        ]
+      },
+      "dark-accent-text": {
+        "role": "primary",
+        "displayName": "Dark · Teal state text",
+        "tonalRamp": [
+          "oklch(15.00% 0.06691 176.85)",
+          "oklch(26.43% 0.06691 176.85)",
+          "oklch(37.86% 0.06691 176.85)",
+          "oklch(49.29% 0.06691 176.85)",
+          "oklch(60.71% 0.06691 176.85)",
+          "oklch(72.14% 0.06691 176.85)",
+          "oklch(83.57% 0.06691 176.85)",
+          "oklch(95.00% 0.06691 176.85)"
+        ]
+      },
+      "dark-danger": {
+        "role": "neutral",
+        "displayName": "Dark · Danger text",
+        "tonalRamp": [
+          "oklch(15.00% 0.09919 19.51)",
+          "oklch(26.43% 0.09919 19.51)",
+          "oklch(37.86% 0.09919 19.51)",
+          "oklch(49.29% 0.09919 19.51)",
+          "oklch(60.71% 0.09919 19.51)",
+          "oklch(72.14% 0.09919 19.51)",
+          "oklch(83.57% 0.09919 19.51)",
+          "oklch(95.00% 0.09919 19.51)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "dark-danger-soft": {
+        "role": "neutral",
+        "displayName": "Dark · Danger fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.03339 13.27)",
+          "oklch(26.43% 0.03339 13.27)",
+          "oklch(37.86% 0.03339 13.27)",
+          "oklch(49.29% 0.03339 13.27)",
+          "oklch(60.71% 0.03339 13.27)",
+          "oklch(72.14% 0.03339 13.27)",
+          "oklch(83.57% 0.03339 13.27)",
+          "oklch(95.00% 0.03339 13.27)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "dark-amber": {
+        "role": "neutral",
+        "displayName": "Dark · Warning text",
+        "tonalRamp": [
+          "oklch(15.00% 0.08027 83.88)",
+          "oklch(26.43% 0.08027 83.88)",
+          "oklch(37.86% 0.08027 83.88)",
+          "oklch(49.29% 0.08027 83.88)",
+          "oklch(60.71% 0.08027 83.88)",
+          "oklch(72.14% 0.08027 83.88)",
+          "oklch(83.57% 0.08027 83.88)",
+          "oklch(95.00% 0.08027 83.88)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      },
+      "dark-amber-soft": {
+        "role": "neutral",
+        "displayName": "Dark · Warning fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.03697 83.00)",
+          "oklch(26.43% 0.03697 83.00)",
+          "oklch(37.86% 0.03697 83.00)",
+          "oklch(49.29% 0.03697 83.00)",
+          "oklch(60.71% 0.03697 83.00)",
+          "oklch(72.14% 0.03697 83.00)",
+          "oklch(83.57% 0.03697 83.00)",
+          "oklch(95.00% 0.03697 83.00)"
+        ],
+        "purpose": "Semantic warning or error role; not a brand accent."
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Workspace page heading; responsive phone overrides are in DESIGN.md."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section heading."
+      },
+      "subheading": {
+        "displayName": "Subheading",
+        "purpose": "Record and criterion heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text; language-specific Noto family takes precedence for Japanese and Vietnamese."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field label."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Action label."
+      },
+      "input": {
+        "displayName": "Input",
+        "purpose": "Editable value; 16px on phones."
+      },
+      "detail": {
+        "displayName": "Detail",
+        "purpose": "Secondary helper text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "floating-light",
+        "value": "0 12px 50px #183a3220",
+        "purpose": "Light-theme select menus, dropdowns, dialogs, and comparison tray."
+      },
+      {
+        "name": "floating-dark",
+        "value": "0 12px 50px #0005",
+        "purpose": "Dark-theme equivalent of the same floating layer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "color-transition",
+        "value": "background-color 0.15s, color 0.15s, border-color 0.15s",
+        "purpose": "Button and link state changes; CSS default easing."
+      },
+      {
+        "name": "field-border-transition",
+        "value": "border-color 0.15s",
+        "purpose": "Field border feedback."
+      },
+      {
+        "name": "overlay-fade",
+        "value": "fade-in 0.15s",
+        "purpose": "Dialog overlay opacity from 0 to 1."
+      },
+      {
+        "name": "loading-pulse",
+        "value": "pulse 1.8s infinite",
+        "purpose": "Loading skeleton opacity reaches 0.4 at 50%."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none !important; transition: none !important; scroll-behavior: auto !important",
+        "purpose": "Applied to all elements and pseudo-elements when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-desktop-min",
+        "value": "1700px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1250px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "900px"
+      },
+      {
+        "name": "phone-max",
+        "value": "700px"
+      },
+      {
+        "name": "narrow-phone-max",
+        "value": "359px"
+      }
+    ],
+    "focus": {
+      "value": "outline: 3px solid var(--accent); outline-offset: 3px",
+      "purpose": "Shared keyboard focus and file-input focus-within."
+    },
+    "overlay": {
+      "background": "#101e2266",
+      "backdropFilter": "blur(3px)",
+      "purpose": "Dialog backdrop."
+    },
+    "evidence": {
+      "source": "app/globals.css; app/layout.js; components/ui.jsx; workspace and screen components",
+      "review": [
+        ".impeccable/review/verdict.md",
+        ".impeccable/review/verdict-touch-target.md"
+      ],
+      "reviewScope": "Ship applies only to the four scored corrections and the subsequent question-link target correction.",
+      "captureMatrix": ".impeccable/review/matrix.json",
+      "verification": "docs/verification.md",
+      "rampPolicy": "Eight-step OKLCH ramps are synthesized panel previews, not additional application tokens. Source theme colors remain normative in DESIGN.md.",
+      "notCanonized": [
+        "Decorative heading eyebrows are removed; dormant style hooks do not authorize reintroduction.",
+        "One-off entry heading and overview numeral sizes are not a shared display scale."
+      ],
+      "touchTargets": ".impeccable/review/touch-targets.json",
+      "collectionsNavigation": {
+        "behavior": "Top-bar collection names open their Apartments list; House Checklist opens /?page=collections. Native links preserve URL/history and the unsaved-form guard while collection entry clears property/filter scope. Collections use flat divided name-and-arrow rows, role chips, owner/editor Edit collection links into scoped Preferences, and the existing 120-character create dialog with an online-only list-page button.",
+        "responsive": "Phone rows stack identity above Edit collection. The first header row separates the collection destination and 44px switcher; the second pairs House Checklist with save status. Collection links and the mobile brand have 44px minimum heights. Local record names use 18px desktop/16px phone; the mobile brand retains 11px text without adding shared type tokens.",
+        "review": ".impeccable/review/collections-navigation/finish-review.md",
+        "captureMatrix": ".impeccable/review/collections-navigation/matrix.json",
+        "reviewScope": "Ship applies to this navigation and collection-management entry extension only; all 11 captures were inspected."
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Built primary action treatment; minimum height rather than fixed height supports wrapping.",
+      "html": "<button class=\"ds-button-primary\">Save changes</button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 17px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid transparent;white-space:normal;text-align:center;cursor:pointer;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);transition:background-color .15s,color .15s,border-color .15s;background:var(--accent,#17675f);color:var(--surface,#fff);}.ds-button-primary:hover{background:var(--accent-hover,#10534c);}.ds-button-primary:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}.ds-button-primary:disabled{opacity:.5;cursor:not-allowed;}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none;}}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Built secondary action treatment; minimum height rather than fixed height supports wrapping.",
+      "html": "<button class=\"ds-button-secondary\">Cancel</button>",
+      "css": ".ds-button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 17px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid transparent;white-space:normal;text-align:center;cursor:pointer;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);transition:background-color .15s,color .15s,border-color .15s;background:var(--surface,#fff);color:var(--text,#242e31);border-color:var(--line,#dce3e3);}.ds-button-secondary:hover{background:var(--surface-soft,#eef2f2);}.ds-button-secondary:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}.ds-button-secondary:disabled{opacity:.5;cursor:not-allowed;}@media(prefers-reduced-motion:reduce){.ds-button-secondary{transition:none;}}"
+    },
+    {
+      "name": "Ghost button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Built ghost action treatment; minimum height rather than fixed height supports wrapping.",
+      "html": "<button class=\"ds-button-ghost\">Edit</button>",
+      "css": ".ds-button-ghost{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 17px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid transparent;white-space:normal;text-align:center;cursor:pointer;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);transition:background-color .15s,color .15s,border-color .15s;background:transparent;color:var(--text,#242e31);}.ds-button-ghost:hover{background:var(--surface-soft,#eef2f2);}.ds-button-ghost:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}.ds-button-ghost:disabled{opacity:.5;cursor:not-allowed;}@media(prefers-reduced-motion:reduce){.ds-button-ghost{transition:none;}}"
+    },
+    {
+      "name": "Danger button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Built danger action treatment; minimum height rather than fixed height supports wrapping.",
+      "html": "<button class=\"ds-button-danger\">Revoke access</button>",
+      "css": ".ds-button-danger{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 17px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid transparent;white-space:normal;text-align:center;cursor:pointer;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);transition:background-color .15s,color .15s,border-color .15s;background:transparent;color:var(--danger,#a33737);border-color:var(--danger,#a33737);}.ds-button-danger:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}.ds-button-danger:disabled{opacity:.5;cursor:not-allowed;}@media(prefers-reduced-motion:reduce){.ds-button-danger{transition:none;}}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Label above a surface field; phone inputs keep readable text.",
+      "html": "<label class=\"ds-field\"><span>Collection name</span><input value=\"Tokyo apartment search\" /></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:7px;font-size:13px;color:var(--text,#242e31);font-family:var(--font, Geist, \"Noto Sans\", sans-serif);}.ds-field>span{font-weight:500}.ds-field input{width:100%;min-height:44px;padding:11px 12px;border:1px solid var(--line,#dce3e3);border-radius:5px;background:var(--surface,#fff);color:inherit;font:inherit;font-size:14px;transition:border-color .15s}.ds-field input:hover{border-color:var(--muted,#606e71)}.ds-field input:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}@media(max-width:700px){.ds-field input{font-size:16px}}@media(prefers-reduced-motion:reduce){.ds-field input{transition:none}}"
+    },
+    {
+      "name": "Workspace navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Desktop navigation states; icons are omitted in this compact text example.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workspace\"><button class=\"ds-active\" aria-current=\"page\">Apartments</button><button>Compare</button><button>Questions</button></nav>",
+      "css": ".ds-nav{display:grid;gap:5px;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);}.ds-nav button{display:flex;align-items:center;gap:11px;min-height:46px;text-align:left;padding:11px 13px;font:inherit;font-size:13px;color:var(--muted,#606e71);border:0;border-radius:5px;background:transparent;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s;}.ds-nav button:hover{background:var(--surface-soft,#eef2f2);color:var(--text,#242e31)}.ds-nav button.ds-active{background:var(--accent-soft,#e6f1ed);color:var(--accent-text,#155a52);font-weight:600}.ds-nav button:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-nav button{transition:none}}"
+    },
+    {
+      "name": "State chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Written neutral, teal, and amber states; display-only labels.",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-chip\">Considering</span><span class=\"ds-chip ds-teal\">Shortlisted</span><span class=\"ds-chip ds-amber\">Needs confirmation</span></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:9px;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);}.ds-chip{display:inline-flex;align-items:center;border-radius:4px;font-size:11px;font-weight:500;padding:4px 8px;line-height:1.4;background:var(--surface-soft,#eef2f2);color:var(--muted,#606e71);white-space:normal}.ds-chip.ds-teal{background:var(--accent-soft,#e6f1ed);color:var(--accent-text,#155a52)}.ds-chip.ds-amber{background:var(--amber-soft,#fbf0d9);color:var(--amber,#80541c)}"
+    },
+    {
+      "name": "Information panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat bordered surface for related information.",
+      "html": "<section class=\"ds-panel\"><h2>Search preferences</h2><p>Keep shared requirements together.</p></section>",
+      "css": ".ds-panel{background:var(--surface,#fff);color:var(--text,#242e31);border:1px solid var(--line,#dce3e3);border-radius:8px;padding:28px;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);}.ds-panel h2{font-size:20px;line-height:1.4;letter-spacing:-.45px;font-weight:600;margin:0 0 24px}.ds-panel p{font-size:13px;line-height:1.8;color:var(--muted,#606e71);margin:0}@media(max-width:700px){.ds-panel{padding:21px 18px}}"
+    },
+    {
+      "name": "Checklist evidence disclosure",
+      "kind": "custom",
+      "refersTo": "checklist-item",
+      "description": "Evidence remains inside the criterion; native disclosure works without a framework runtime.",
+      "html": "<article class=\"ds-check\"><h3>Is there enough natural light?</h3><p>Record what you observed during the viewing.</p><details class=\"ds-evidence\"><summary>Evidence</summary><div class=\"ds-evidence-body\">Source, observation date, and notes stay with this answer.</div></details></article>",
+      "css": ".ds-check{padding:26px;background:var(--surface,#fff);color:var(--text,#242e31);border:1px solid var(--line,#dce3e3);border-radius:6px;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);}.ds-check h3{font-size:16px;line-height:1.6;font-weight:600;margin:0}.ds-check p{font-size:13px;line-height:1.8;color:var(--muted,#606e71);margin:8px 0 0}.ds-evidence{border-top:1px solid var(--line,#dce3e3);margin-top:12px}.ds-evidence summary{display:flex;align-items:center;justify-content:space-between;list-style:none;min-height:48px;cursor:pointer;font-size:12px;color:var(--muted,#606e71)}.ds-evidence summary::-webkit-details-marker{display:none}.ds-evidence summary:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}.ds-evidence-body{padding-top:16px;font-size:13px;line-height:1.5}@media(max-width:700px){.ds-check{padding:22px 18px}}"
+    },
+    {
+      "name": "Segmented answer",
+      "kind": "custom",
+      "refersTo": "segmented-selected",
+      "description": "Static state example of the built answer choices; the app supplies selection behavior.",
+      "html": "<div class=\"ds-segmented\" aria-label=\"Answer\"><button aria-pressed=\"true\">Yes</button><button aria-pressed=\"false\">No</button><button aria-pressed=\"false\">Not checked</button></div>",
+      "css": ".ds-segmented{display:flex;padding:3px;background:var(--surface-soft,#eef2f2);border-radius:6px;gap:3px;font-family:var(--font, Geist, \"Noto Sans\", sans-serif);}.ds-segmented button{flex:1;min-height:44px;padding:9px 14px;border:1px solid transparent;border-radius:4px;font:inherit;font-size:13px;color:var(--muted,#606e71);background:transparent;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s;}.ds-segmented button[aria-pressed=\"true\"]{background:var(--surface,#fff);color:var(--accent-text,#155a52);border-color:var(--line,#dce3e3);font-weight:600}.ds-segmented button:focus-visible{outline:3px solid var(--accent,#17675f);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-segmented button{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Focused Operate workspace",
+    "overview": "The user-pinned direction is a quiet, practical workspace: cool neutral surfaces, graphite text, and one teal action family. Information density is moderate, with generous space around individual records and compact navigation. The hierarchy supports reading, editing, and comparing evidence on a phone during a viewing.\n\nThe system uses flat lists, fine dividers, restrained panels, Radix controls, and Phosphor icons. It supports light and dark themes with the same roles and hierarchy. The chosen direction excludes marketing heroes, scroll pinning, and decorative motion; the existing signed-out entry is a simple access screen, not a reusable display or marketing pattern. User pins remain variance 4, motion 3, and density 5.",
+    "keyCharacteristics": [
+      "Cool neutral fields with a single teal action family.",
+      "Readable multilingual content and controls that reflow on phones.",
+      "Flat records and panels, with lift reserved for overlays and floating controls.",
+      "Facts, evidence, uncertainty, and personal suitability remain visibly distinct."
+    ],
+    "rules": [
+      {
+        "name": "The Semantic Color Rule",
+        "body": "Reuse a color by its role and theme, with a written state label; do not assign new decorative accents to individual screens.",
+        "section": "colors"
+      },
+      {
+        "name": "The Language First Rule",
+        "body": "Preserve the active locale's font, allow labels and content to wrap, and give editable names, destinations, and dates enough width before reducing type size.",
+        "section": "typography"
+      },
+      {
+        "name": "The Reflow Before Compression Rule",
+        "body": "Stack identity and form content on narrow screens before squeezing it into unreadable columns.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Workspace Rule",
+        "body": "Keep ordinary content flat; reserve shadow for a floating control or an overlay that must read above the current context.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use semantic theme roles and the active locale's font.",
+      "**Do** preserve 44px targets for reusable controls and visible keyboard focus.",
+      "**Do** give identities, long text, and native dates full width when narrow columns impair reading.",
+      "**Do** keep evidence, uncertainty, and manual suitability visible as separate information.",
+      "**Do** verify affected layouts at 320, 390, 1440, and 1920px in both themes and the supported locales.",
+      "**Do** use authentic supplied property images or the honest neutral placeholder."
+    ],
+    "donts": [
+      "**Don't** add a marketing hero, scroll pinning, or decorative motion to this Operate workspace.",
+      "**Don't** reintroduce decorative labels above page headings; functional selector labels and stable identifiers remain valid.",
+      "**Don't** encode missing values as zero, known exemptions as unknown amounts, or state through color alone.",
+      "**Don't** replace flat records with nested cards or add shadows to ordinary content panels.",
+      "**Don't** treat the scoped finish verdicts as whole-product or cloud-release certification."
+    ]
+  }
+}

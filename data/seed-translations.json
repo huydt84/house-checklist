@@ -1,0 +1,1132 @@
+{
+  "A02": {
+    "ja": {
+      "label": "掲載された専有面積",
+      "guidance": "実測や追加確認が必要な点を記録します。"
+    },
+    "vi": {
+      "label": "Diện tích được quảng cáo",
+      "guidance": "Ghi những điểm cần đo hoặc xác nhận thêm."
+    }
+  },
+  "A03": {
+    "ja": {
+      "label": "実際の間取り",
+      "guidance": "1R、1K、1DK、1LDK、2K、その他から選びます。"
+    },
+    "vi": {
+      "label": "Bố cục thực tế",
+      "guidance": "Chọn 1R, 1K, 1DK, 1LDK, 2K hoặc loại khác."
+    }
+  },
+  "A04": {
+    "ja": {
+      "label": "主室の有効幅",
+      "guidance": "家具配置に使える幅をメートルで測ります。"
+    },
+    "vi": {
+      "label": "Chiều rộng sử dụng của phòng chính",
+      "guidance": "Đo chiều rộng có thể sử dụng, tính bằng mét."
+    }
+  },
+  "A05": {
+    "ja": {
+      "label": "築年",
+      "guidance": "建物が建てられた年を記録します。"
+    },
+    "vi": {
+      "label": "Năm xây dựng",
+      "guidance": "Ghi năm tòa nhà được xây dựng."
+    }
+  },
+  "A06": {
+    "ja": {
+      "label": "入居可能日",
+      "guidance": "最短入居可能日と希望入居日を比較します。"
+    },
+    "vi": {
+      "label": "Ngày có thể chuyển vào",
+      "guidance": "So sánh ngày nhận nhà sớm nhất với ngày chuyển vào mong muốn."
+    }
+  },
+  "A07": {
+    "ja": {
+      "label": "申込資格",
+      "guidance": "本人の状況で契約できるか、確認が必要な条件を記録します。"
+    },
+    "vi": {
+      "label": "Điều kiện của người thuê",
+      "guidance": "Xác nhận có thể thuê theo hoàn cảnh của người nộp đơn và các điều kiện còn thiếu."
+    }
+  },
+  "A08": {
+    "ja": {
+      "label": "来客・パートナーの宿泊",
+      "guidance": "予定する宿泊頻度が契約上認められるか確認します。"
+    },
+    "vi": {
+      "label": "Khách và người yêu ở lại",
+      "guidance": "Xác nhận tần suất ở lại qua đêm dự kiến có phù hợp hợp đồng không."
+    }
+  },
+  "A09": {
+    "ja": {
+      "label": "未達成・未確認の必須条件",
+      "guidance": "満たしていない条件と、まだ確認していない条件を区別します。"
+    },
+    "vi": {
+      "label": "Yêu cầu chưa đáp ứng hoặc chưa kiểm tra",
+      "guidance": "Phân biệt điều kiện không đáp ứng với điều kiện chưa xác minh."
+    }
+  },
+  "B01": {
+    "ja": {
+      "label": "利用する駅・路線・バス停",
+      "guidance": "物件から各交通拠点までの経路も記録します。"
+    },
+    "vi": {
+      "label": "Ga, tuyến tàu và điểm xe buýt sử dụng",
+      "guidance": "Ghi cả tuyến đường giữa căn hộ và các điểm tiếp cận này."
+    }
+  },
+  "B02": {
+    "ja": {
+      "label": "玄関から駅・バス停までの徒歩",
+      "guidance": "距離と所要時間を別々に記録し、駅入口かホームかも分かれば明記します。"
+    },
+    "vi": {
+      "label": "Đi bộ từ cửa căn hộ tới ga hoặc trạm xe buýt",
+      "guidance": "Ghi riêng khoảng cách và thời gian; nêu điểm cuối là cửa ga hay sân ga nếu biết."
+    }
+  },
+  "B03": {
+    "ja": {
+      "label": "職場までの総通勤時間",
+      "guidance": "玄関から職場までの所要時間を分で記録します。"
+    },
+    "vi": {
+      "label": "Thời gian từ cửa nhà tới nơi làm việc",
+      "guidance": "Ghi toàn bộ thời gian đi làm của người thuê, tính bằng phút."
+    }
+  },
+  "B04": {
+    "ja": {
+      "label": "乗り換え回数",
+      "guidance": "直通列車と、電車とバスを組み合わせる経路を区別します。"
+    },
+    "vi": {
+      "label": "Số lần chuyển tuyến",
+      "guidance": "Phân biệt tàu đi thẳng với hành trình kết hợp tàu và xe buýt."
+    }
+  },
+  "B05": {
+    "ja": {
+      "label": "職場などへの直通バス",
+      "guidance": "停留所、路線、時間、実用上の便利さを記録します。"
+    },
+    "vi": {
+      "label": "Xe buýt thẳng tới nơi làm việc hoặc điểm quan trọng",
+      "guidance": "Ghi trạm, tuyến, thời gian đi và mức độ thuận tiện thực tế."
+    }
+  },
+  "B06": {
+    "ja": {
+      "label": "運行頻度・終発・運行時間",
+      "guidance": "必要に応じて週末の違いも記録します。"
+    },
+    "vi": {
+      "label": "Tần suất, chuyến cuối và giờ hoạt động",
+      "guidance": "Ghi cả khác biệt cuối tuần khi cần."
+    }
+  },
+  "B07": {
+    "ja": {
+      "label": "各移動シナリオの往路・復路運賃",
+      "guidance": "往路と復路を別々に記録し、会社精算分も分けます。"
+    },
+    "vi": {
+      "label": "Chi phí lượt đi và lượt về theo hành trình",
+      "guidance": "Ghi riêng hai chiều và phần được công ty hoàn trả."
+    }
+  },
+  "B08": {
+    "ja": {
+      "label": "パートナーの自宅からの来訪",
+      "guidance": "パートナーや共同検討者が自宅から来る経路を記録します。"
+    },
+    "vi": {
+      "label": "Người đi cùng đến từ nhà riêng",
+      "guidance": "Ghi tuyến đến căn hộ từ nhà riêng của người yêu hoặc người cùng tìm nhà."
+    }
+  },
+  "B09": {
+    "ja": {
+      "label": "パートナーの職場からの来訪",
+      "guidance": "職場から物件に来る経路を記録します。"
+    },
+    "vi": {
+      "label": "Người đi cùng đến từ chỗ làm",
+      "guidance": "Ghi tuyến từ nơi làm việc tới căn hộ."
+    }
+  },
+  "B10": {
+    "ja": {
+      "label": "パートナーの自宅への帰路",
+      "guidance": "往路の逆とは限りません。帰宅先までの経路を別に記録します。"
+    },
+    "vi": {
+      "label": "Người đi cùng trở về nhà riêng",
+      "guidance": "Ghi riêng đường về; không mặc định là đảo ngược đường đến."
+    }
+  },
+  "B11": {
+    "ja": {
+      "label": "物件と駅の間のタクシー",
+      "guidance": "予約・迎車料金と見積もりの情報源も含めます。"
+    },
+    "vi": {
+      "label": "Taxi giữa căn hộ và ga",
+      "guidance": "Bao gồm phí đặt xe, đón xe đã biết và nguồn báo giá."
+    }
+  },
+  "B12": {
+    "ja": {
+      "label": "駅・目的地までの自転車",
+      "guidance": "時間を分で記録し、駐輪場の条件も残します。"
+    },
+    "vi": {
+      "label": "Đạp xe tới ga hoặc điểm đến",
+      "guidance": "Ghi số phút và việc bố trí chỗ đỗ xe đạp liên quan."
+    }
+  },
+  "B13": {
+    "ja": {
+      "label": "雨・疲労・乗り遅れ時の代替手段",
+      "guidance": "バス、タクシー、別経路などを記録します。"
+    },
+    "vi": {
+      "label": "Phương án khi mưa, mệt hoặc lỡ chuyến",
+      "guidance": "Ghi xe buýt, taxi hoặc tuyến khác."
+    }
+  },
+  "B14": {
+    "ja": {
+      "label": "歩行・階段・段差・負担",
+      "guidance": "各人について、連続歩行や高低差の負担を記録します。"
+    },
+    "vi": {
+      "label": "Đi bộ liên tục, cầu thang và độ thoải mái",
+      "guidance": "Đánh giá quãng đi bộ, thay đổi độ cao và sự thuận tiện cho từng người."
+    }
+  },
+  "C01": {
+    "ja": {
+      "label": "室内の有効な縦幅と横幅",
+      "guidance": "柱、使いにくい角、扉が開く範囲を含めます。"
+    },
+    "vi": {
+      "label": "Chiều dài và rộng sử dụng",
+      "guidance": "Tính cả cột, góc khó dùng và khoảng mở cửa."
+    }
+  },
+  "C02": {
+    "ja": {
+      "label": "布団を毎日畳まずに置ける",
+      "guidance": "設定した布団・マットレスの寸法で確認します。"
+    },
+    "vi": {
+      "label": "Đặt vừa đệm mà không phải gấp hằng ngày",
+      "guidance": "Kiểm tra theo kích thước đệm đã cấu hình."
+    }
+  },
+  "C03": {
+    "ja": {
+      "label": "常設デスクと椅子の空間",
+      "guidance": "椅子を引いて座るための余裕も確認します。"
+    },
+    "vi": {
+      "label": "Đủ chỗ cho bàn học/làm việc cố định",
+      "guidance": "Bao gồm khoảng kéo ghế ra và sử dụng ghế."
+    }
+  },
+  "C04": {
+    "ja": {
+      "label": "布団を敷いた状態の動線",
+      "guidance": "通路、収納、扉が問題なく使えるか確認します。"
+    },
+    "vi": {
+      "label": "Lối đi, tủ và cửa khi trải đệm",
+      "guidance": "Kiểm tra vẫn sử dụng được khi để đệm thường xuyên."
+    }
+  },
+  "C05": {
+    "ja": {
+      "label": "布団・机・椅子の配置案",
+      "guidance": "畳数や総面積だけで配置可能とは判断しません。"
+    },
+    "vi": {
+      "label": "Cách bố trí đệm, bàn, ghế và chỗ làm việc",
+      "guidance": "Không suy ra có đủ chỗ chỉ từ số chiếu tatami hoặc tổng diện tích."
+    }
+  },
+  "C06": {
+    "ja": {
+      "label": "間仕切りと日常の使いやすさ",
+      "guidance": "部屋を開放・調整できるかも記録します。"
+    },
+    "vi": {
+      "label": "Vách ngăn phù hợp sinh hoạt",
+      "guidance": "Ghi khả năng mở thông hoặc điều chỉnh các phòng."
+    }
+  },
+  "C07": {
+    "ja": {
+      "label": "衣類・寝具・荷物の収納",
+      "guidance": "スーツケースや日用品も含めて確認します。"
+    },
+    "vi": {
+      "label": "Đủ chỗ cất quần áo, chăn đệm và đồ dùng",
+      "guidance": "Bao gồm vali và vật dụng gia đình."
+    }
+  },
+  "C08": {
+    "ja": {
+      "label": "手持ちの家具・家電の置き場",
+      "guidance": "扇風機、本棚、その他の持ち物に合う空間を確認します。"
+    },
+    "vi": {
+      "label": "Chỗ cho quạt, giá sách và đồ đang có",
+      "guidance": "Kiểm tra không gian phù hợp với đồ dùng hiện tại."
+    }
+  },
+  "C09": {
+    "ja": {
+      "label": "二人で過ごす快適さ",
+      "guidance": "座る場所、移動のしやすさ、プライバシーを記録します。"
+    },
+    "vi": {
+      "label": "Thoải mái khi hai người ở lại",
+      "guidance": "Ghi chỗ ngồi, di chuyển và riêng tư."
+    }
+  },
+  "D01": {
+    "ja": {
+      "label": "窓・バルコニーの方角",
+      "guidance": "方角だけで実際の日当たりを判断しません。"
+    },
+    "vi": {
+      "label": "Hướng cửa sổ hoặc ban công",
+      "guidance": "Không suy ra chất lượng ánh sáng chỉ từ hướng."
+    }
+  },
+  "D02": {
+    "ja": {
+      "label": "実際の明るさと直射日光",
+      "guidance": "内見時刻と天気を記録します。"
+    },
+    "vi": {
+      "label": "Ánh sáng và nắng trực tiếp thực tế",
+      "guidance": "Ghi giờ xem nhà và thời tiết."
+    }
+  },
+  "D03": {
+    "ja": {
+      "label": "周辺の遮蔽物",
+      "guidance": "向かいの建物、距離、窓の高さ、空の見え方を記録します。"
+    },
+    "vi": {
+      "label": "Vật cản xung quanh",
+      "guidance": "Ghi tòa nhà đối diện, khoảng cách, độ cao cửa sổ và phần trời nhìn thấy."
+    }
+  },
+  "D04": {
+    "ja": {
+      "label": "眺望とプライバシー",
+      "guidance": "カーテンを開けた状態で確認します。"
+    },
+    "vi": {
+      "label": "Tầm nhìn và riêng tư",
+      "guidance": "Kiểm tra khi mở rèm."
+    }
+  },
+  "D05": {
+    "ja": {
+      "label": "必要な換気ができる",
+      "guidance": "窓が開き、使いやすいか確認します。"
+    },
+    "vi": {
+      "label": "Thông gió đáp ứng nhu cầu",
+      "guidance": "Kiểm tra cửa sổ mở được và sử dụng thuận tiện."
+    }
+  },
+  "D06": {
+    "ja": {
+      "label": "湿気・カビ・結露・異臭",
+      "guidance": "直接見聞きした事実と推測を区別します。"
+    },
+    "vi": {
+      "label": "Ẩm, mốc, đọng nước và mùi lạ",
+      "guidance": "Phân biệt quan sát thực tế với giả định."
+    }
+  },
+  "D07": {
+    "ja": {
+      "label": "屋外からの騒音",
+      "guidance": "学校、道路、電車、飲食店、工事などを記録します。"
+    },
+    "vi": {
+      "label": "Tiếng ồn bên ngoài",
+      "guidance": "Ghi trường học, đường, tàu, quán ăn hoặc công trường."
+    }
+  },
+  "D08": {
+    "ja": {
+      "label": "廊下・隣室・上階の音",
+      "guidance": "いつ確認したかを記録します。"
+    },
+    "vi": {
+      "label": "Tiếng từ hành lang, hàng xóm và tầng trên",
+      "guidance": "Ghi thời điểm kiểm tra."
+    }
+  },
+  "D09": {
+    "ja": {
+      "label": "構造・戸境壁・遮音の根拠",
+      "guidance": "鉄筋コンクリート造だけでは静かとは判断できません。"
+    },
+    "vi": {
+      "label": "Kết cấu, tường ngăn và bằng chứng cách âm",
+      "guidance": "Kết cấu bê tông cốt thép không tự chứng minh căn hộ yên tĩnh."
+    }
+  },
+  "E01": {
+    "ja": {
+      "label": "キッチンを生活空間と分けられる",
+      "guidance": "料理のにおいが寝室や仕事場に広がりにくいか確認します。"
+    },
+    "vi": {
+      "label": "Tách bếp khỏi nơi ngủ/làm việc",
+      "guidance": "Kiểm tra khả năng hạn chế mùi nấu ăn."
+    }
+  },
+  "E02": {
+    "ja": {
+      "label": "コンロの口数",
+      "guidance": "種類と状態も補足に記録します。"
+    },
+    "vi": {
+      "label": "Số bếp nấu",
+      "guidance": "Ghi thêm loại bếp và tình trạng."
+    }
+  },
+  "E03": {
+    "ja": {
+      "label": "調理の作業スペース",
+      "guidance": "まな板、家電、日常の調理作業に使える面積を確認します。"
+    },
+    "vi": {
+      "label": "Không gian sơ chế",
+      "guidance": "Kiểm tra chỗ cho thớt, thiết bị và công việc nấu ăn thực tế."
+    }
+  },
+  "E04": {
+    "ja": {
+      "label": "冷蔵庫の位置と設置寸法",
+      "guidance": "調理場所との距離や間にある壁も確認します。"
+    },
+    "vi": {
+      "label": "Vị trí và kích thước chỗ đặt tủ lạnh",
+      "guidance": "Ghi khoảng cách tới nơi nấu ăn và vách tường ngăn giữa nếu có."
+    }
+  },
+  "E05": {
+    "ja": {
+      "label": "換気扇とキッチン収納",
+      "guidance": "自分の調理習慣に合うか確認します。"
+    },
+    "vi": {
+      "label": "Hút mùi và tủ bếp phù hợp",
+      "guidance": "Kiểm tra theo nhu cầu nấu ăn của người dùng."
+    }
+  },
+  "E06": {
+    "ja": {
+      "label": "浴室・トイレ・洗面台",
+      "guidance": "配置、清潔さ、水圧、給湯、調査が必要なにおいを記録します。"
+    },
+    "vi": {
+      "label": "Phòng tắm, nhà vệ sinh và bồn rửa",
+      "guidance": "Ghi bố trí, vệ sinh, áp lực nước, nước nóng và mùi cần tìm hiểu."
+    }
+  },
+  "E07": {
+    "ja": {
+      "label": "洗濯機の場所と寸法",
+      "guidance": "給水・排水接続も確認します。"
+    },
+    "vi": {
+      "label": "Chỗ đặt và kích thước máy giặt",
+      "guidance": "Kiểm tra cả đường cấp và thoát nước."
+    }
+  },
+  "E08": {
+    "ja": {
+      "label": "室内干しの場所・設備",
+      "guidance": "日光がない日にも洗濯物を干せるか確認します。"
+    },
+    "vi": {
+      "label": "Chỗ hoặc thiết bị phơi trong nhà",
+      "guidance": "Kiểm tra cho những ngày không có nắng."
+    }
+  },
+  "E09": {
+    "ja": {
+      "label": "バルコニーでの物干し",
+      "guidance": "広さ、日当たり、プライバシー、規制を記録します。"
+    },
+    "vi": {
+      "label": "Phơi ở ban công",
+      "guidance": "Ghi không gian, ánh nắng, riêng tư và các hạn chế."
+    }
+  },
+  "E10": {
+    "ja": {
+      "label": "ガスの種類",
+      "guidance": "都市ガス・プロパン・その他から選びます。その他の場合は種類を入力してください。"
+    },
+    "vi": {
+      "label": "Loại ga provider",
+      "guidance": "Chọn Toshi (ga đô thị), Propane hoặc Other; nhập loại ga khi chọn Other."
+    }
+  },
+  "F01": {
+    "ja": {
+      "label": "備え付けエアコン",
+      "guidance": "台数、場所、状態、修理の責任者を記録します。"
+    },
+    "vi": {
+      "label": "Điều hòa có sẵn",
+      "guidance": "Ghi số máy, vị trí, tình trạng và trách nhiệm sửa chữa."
+    }
+  },
+  "F02": {
+    "ja": {
+      "label": "コンセント",
+      "guidance": "机、布団、調理家電、ルーター付近の数と使いやすさを確認します。"
+    },
+    "vi": {
+      "label": "Ổ điện",
+      "guidance": "Kiểm tra số lượng và sự thuận tiện gần bàn, đệm, đồ bếp và router."
+    }
+  },
+  "F03": {
+    "ja": {
+      "label": "インターネット契約形態",
+      "guidance": "込み・別契約が必要・不明を区別します。"
+    },
+    "vi": {
+      "label": "Hình thức internet",
+      "guidance": "Phân biệt đã bao gồm, cần hợp đồng riêng hoặc chưa rõ."
+    }
+  },
+  "F04": {
+    "ja": {
+      "label": "室内への実際の回線と事業者",
+      "guidance": "確認済みの内容と広告上の対応状況を区別します。"
+    },
+    "vi": {
+      "label": "Đường truyền thực tế vào căn hộ và nhà mạng",
+      "guidance": "Phân biệt thông tin đã xác minh với quảng cáo có dịch vụ."
+    }
+  },
+  "F05": {
+    "ja": {
+      "label": "インターネット月額費用",
+      "guidance": "その料金が適用される条件を記録します。"
+    },
+    "vi": {
+      "label": "Phí internet định kỳ",
+      "guidance": "Ghi điều kiện để được mức giá đó."
+    }
+  },
+  "F06": {
+    "ja": {
+      "label": "開通・工事・機器費用",
+      "guidance": "初期に支払う金額を記録します。"
+    },
+    "vi": {
+      "label": "Phí kích hoạt, lắp đặt và thiết bị",
+      "guidance": "Ghi các khoản phải trả ban đầu."
+    }
+  },
+  "F07": {
+    "ja": {
+      "label": "利用開始日と工事",
+      "guidance": "工事許可や予想待ち時間も確認します。"
+    },
+    "vi": {
+      "label": "Ngày có mạng, phép lắp đặt và thời gian chờ",
+      "guidance": "Ghi ngày sử dụng được và thời gian dự kiến chờ thi công."
+    }
+  },
+  "F08": {
+    "ja": {
+      "label": "既存契約の移転・解約条件",
+      "guidance": "最低契約期間、解約、機器返却の条件を記録します。"
+    },
+    "vi": {
+      "label": "Chuyển hợp đồng, thời hạn tối thiểu và hủy dịch vụ",
+      "guidance": "Ghi cả điều kiện trả thiết bị."
+    }
+  },
+  "F09": {
+    "ja": {
+      "label": "実測の通信速度と安定性",
+      "guidance": "下り・上り速度、遅延、測定時刻・方法、根拠を記録します。"
+    },
+    "vi": {
+      "label": "Tốc độ tải xuống/lên, độ trễ và ổn định",
+      "guidance": "Ghi thời gian, phương pháp đo và bằng chứng."
+    }
+  },
+  "F10": {
+    "ja": {
+      "label": "仕事場の電波と仮の接続",
+      "guidance": "携帯電波・Wi-Fiの状態と、開通までの代替接続を確認します。"
+    },
+    "vi": {
+      "label": "Sóng di động/Wi-Fi tại bàn và mạng tạm thời",
+      "guidance": "Kiểm tra kết nối có thể dùng trước khi lắp mạng."
+    }
+  },
+  "G01": {
+    "ja": {
+      "label": "最寄りのスーパー",
+      "guidance": "距離、徒歩経路、営業時間を確認します。"
+    },
+    "vi": {
+      "label": "Siêu thị gần nhất",
+      "guidance": "Kiểm tra khoảng cách, đường đi bộ và giờ mở cửa."
+    }
+  },
+  "G02": {
+    "ja": {
+      "label": "安い食料品店・まとめ買い",
+      "guidance": "低価格店や大量購入に向く店を記録します。"
+    },
+    "vi": {
+      "label": "Cửa hàng giá rẻ hoặc mua số lượng lớn",
+      "guidance": "Ghi các lựa chọn tiết kiệm để mua thực phẩm."
+    }
+  },
+  "G03": {
+    "ja": {
+      "label": "普段使いの飲食店",
+      "guidance": "料理の種類、距離、営業時間を記録します。"
+    },
+    "vi": {
+      "label": "Quán ăn cho bữa thường ngày",
+      "guidance": "Ghi loại đồ ăn, khoảng cách và giờ mở cửa."
+    }
+  },
+  "G04": {
+    "ja": {
+      "label": "必要な生活施設",
+      "guidance": "コンビニなど、実際に必要な施設を確認します。"
+    },
+    "vi": {
+      "label": "Cửa hàng tiện lợi và tiện ích cần thiết",
+      "guidance": "Kiểm tra các tiện ích người dùng thực sự cần."
+    }
+  },
+  "G05": {
+    "ja": {
+      "label": "駐輪場の有無",
+      "guidance": "空き区画と登録条件を確認します。"
+    },
+    "vi": {
+      "label": "Chỗ đỗ xe đạp",
+      "guidance": "Kiểm tra còn chỗ và điều kiện đăng ký."
+    }
+  },
+  "G06": {
+    "ja": {
+      "label": "駐輪場の月額料金",
+      "guidance": "自宅の駐輪場と駅の駐輪場を区別します。"
+    },
+    "vi": {
+      "label": "Phí đỗ xe đạp hằng tháng",
+      "guidance": "Phân biệt chỗ đỗ tại nhà với chỗ đỗ ở ga."
+    }
+  },
+  "G07": {
+    "ja": {
+      "label": "家具の搬入経路",
+      "guidance": "エレベーター・階段・扉の寸法と、マットレス・机・本棚の搬入経路を確認します。"
+    },
+    "vi": {
+      "label": "Lối chuyển đồ vào nhà",
+      "guidance": "Kiểm tra thang máy, cầu thang, kích thước cửa và đường đưa đệm, bàn, giá sách vào."
+    }
+  },
+  "G08": {
+    "ja": {
+      "label": "引越し作業の制限",
+      "guidance": "作業時間、車の停車場所、予約、共用部の養生を確認します。"
+    },
+    "vi": {
+      "label": "Hạn chế khi chuyển nhà",
+      "guidance": "Ghi giờ được phép, chỗ dừng xe, đặt lịch và bảo vệ khu vực chung."
+    }
+  },
+  "G09": {
+    "ja": {
+      "label": "実際の荷物による引越し見積もり",
+      "guidance": "平日と週末の選択肢を比較します。"
+    },
+    "vi": {
+      "label": "Báo giá chuyển nhà theo đồ thực tế",
+      "guidance": "So sánh lựa chọn ngày thường và cuối tuần."
+    }
+  },
+  "H01": {
+    "ja": {
+      "label": "家賃",
+      "guidance": "月額の家賃を円で記録します。"
+    },
+    "vi": {
+      "label": "Tiền thuê nhà",
+      "guidance": "Ghi tiền thuê hằng tháng bằng JPY."
+    }
+  },
+  "H02": {
+    "ja": {
+      "label": "管理費・共益費",
+      "guidance": "月額の管理費・共益費を円で記録します。"
+    },
+    "vi": {
+      "label": "Phí quản lý và khu vực chung",
+      "guidance": "Ghi phí hằng tháng bằng JPY."
+    }
+  },
+  "H03": {
+    "ja": {
+      "label": "敷金",
+      "guidance": "返金条件や控除される可能性のある費用を確認します。"
+    },
+    "vi": {
+      "label": "Tiền đặt cọc (敷金)",
+      "guidance": "Ghi điều kiện hoàn lại và khoản có thể bị trừ."
+    }
+  },
+  "H04": {
+    "ja": {
+      "label": "礼金",
+      "guidance": "返金されない礼金を円で記録します。"
+    },
+    "vi": {
+      "label": "Tiền lễ (礼金)",
+      "guidance": "Ghi số tiền lễ bằng JPY."
+    }
+  },
+  "H05": {
+    "ja": {
+      "label": "仲介手数料",
+      "guidance": "金額・計算式、税、割引、支払先を確認します。"
+    },
+    "vi": {
+      "label": "Phí môi giới (仲介手数料)",
+      "guidance": "Ghi số tiền/công thức, thuế, giảm giá và bên nhận."
+    }
+  },
+  "H07": {
+    "ja": {
+      "label": "初回保証料",
+      "guidance": "金額・計算式、計算の基礎、免除が確認済みかを記録します。"
+    },
+    "vi": {
+      "label": "Phí bảo lãnh ban đầu",
+      "guidance": "Ghi số tiền/công thức, cơ sở tính và việc miễn phí đã được xác nhận chưa."
+    }
+  },
+  "H08": {
+    "ja": {
+      "label": "月次・年次・更新時の保証料",
+      "guidance": "各支払頻度を別々に記録します。"
+    },
+    "vi": {
+      "label": "Phí bảo lãnh hằng tháng, hằng năm và gia hạn",
+      "guidance": "Ghi riêng từng tần suất."
+    }
+  },
+  "H09": {
+    "ja": {
+      "label": "外国人向け追加料金",
+      "guidance": "金額、頻度、適用の有無を確認します。"
+    },
+    "vi": {
+      "label": "Phụ phí dành cho người nước ngoài",
+      "guidance": "Ghi số tiền, tần suất và có áp dụng hay không."
+    }
+  },
+  "H10": {
+    "ja": {
+      "label": "鍵交換費",
+      "guidance": "鍵交換の金額を円で記録します。"
+    },
+    "vi": {
+      "label": "Phí thay khóa",
+      "guidance": "Ghi số tiền bằng JPY."
+    }
+  },
+  "H11": {
+    "ja": {
+      "label": "サポート・登録・事務・消毒など",
+      "guidance": "24時間サポート等のパッケージで、必須と任意を区別します。"
+    },
+    "vi": {
+      "label": "Gói hỗ trợ, đăng ký, hành chính và khử trùng",
+      "guidance": "Phân biệt bắt buộc và tùy chọn, bao gồm hỗ trợ 24 giờ và các gói khác."
+    }
+  },
+  "H12": {
+    "ja": {
+      "label": "火災保険",
+      "guidance": "費用、補償期間、支払先、次回支払時期を記録します。"
+    },
+    "vi": {
+      "label": "Bảo hiểm cháy",
+      "guidance": "Ghi giá, thời hạn bảo hiểm, bên nhận và lần phải trả tiếp theo."
+    }
+  },
+  "H13": {
+    "ja": {
+      "label": "入退去・エアコン清掃費",
+      "guidance": "支払時期と重複の可能性を確認します。"
+    },
+    "vi": {
+      "label": "Phí vệ sinh lúc vào/ra và điều hòa",
+      "guidance": "Ghi thời điểm trả và khả năng tính trùng."
+    }
+  },
+  "H14": {
+    "ja": {
+      "label": "フリーレント・キャンペーン",
+      "guidance": "金額・月数、対象費用、条件、返還義務の可能性を記録します。"
+    },
+    "vi": {
+      "label": "Miễn tiền thuê và khuyến mãi",
+      "guidance": "Ghi số tiền hoặc số tháng, khoản được miễn, điều kiện và khả năng bị thu hồi."
+    }
+  },
+  "H15": {
+    "ja": {
+      "label": "家賃発生日と初月の日割り",
+      "guidance": "契約上の課金開始、鍵の受取日、実際の引越し日を区別します。"
+    },
+    "vi": {
+      "label": "Ngày bắt đầu tính thuê và chia theo ngày",
+      "guidance": "Phân biệt ngày tính tiền theo hợp đồng, ngày nhận khóa và ngày chuyển vào thực tế."
+    }
+  },
+  "H16": {
+    "ja": {
+      "label": "更新料と更新時の費用",
+      "guidance": "契約更新ごとに繰り返す料金を記録します。"
+    },
+    "vi": {
+      "label": "Phí gia hạn hợp đồng và khoản lặp lại",
+      "guidance": "Ghi các khoản phải trả lại khi gia hạn."
+    }
+  },
+  "H17": {
+    "ja": {
+      "label": "早期解約の違約金・予告期間",
+      "guidance": "関連するその他の費用も記録します。"
+    },
+    "vi": {
+      "label": "Phạt chấm dứt sớm và thời hạn báo trước",
+      "guidance": "Ghi cả các phí liên quan."
+    }
+  },
+  "H18": {
+    "ja": {
+      "label": "その他の退去費用・不明な費用",
+      "guidance": "説明されていない請求を未解決のまま記録します。"
+    },
+    "vi": {
+      "label": "Chi phí ra khỏi nhà và khoản chưa giải thích",
+      "guidance": "Giữ các khoản chưa rõ là chưa được giải quyết."
+    }
+  },
+  "H19": {
+    "ja": {
+      "label": "見積もりの範囲と支払方法",
+      "guidance": "各費用が含まれるか、集金者、別払い、期限、必要な振込名義・番号を確認します。"
+    },
+    "vi": {
+      "label": "Phạm vi báo giá và cách thanh toán",
+      "guidance": "Ghi khoản đã bao gồm, bên thu, trả riêng, hạn trả và nội dung/mã chuyển khoản."
+    }
+  },
+  "H20": {
+    "ja": {
+      "label": "費用の確認状況",
+      "guidance": "見積もり、仲介担当者の確認、書類に記載のいずれかを区別します。"
+    },
+    "vi": {
+      "label": "Tình trạng xác nhận chi phí",
+      "guidance": "Phân biệt ước tính, xác nhận bởi môi giới và được ghi trong tài liệu."
+    }
+  },
+  "I01": {
+    "ja": {
+      "label": "契約種別・期間・更新・開始日",
+      "guidance": "契約の種類、期間、更新条件、効力発生日を記録します。"
+    },
+    "vi": {
+      "label": "Loại, thời hạn, gia hạn và hiệu lực hợp đồng",
+      "guidance": "Ghi đủ các điều kiện và ngày hiệu lực."
+    }
+  },
+  "I02": {
+    "ja": {
+      "label": "必要書類・日本語・保証条件",
+      "guidance": "日本語対応の要件と、適用される保証人・保証会社の条件を確認します。"
+    },
+    "vi": {
+      "label": "Giấy tờ, tiếng Nhật và bảo lãnh",
+      "guidance": "Ghi yêu cầu giấy tờ, trình độ/hỗ trợ tiếng Nhật và điều kiện bảo lãnh áp dụng."
+    }
+  },
+  "I03": {
+    "ja": {
+      "label": "希望する契約形態への承諾",
+      "guidance": "必要なら法人契約も含め、貸主・管理会社が認めるか確認します。"
+    },
+    "vi": {
+      "label": "Chủ nhà/quản lý chấp nhận hình thức thuê",
+      "guidance": "Bao gồm thuê qua công ty khi có liên quan."
+    }
+  },
+  "I04": {
+    "ja": {
+      "label": "頻繁な来客・同居人・居住者申告",
+      "guidance": "来客、追加の居住者、申告義務を確認します。"
+    },
+    "vi": {
+      "label": "Khách thường xuyên, người ở thêm và khai báo cư trú",
+      "guidance": "Kiểm tra các yêu cầu khai báo và người ở."
+    }
+  },
+  "I05": {
+    "ja": {
+      "label": "日常生活に関係する規則",
+      "guidance": "在宅勤務、料理、洗濯物干し、物件固有の制限を確認します。"
+    },
+    "vi": {
+      "label": "Quy định ảnh hưởng sinh hoạt",
+      "guidance": "Kiểm tra làm việc tại nhà, nấu ăn, phơi đồ và hạn chế riêng của căn hộ."
+    }
+  },
+  "I06": {
+    "ja": {
+      "label": "掲載・担当者・契約書の不一致",
+      "guidance": "異なる説明を記録し、解消できた根拠を残します。"
+    },
+    "vi": {
+      "label": "Khác biệt giữa quảng cáo, môi giới và hợp đồng",
+      "guidance": "Ghi nội dung không thống nhất và bằng chứng giải quyết."
+    }
+  },
+  "I07": {
+    "ja": {
+      "label": "担当者への未回答の質問",
+      "guidance": "回答責任者と解決状況を記録します。"
+    },
+    "vi": {
+      "label": "Câu hỏi còn chờ môi giới trả lời",
+      "guidance": "Ghi người phụ trách và trạng thái giải quyết."
+    }
+  },
+  "J01": {
+    "ja": {
+      "label": "勤務先の法人契約制度の対象",
+      "guidance": "この物件が制度で受け入れられるか確認します。"
+    },
+    "vi": {
+      "label": "Căn hộ được chấp nhận theo chế độ thuê công ty",
+      "guidance": "Xác nhận phù hợp chương trình thuê nhà của công ty."
+    }
+  },
+  "J02": {
+    "ja": {
+      "label": "関係者と次の対応",
+      "guidance": "仲介、管理会社、借上げサービス、人事の各担当者と次の作業を記録します。"
+    },
+    "vi": {
+      "label": "Các bên và bước tiếp theo",
+      "guidance": "Ghi môi giới, quản lý, dịch vụ thuê hộ, nhân sự và hành động tiếp theo của từng bên."
+    }
+  },
+  "J03": {
+    "ja": {
+      "label": "処理期間と法人契約の開始日",
+      "guidance": "手続きに必要な時間と適用開始日を記録します。"
+    },
+    "vi": {
+      "label": "Thời gian xử lý và ngày thuê công ty có hiệu lực",
+      "guidance": "Ghi thời gian cần thiết và ngày bắt đầu áp dụng."
+    }
+  },
+  "J04": {
+    "ja": {
+      "label": "名義変更・個人から法人への切替費",
+      "guidance": "いつ費用がかかるかも確認します。"
+    },
+    "vi": {
+      "label": "Phí đổi người đứng tên hoặc chuyển sang công ty",
+      "guidance": "Ghi thời điểm và điều kiện áp dụng."
+    }
+  },
+  "J05": {
+    "ja": {
+      "label": "保証会社の要否と免除",
+      "guidance": "根拠と、どの費用が具体的に免除されるかを記録します。"
+    },
+    "vi": {
+      "label": "Bắt buộc hay miễn công ty bảo lãnh",
+      "guidance": "Ghi bằng chứng và chính xác khoản nào được miễn."
+    }
+  },
+  "J06": {
+    "ja": {
+      "label": "住宅手当判定用の職場距離",
+      "guidance": "直線距離の半径と実際の移動距離を区別します。"
+    },
+    "vi": {
+      "label": "Khoảng cách tới văn phòng để xét trợ cấp",
+      "guidance": "Phân biệt bán kính đường thẳng với khoảng cách di chuyển thực tế."
+    }
+  },
+  "J07": {
+    "ja": {
+      "label": "見込み・確認済みの住宅手当",
+      "guidance": "月額を記録し、未確認か確認済みかを区別します。"
+    },
+    "vi": {
+      "label": "Trợ cấp nhà dự kiến hoặc đã xác nhận",
+      "guidance": "Ghi số tiền hằng tháng và tình trạng xác nhận."
+    }
+  },
+  "J08": {
+    "ja": {
+      "label": "手当条件と法人契約との併用",
+      "guidance": "両方を併用できると決めつけず、確認結果を記録します。"
+    },
+    "vi": {
+      "label": "Điều kiện trợ cấp và kết hợp thuê công ty",
+      "guidance": "Không mặc định được hưởng cả hai; ghi kết quả xác nhận."
+    }
+  },
+  "J09": {
+    "ja": {
+      "label": "本人負担・給与控除・一時預り・返金",
+      "guidance": "各金額と時期を別々に記録します。"
+    },
+    "vi": {
+      "label": "Tiền tự trả, khấu trừ lương, tạm giữ và hoàn lại",
+      "guidance": "Ghi riêng số tiền và thời điểm của từng khoản."
+    }
+  },
+  "J10": {
+    "ja": {
+      "label": "更新・保険・定期費用の負担者",
+      "guidance": "誰が継続費用を負担するか確認します。"
+    },
+    "vi": {
+      "label": "Bên chịu phí gia hạn, bảo hiểm và định kỳ",
+      "guidance": "Xác nhận trách nhiệm trả từng khoản."
+    }
+  },
+  "J11": {
+    "ja": {
+      "label": "人事に確認する給与処理",
+      "guidance": "家賃・手当が給与にどう表れるかを記録し、節税額を自動計算しません。"
+    },
+    "vi": {
+      "label": "Cách xử lý trên lương cần hỏi nhân sự",
+      "guidance": "Ghi cách tiền thuê/trợ cấp thể hiện trên lương; không tự tính lợi ích thuế."
+    }
+  },
+  "K01": {
+    "ja": {
+      "label": "玄関の防犯・鍵・インターホン",
+      "guidance": "必要に応じて有効にする追加確認です。"
+    },
+    "vi": {
+      "label": "An ninh cửa vào, khóa và intercom",
+      "guidance": "Kiểm tra bổ sung, chỉ bật khi cần."
+    }
+  },
+  "K02": {
+    "ja": {
+      "label": "宅配便の受け取り",
+      "guidance": "必要な受取方法を確認します。"
+    },
+    "vi": {
+      "label": "Nhận bưu kiện",
+      "guidance": "Kiểm tra cách nhận phù hợp nhu cầu."
+    }
+  },
+  "K03": {
+    "ja": {
+      "label": "ごみ出しの規則",
+      "guidance": "分別、場所、時間などを確認します。"
+    },
+    "vi": {
+      "label": "Quy định đổ rác",
+      "guidance": "Kiểm tra phân loại, địa điểm và thời gian."
+    }
+  },
+  "K04": {
+    "ja": {
+      "label": "夜の帰宅経路",
+      "guidance": "必要に応じて夜間の経路を確認します。"
+    },
+    "vi": {
+      "label": "Đường về nhà vào ban đêm",
+      "guidance": "Kiểm tra tuyến đường buổi tối khi cần."
+    }
+  },
+  "K05": {
+    "ja": {
+      "label": "地域固有の災害リスク",
+      "guidance": "公的な情報に照らして確認します。"
+    },
+    "vi": {
+      "label": "Nguy cơ đặc thù của khu vực",
+      "guidance": "Đối chiếu thông tin chính thức."
+    }
+  },
+  "K06": {
+    "ja": {
+      "label": "虫・害虫",
+      "guidance": "観察や確認した内容を記録します。"
+    },
+    "vi": {
+      "label": "Côn trùng và sâu hại",
+      "guidance": "Ghi quan sát hoặc thông tin đã kiểm tra."
+    }
+  },
+  "K07": {
+    "ja": {
+      "label": "ペット・喫煙の規則",
+      "guidance": "自分に関係する場合に確認します。"
+    },
+    "vi": {
+      "label": "Quy định thú cưng và hút thuốc",
+      "guidance": "Kiểm tra khi có liên quan."
+    }
+  }
+}

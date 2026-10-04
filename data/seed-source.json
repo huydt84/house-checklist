@@ -1,0 +1,906 @@
+[
+  {
+    "key": "A02",
+    "section": "A",
+    "type": "number",
+    "unit": "m²",
+    "label": "Advertised floor area",
+    "guidance": "note anything that needs measurement or further confirmation."
+  },
+  {
+    "key": "A03",
+    "section": "A",
+    "type": "select",
+    "unit": null,
+    "label": "Actual layout",
+    "guidance": "1R / 1K / 1DK / 1LDK / 2K / Other."
+  },
+  {
+    "key": "A04",
+    "section": "A",
+    "type": "number",
+    "unit": "m",
+    "label": "Usable width of the main room",
+    "guidance": ""
+  },
+  {
+    "key": "A05",
+    "section": "A",
+    "type": "number",
+    "unit": "year",
+    "label": "Building year",
+    "guidance": "Record the year the building was built."
+  },
+  {
+    "key": "A06",
+    "section": "A",
+    "type": "text",
+    "unit": null,
+    "label": "Earliest availability versus the desired move-in date",
+    "guidance": ""
+  },
+  {
+    "key": "A07",
+    "section": "A",
+    "type": "boolean",
+    "unit": null,
+    "label": "Applicant eligibility",
+    "guidance": "whether the applicant can rent under their circumstances, with any conditions needing confirmation."
+  },
+  {
+    "key": "A08",
+    "section": "A",
+    "type": "boolean",
+    "unit": null,
+    "label": "Guest/partner stays",
+    "guidance": "whether the intended frequency of overnight stays is compatible with the contract."
+  },
+  {
+    "key": "A09",
+    "section": "A",
+    "type": "text",
+    "unit": null,
+    "label": "Requirements currently unmet or still unchecked",
+    "guidance": ""
+  },
+  {
+    "key": "B01",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Stations, train lines, and bus stops actually used",
+    "guidance": "include the route between the apartment and those access points."
+  },
+  {
+    "key": "B02",
+    "section": "B",
+    "type": "number",
+    "unit": "m and minutes",
+    "label": "Walking distance and duration from the apartment door to the station/bus stop",
+    "guidance": "record distance and time separately; note whether the endpoint is the station entrance or platform when known."
+  },
+  {
+    "key": "B03",
+    "section": "B",
+    "type": "number",
+    "unit": "minutes",
+    "label": "Door-to-door commute to the renter's workplace",
+    "guidance": ""
+  },
+  {
+    "key": "B04",
+    "section": "B",
+    "type": "number",
+    "unit": null,
+    "label": "Number of transfers",
+    "guidance": "distinguish a direct train from a train-plus-bus journey."
+  },
+  {
+    "key": "B05",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Direct bus to work or another important destination",
+    "guidance": "stop, route, travel time, and practical convenience."
+  },
+  {
+    "key": "B06",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Service frequency, last departures, and operating hours",
+    "guidance": "include weekend differences where relevant."
+  },
+  {
+    "key": "B07",
+    "section": "B",
+    "type": "number",
+    "unit": "JPY",
+    "label": "One-way and return cost for each journey scenario",
+    "guidance": "keep employer-reimbursed portions separate."
+  },
+  {
+    "key": "B08",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Partner/co-searcher's arrival from their own home",
+    "guidance": ""
+  },
+  {
+    "key": "B09",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Partner/co-searcher's arrival from their workplace",
+    "guidance": ""
+  },
+  {
+    "key": "B10",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Partner/co-searcher's return to their own home",
+    "guidance": "do not assume it reverses the arrival route."
+  },
+  {
+    "key": "B11",
+    "section": "B",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Taxi for the apartment–station segment",
+    "guidance": "include known booking/pickup surcharges and the quote/source."
+  },
+  {
+    "key": "B12",
+    "section": "B",
+    "type": "number",
+    "unit": "minutes",
+    "label": "Cycling time to stations/destinations",
+    "guidance": "include relevant bicycle-parking arrangements."
+  },
+  {
+    "key": "B13",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Alternatives for rain, fatigue, or a missed service",
+    "guidance": "bus, taxi, or another route."
+  },
+  {
+    "key": "B14",
+    "section": "B",
+    "type": "text",
+    "unit": null,
+    "label": "Continuous walking, stairs, level changes, and comfort for each person",
+    "guidance": ""
+  },
+  {
+    "key": "C01",
+    "section": "C",
+    "type": "text",
+    "unit": null,
+    "label": "Usable length × width",
+    "guidance": "include columns, awkward corners, and door-opening areas."
+  },
+  {
+    "key": "C02",
+    "section": "C",
+    "type": "boolean",
+    "unit": null,
+    "label": "The configured futon/mattress fits without being folded every day",
+    "guidance": ""
+  },
+  {
+    "key": "C03",
+    "section": "C",
+    "type": "boolean",
+    "unit": null,
+    "label": "A permanent study/work desk fits, including clearance to pull out and use the chair",
+    "guidance": ""
+  },
+  {
+    "key": "C04",
+    "section": "C",
+    "type": "boolean",
+    "unit": null,
+    "label": "Walkways, cupboards, and doors remain usable with the futon laid out",
+    "guidance": ""
+  },
+  {
+    "key": "C05",
+    "section": "C",
+    "type": "text",
+    "unit": null,
+    "label": "Proposed arrangement of the futon, desk, chair, and workspace",
+    "guidance": "do not infer fit from tatami count or total floor area alone."
+  },
+  {
+    "key": "C06",
+    "section": "C",
+    "type": "boolean",
+    "unit": null,
+    "label": "Room divisions/partitions suit daily use",
+    "guidance": "note whether rooms can be opened up or adapted."
+  },
+  {
+    "key": "C07",
+    "section": "C",
+    "type": "boolean",
+    "unit": null,
+    "label": "Adequate storage for clothes, bedding, suitcases, and household items",
+    "guidance": ""
+  },
+  {
+    "key": "C08",
+    "section": "C",
+    "type": "boolean",
+    "unit": null,
+    "label": "Suitable space for the fan, bookshelf, and other existing belongings",
+    "guidance": ""
+  },
+  {
+    "key": "C09",
+    "section": "C",
+    "type": "text",
+    "unit": null,
+    "label": "Comfort when two people stay",
+    "guidance": "seating, circulation, and privacy."
+  },
+  {
+    "key": "D01",
+    "section": "D",
+    "type": "select",
+    "unit": null,
+    "label": "Window/balcony orientation",
+    "guidance": "do not infer actual light quality from orientation alone."
+  },
+  {
+    "key": "D02",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "Actual daylight and direct sunlight",
+    "guidance": "record viewing time and weather."
+  },
+  {
+    "key": "D03",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "Nearby obstructions",
+    "guidance": "facing buildings, separation distance, window height, and visible sky."
+  },
+  {
+    "key": "D04",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "View and privacy with curtains open",
+    "guidance": ""
+  },
+  {
+    "key": "D05",
+    "section": "D",
+    "type": "boolean",
+    "unit": null,
+    "label": "Ventilation meets the user's needs",
+    "guidance": "whether windows open and can be used conveniently."
+  },
+  {
+    "key": "D06",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "Dampness, mold, condensation, and unusual smells",
+    "guidance": "distinguish observations from assumptions."
+  },
+  {
+    "key": "D07",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "External noise",
+    "guidance": "schools, roads, trains, restaurants, or construction."
+  },
+  {
+    "key": "D08",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "Noise from corridors, neighbors, and upstairs",
+    "guidance": "record when it was checked."
+  },
+  {
+    "key": "D09",
+    "section": "D",
+    "type": "text",
+    "unit": null,
+    "label": "Building structure, party walls, and evidence of sound insulation",
+    "guidance": "reinforced-concrete construction alone does not establish quietness."
+  },
+  {
+    "key": "E01",
+    "section": "E",
+    "type": "boolean",
+    "unit": null,
+    "label": "The kitchen can be separated from sleeping/working areas to limit cooking smells",
+    "guidance": ""
+  },
+  {
+    "key": "E02",
+    "section": "E",
+    "type": "number",
+    "unit": null,
+    "label": "Number of burners",
+    "guidance": "include burner type and condition in supporting details."
+  },
+  {
+    "key": "E03",
+    "section": "E",
+    "type": "text",
+    "unit": null,
+    "label": "Preparation space",
+    "guidance": "usable space for a chopping board, appliances, and practical cooking tasks."
+  },
+  {
+    "key": "E04",
+    "section": "E",
+    "type": "text",
+    "unit": null,
+    "label": "Refrigerator position and available dimensions",
+    "guidance": "distance from the cooking area and any intervening wall."
+  },
+  {
+    "key": "E05",
+    "section": "E",
+    "type": "boolean",
+    "unit": null,
+    "label": "Extractor ventilation and kitchen storage suit the user's cooking needs",
+    "guidance": ""
+  },
+  {
+    "key": "E06",
+    "section": "E",
+    "type": "text",
+    "unit": null,
+    "label": "Bathroom, toilet, and washbasin",
+    "guidance": "layout, cleanliness, water pressure, hot water, and smells requiring investigation."
+  },
+  {
+    "key": "E07",
+    "section": "E",
+    "type": "text",
+    "unit": null,
+    "label": "Washing-machine location and dimensions",
+    "guidance": "water supply and drainage connections."
+  },
+  {
+    "key": "E08",
+    "section": "E",
+    "type": "boolean",
+    "unit": null,
+    "label": "Indoor drying space or equipment is available for days without sunlight",
+    "guidance": ""
+  },
+  {
+    "key": "E09",
+    "section": "E",
+    "type": "text",
+    "unit": null,
+    "label": "Balcony drying",
+    "guidance": "space, sunlight, privacy, and restrictions."
+  },
+  {
+    "key": "E10",
+    "section": "E",
+    "type": "select",
+    "unit": null,
+    "label": "Gas provider type",
+    "guidance": "Select Toshi (city gas), propane, or other; specify the type when selecting other."
+  },
+  {
+    "key": "F01",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Included air conditioning",
+    "guidance": "number of units, location, condition, and repair responsibility."
+  },
+  {
+    "key": "F02",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Power outlets",
+    "guidance": "availability and convenience near the desk, futon, kitchen equipment, and router."
+  },
+  {
+    "key": "F03",
+    "section": "F",
+    "type": "select",
+    "unit": null,
+    "label": "Internet arrangement",
+    "guidance": "included / separate contract required / unknown."
+  },
+  {
+    "key": "F04",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Actual connection to the apartment and provider",
+    "guidance": "distinguish verified details from advertised availability."
+  },
+  {
+    "key": "F05",
+    "section": "F",
+    "type": "number",
+    "unit": "JPY/month",
+    "label": "Recurring internet cost",
+    "guidance": "conditions required to obtain that price."
+  },
+  {
+    "key": "F06",
+    "section": "F",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Activation, installation, and equipment charges",
+    "guidance": "amounts payable upfront."
+  },
+  {
+    "key": "F07",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Service availability date, installation permission, and expected waiting time",
+    "guidance": ""
+  },
+  {
+    "key": "F08",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Existing contract transfer, minimum term, cancellation, and equipment-return conditions",
+    "guidance": ""
+  },
+  {
+    "key": "F09",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Measured download/upload speeds, latency, and stability",
+    "guidance": "time, method, and supporting evidence."
+  },
+  {
+    "key": "F10",
+    "section": "F",
+    "type": "text",
+    "unit": null,
+    "label": "Mobile reception/Wi-Fi at the workspace and a temporary connection before installation",
+    "guidance": ""
+  },
+  {
+    "key": "G01",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Nearest supermarket",
+    "guidance": "distance, walking route, and opening hours to verify."
+  },
+  {
+    "key": "G02",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Lower-cost grocery or bulk-shopping options",
+    "guidance": ""
+  },
+  {
+    "key": "G03",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Restaurants suitable for regular meals",
+    "guidance": "food types, distance, and opening hours."
+  },
+  {
+    "key": "G04",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Convenience stores and other amenities the user actually needs",
+    "guidance": ""
+  },
+  {
+    "key": "G05",
+    "section": "G",
+    "type": "boolean",
+    "unit": null,
+    "label": "Bicycle parking available",
+    "guidance": "availability of spaces and registration conditions."
+  },
+  {
+    "key": "G06",
+    "section": "G",
+    "type": "number",
+    "unit": "JPY/month",
+    "label": "Monthly bicycle parking fee",
+    "guidance": "distinguish parking at home from parking at a station."
+  },
+  {
+    "key": "G07",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Elevator/stairs, doorway dimensions, and the route for bringing in the mattress, desk, and bookshelf",
+    "guidance": ""
+  },
+  {
+    "key": "G08",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Moving restrictions",
+    "guidance": "permitted hours, vehicle stopping space, reservations, and protection of shared areas."
+  },
+  {
+    "key": "G09",
+    "section": "G",
+    "type": "text",
+    "unit": null,
+    "label": "Moving estimate based on actual belongings",
+    "guidance": "weekday versus weekend options."
+  },
+  {
+    "key": "H01",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY/month",
+    "label": "Rent",
+    "guidance": ""
+  },
+  {
+    "key": "H02",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY/month",
+    "label": "Management/common-area fees",
+    "guidance": ""
+  },
+  {
+    "key": "H03",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Security deposit (敷金)",
+    "guidance": "refund conditions and possible deductions."
+  },
+  {
+    "key": "H04",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Key money (礼金)",
+    "guidance": ""
+  },
+  {
+    "key": "H05",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Brokerage fee (仲介手数料)",
+    "guidance": "amount/formula, tax, discounts, and payee."
+  },
+  {
+    "key": "H07",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Initial guarantor fee",
+    "guidance": "amount/formula, calculation base, and whether an exemption is confirmed."
+  },
+  {
+    "key": "H08",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Monthly, annual, and renewal guarantor charges",
+    "guidance": "record each frequency separately."
+  },
+  {
+    "key": "H09",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Foreigner-specific surcharges",
+    "guidance": "amount, frequency, and applicability."
+  },
+  {
+    "key": "H10",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Lock replacement",
+    "guidance": ""
+  },
+  {
+    "key": "H11",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "24-hour support, registration, administration, disinfection, and other packages",
+    "guidance": "distinguish mandatory from optional charges."
+  },
+  {
+    "key": "H12",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Fire insurance",
+    "guidance": "cost, coverage period, payee, and when it must be paid again."
+  },
+  {
+    "key": "H13",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Move-in/move-out cleaning and air-conditioner cleaning",
+    "guidance": "payment timing and possible duplication."
+  },
+  {
+    "key": "H14",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Free rent/promotions",
+    "guidance": "amount or months, charges covered, conditions, and potential repayment/clawback."
+  },
+  {
+    "key": "H15",
+    "section": "H",
+    "type": "text",
+    "unit": null,
+    "label": "Rent commencement and first-month proration",
+    "guidance": "distinguish contract charging from key handover and the physical moving date."
+  },
+  {
+    "key": "H16",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Lease renewal fees and other charges repeated at renewal",
+    "guidance": ""
+  },
+  {
+    "key": "H17",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Early-termination penalties, notice period, and related charges",
+    "guidance": ""
+  },
+  {
+    "key": "H18",
+    "section": "H",
+    "type": "number",
+    "unit": "JPY",
+    "label": "Other move-out costs or unexplained charges",
+    "guidance": ""
+  },
+  {
+    "key": "H19",
+    "section": "H",
+    "type": "text",
+    "unit": null,
+    "label": "Quote coverage and payment arrangements",
+    "guidance": "whether each charge is included, who collects it, whether paid separately, deadlines, and required payment references."
+  },
+  {
+    "key": "H20",
+    "section": "H",
+    "type": "text",
+    "unit": null,
+    "label": "Confirmation status",
+    "guidance": "estimated, confirmed by the agent, or present in the documents."
+  },
+  {
+    "key": "I01",
+    "section": "I",
+    "type": "text",
+    "unit": null,
+    "label": "Contract type, term, renewal conditions, and effective date",
+    "guidance": ""
+  },
+  {
+    "key": "I02",
+    "section": "I",
+    "type": "text",
+    "unit": null,
+    "label": "Required documents, Japanese-language requirements, and applicable guarantor conditions",
+    "guidance": ""
+  },
+  {
+    "key": "I03",
+    "section": "I",
+    "type": "boolean",
+    "unit": null,
+    "label": "The landlord/management accepts the intended lease arrangement, including corporate leasing when relevant",
+    "guidance": ""
+  },
+  {
+    "key": "I04",
+    "section": "I",
+    "type": "text",
+    "unit": null,
+    "label": "Frequent guests, additional occupants, and resident-declaration requirements",
+    "guidance": ""
+  },
+  {
+    "key": "I05",
+    "section": "I",
+    "type": "text",
+    "unit": null,
+    "label": "Rules affecting intended daily use",
+    "guidance": "working from home, cooking, drying laundry, or other property-specific restrictions."
+  },
+  {
+    "key": "I06",
+    "section": "I",
+    "type": "text",
+    "unit": null,
+    "label": "Discrepancies between the listing, agent's answers, and contract documents",
+    "guidance": ""
+  },
+  {
+    "key": "I07",
+    "section": "I",
+    "type": "text",
+    "unit": null,
+    "label": "Questions still needing an agent's response",
+    "guidance": "responsible contact and resolution status."
+  },
+  {
+    "key": "J01",
+    "section": "J",
+    "type": "boolean",
+    "unit": null,
+    "label": "The property is accepted under the employer's corporate-lease scheme",
+    "guidance": ""
+  },
+  {
+    "key": "J02",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Parties involved",
+    "guidance": "agent, management, leasing service, and HR; the next action for each."
+  },
+  {
+    "key": "J03",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Processing time and the date corporate leasing becomes effective",
+    "guidance": ""
+  },
+  {
+    "key": "J04",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Contract-holder change or personal-to-corporate conversion fees",
+    "guidance": "when they apply."
+  },
+  {
+    "key": "J05",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Guarantor company required or exempted",
+    "guidance": "evidence and exactly which fees are waived."
+  },
+  {
+    "key": "J06",
+    "section": "J",
+    "type": "number",
+    "unit": "km",
+    "label": "Distance to the office for allowance eligibility",
+    "guidance": "straight-line radius versus actual travel distance."
+  },
+  {
+    "key": "J07",
+    "section": "J",
+    "type": "number",
+    "unit": "JPY/month",
+    "label": "Expected/confirmed housing allowance",
+    "guidance": ""
+  },
+  {
+    "key": "J08",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Allowance conditions and compatibility with corporate leasing",
+    "guidance": "do not assume both benefits can be combined."
+  },
+  {
+    "key": "J09",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Personally paid upfront amounts, payroll deductions, temporary holds, refunds, and their timing",
+    "guidance": ""
+  },
+  {
+    "key": "J10",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Responsibility for lease renewal, insurance, and other recurring charges",
+    "guidance": ""
+  },
+  {
+    "key": "J11",
+    "section": "J",
+    "type": "text",
+    "unit": null,
+    "label": "Payroll treatment requiring HR confirmation",
+    "guidance": "how rent/allowance appears in payroll; do not automatically calculate tax savings."
+  },
+  {
+    "key": "K01",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "Entrance security, locks, and intercom",
+    "guidance": ""
+  },
+  {
+    "key": "K02",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "Parcel reception",
+    "guidance": ""
+  },
+  {
+    "key": "K03",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "Waste-disposal rules",
+    "guidance": ""
+  },
+  {
+    "key": "K04",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "The route home at night",
+    "guidance": ""
+  },
+  {
+    "key": "K05",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "Area-specific hazards to check against official information",
+    "guidance": ""
+  },
+  {
+    "key": "K06",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "Insects/pests",
+    "guidance": ""
+  },
+  {
+    "key": "K07",
+    "section": "K",
+    "type": "text",
+    "unit": null,
+    "label": "Pet or smoking rules when relevant",
+    "guidance": ""
+  }
+]

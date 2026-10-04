@@ -1,0 +1,12 @@
+.env
+.env.*
+.local-files/
+.impeccable/
+test-results/
+playwright-report/
+public/sw.js
+public/offline-lib/
+docs/deployment/*.jpg
+docs/deployment/*.png
+docs/deployment/*-matrix.json
+*.tsbuildinfo

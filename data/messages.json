@@ -1,0 +1,2187 @@
+{
+  "applianceAvailable": {
+    "en": "Available",
+    "ja": "備え付けあり",
+    "vi": "Có sẵn"
+  },
+  "applianceUnavailable": {
+    "en": "Not available",
+    "ja": "備え付けなし",
+    "vi": "Không có sẵn"
+  },
+  "hasLoft": {
+    "en": "Has loft",
+    "ja": "ロフトあり",
+    "vi": "Có loft"
+  },
+  "noLoft": {
+    "en": "No loft",
+    "ja": "ロフトなし",
+    "vi": "Không có loft"
+  },
+  "searchCriteria": {
+    "en": "Search criteria",
+    "ja": "チェック項目を検索",
+    "vi": "Tìm kiếm tiêu chí"
+  },
+  "searchCriteriaPlaceholder": {
+    "en": "Checklist, costs, travel…",
+    "ja": "チェックリスト・費用・移動…",
+    "vi": "Checklist, chi phí, đi lại…"
+  },
+  "searchCriteriaHelp": {
+    "en": "Try another keyword or a check code, such as F03.",
+    "ja": "別のキーワードや F03 などの項目コードを試してください。",
+    "vi": "Thử từ khóa khác hoặc mã tiêu chí, ví dụ F03."
+  },
+  "clearSearch": {
+    "en": "Clear search",
+    "ja": "検索をクリア",
+    "vi": "Xóa tìm kiếm"
+  },
+  "searchResults": {
+    "en": "Search results",
+    "ja": "検索結果",
+    "vi": "Kết quả tìm kiếm"
+  },
+  "results": {
+    "en": "results",
+    "ja": "件",
+    "vi": "kết quả"
+  },
+  "result": {
+    "en": "result",
+    "ja": "件",
+    "vi": "kết quả"
+  },
+  "app": {
+    "en": "House Checklist",
+    "ja": "住まいチェック",
+    "vi": "House Checklist"
+  },
+  "apartments": {
+    "en": "Apartments",
+    "ja": "物件",
+    "vi": "Căn hộ"
+  },
+  "compare": {
+    "en": "Compare",
+    "ja": "比較",
+    "vi": "So sánh"
+  },
+  "questions": {
+    "en": "Questions",
+    "ja": "質問",
+    "vi": "Câu hỏi"
+  },
+  "checklist": {
+    "en": "Shared checklist",
+    "ja": "共有チェックリスト",
+    "vi": "Danh sách chung"
+  },
+  "preferences": {
+    "en": "Search preferences",
+    "ja": "検索条件",
+    "vi": "Tiêu chí tìm nhà"
+  },
+  "members": {
+    "en": "Members",
+    "ja": "メンバー",
+    "vi": "Thành viên"
+  },
+  "addApartment": {
+    "en": "Add apartment",
+    "ja": "物件を追加",
+    "vi": "Thêm căn hộ"
+  },
+  "collection": {
+    "en": "Collection",
+    "ja": "コレクション",
+    "vi": "Bộ sưu tập"
+  },
+  "collections": {
+    "en": "Collections",
+    "ja": "コレクション一覧",
+    "vi": "Danh sách bộ sưu tập"
+  },
+  "collectionsDescription": {
+    "en": "Open a collection to view its properties, or edit its name and search preferences.",
+    "ja": "コレクションを開いて物件を確認したり、名前や検索条件を編集できます。",
+    "vi": "Mở bộ sưu tập để xem các căn hộ, hoặc chỉnh sửa tên và tùy chọn tìm nhà."
+  },
+  "editCollection": {
+    "en": "Edit collection",
+    "ja": "コレクションを編集",
+    "vi": "Chỉnh sửa bộ sưu tập"
+  },
+  "collectionCreateOnline": {
+    "en": "Connect to the internet to create a collection.",
+    "ja": "コレクションを作成するにはインターネット接続が必要です。",
+    "vi": "Kết nối internet để tạo bộ sưu tập."
+  },
+  "newCollection": {
+    "en": "Create a collection",
+    "ja": "コレクションを作成",
+    "vi": "Tạo bộ sưu tập"
+  },
+  "collectionName": {
+    "en": "Collection name",
+    "ja": "コレクション名",
+    "vi": "Tên bộ sưu tập"
+  },
+  "renameCollection": {
+    "en": "Rename collection",
+    "ja": "コレクション名を変更",
+    "vi": "Đổi tên bộ sưu tập"
+  },
+  "renameProperty": {
+    "en": "Rename property",
+    "ja": "物件名を変更",
+    "vi": "Đổi tên căn hộ"
+  },
+  "editAddress": {
+    "en": "Edit address",
+    "ja": "住所を編集",
+    "vi": "Sửa địa chỉ"
+  },
+  "propertyName": {
+    "en": "Property name",
+    "ja": "物件名",
+    "vi": "Tên căn hộ"
+  },
+  "welcome": {
+    "en": "Find the place that fits.",
+    "ja": "暮らしに合う一部屋を。",
+    "vi": "Tìm nơi ở phù hợp."
+  },
+  "welcomeText": {
+    "en": "Keep your shortlist, viewing notes, and the questions that matter together.",
+    "ja": "候補物件、内見の記録、大切な質問をひとつに。",
+    "vi": "Lưu căn hộ đang cân nhắc, ghi chú xem nhà và những câu hỏi quan trọng cùng một nơi."
+  },
+  "google": {
+    "en": "Continue with Google",
+    "ja": "Googleで続ける",
+    "vi": "Tiếp tục với Google"
+  },
+  "localDemo": {
+    "en": "Open local workspace",
+    "ja": "ローカル画面を開く",
+    "vi": "Mở không gian cục bộ"
+  },
+  "localNotice": {
+    "en": "Local development. Sample data stays in this project's database.",
+    "ja": "ローカル開発用。サンプルはこのプロジェクトのDBに保存されます。",
+    "vi": "Môi trường cục bộ. Dữ liệu mẫu nằm trong cơ sở dữ liệu riêng của dự án."
+  },
+  "setup": {
+    "en": "Google sign-in and cloud storage need configuration. See the setup guide.",
+    "ja": "Googleログインとクラウド保存の設定が必要です。セットアップガイドを参照してください。",
+    "vi": "Cần cấu hình đăng nhập Google và lưu trữ đám mây. Xem hướng dẫn thiết lập."
+  },
+  "noCollections": {
+    "en": "Your search starts here.",
+    "ja": "ここから住まい探しを。",
+    "vi": "Bắt đầu tìm nhà tại đây."
+  },
+  "noCollectionsText": {
+    "en": "Create your own collection or open an invitation to join someone else's.",
+    "ja": "自分のコレクションを作るか、招待から参加できます。",
+    "vi": "Tạo bộ sưu tập của bạn hoặc mở lời mời để tham gia cùng người khác."
+  },
+  "name": {
+    "en": "Name",
+    "ja": "名前",
+    "vi": "Tên"
+  },
+  "save": {
+    "en": "Save changes",
+    "ja": "変更を保存",
+    "vi": "Lưu thay đổi"
+  },
+  "create": {
+    "en": "Create",
+    "ja": "作成",
+    "vi": "Tạo"
+  },
+  "cancel": {
+    "en": "Cancel",
+    "ja": "キャンセル",
+    "vi": "Hủy"
+  },
+  "close": {
+    "en": "Close",
+    "ja": "閉じる",
+    "vi": "Đóng"
+  },
+  "edit": {
+    "en": "Edit",
+    "ja": "編集",
+    "vi": "Sửa"
+  },
+  "add": {
+    "en": "Add",
+    "ja": "追加",
+    "vi": "Thêm"
+  },
+  "remove": {
+    "en": "Remove",
+    "ja": "削除",
+    "vi": "Xóa"
+  },
+  "archive": {
+    "en": "Archive",
+    "ja": "非表示にする",
+    "vi": "Lưu trữ"
+  },
+  "archiveApartmentTitle": {
+    "en": "Archive apartment?",
+    "ja": "物件を非表示にしますか？",
+    "vi": "Lưu trữ căn hộ?"
+  },
+  "archiveApartmentDescription": {
+    "en": "This apartment will be hidden from the active list. Its data will be kept, and you can restore it from the archived list.",
+    "ja": "この物件は通常の一覧に表示されなくなります。データは保持され、非表示の物件一覧から復元できます。",
+    "vi": "Căn hộ sẽ được ẩn khỏi danh sách đang hoạt động. Dữ liệu vẫn được giữ và bạn có thể khôi phục từ danh sách đã lưu trữ."
+  },
+  "openGoogleMaps": {
+    "en": "Open Google Maps",
+    "ja": "Google マップを開く",
+    "vi": "Mở Google Maps"
+  },
+  "restore": {
+    "en": "Restore",
+    "ja": "復元",
+    "vi": "Khôi phục"
+  },
+  "search": {
+    "en": "Search apartments",
+    "ja": "物件を検索",
+    "vi": "Tìm căn hộ"
+  },
+  "allStatuses": {
+    "en": "All statuses",
+    "ja": "すべての状態",
+    "vi": "Tất cả trạng thái"
+  },
+  "allSections": {
+    "en": "All sections",
+    "ja": "すべての項目",
+    "vi": "Tất cả mục"
+  },
+  "allStages": {
+    "en": "All stages",
+    "ja": "すべての確認段階",
+    "vi": "Tất cả giai đoạn"
+  },
+  "all": {
+    "en": "All",
+    "ja": "すべて",
+    "vi": "Tất cả"
+  },
+  "emptyApartments": {
+    "en": "A shortlist worth looking forward to.",
+    "ja": "気になる一部屋から始めましょう。",
+    "vi": "Bắt đầu với căn hộ bạn quan tâm."
+  },
+  "emptyApartmentsText": {
+    "en": "Add a name now. Fill in the details when you have them.",
+    "ja": "名前だけで追加できます。詳細はあとから。",
+    "vi": "Chỉ cần tên để thêm. Điền thông tin chi tiết sau."
+  },
+  "noResults": {
+    "en": "No apartments match these filters.",
+    "ja": "条件に合う物件がありません。",
+    "vi": "Không có căn hộ khớp bộ lọc."
+  },
+  "considering": {
+    "en": "Considering",
+    "ja": "検討中",
+    "vi": "Đang cân nhắc"
+  },
+  "contacted": {
+    "en": "Contacted",
+    "ja": "問い合わせ済み",
+    "vi": "Đã liên hệ"
+  },
+  "viewing_scheduled": {
+    "en": "Viewing scheduled",
+    "ja": "内見予定",
+    "vi": "Đã hẹn xem"
+  },
+  "viewed": {
+    "en": "Viewed",
+    "ja": "内見済み",
+    "vi": "Đã xem"
+  },
+  "shortlisted": {
+    "en": "Shortlisted",
+    "ja": "候補",
+    "vi": "Ưu tiên"
+  },
+  "applied": {
+    "en": "Applied",
+    "ja": "申込済み",
+    "vi": "Đã nộp đơn"
+  },
+  "selected": {
+    "en": "Selected",
+    "ja": "決定",
+    "vi": "Đã chọn"
+  },
+  "rejected": {
+    "en": "Rejected",
+    "ja": "見送り",
+    "vi": "Đã loại"
+  },
+  "unavailable": {
+    "en": "Unavailable",
+    "ja": "募集終了",
+    "vi": "Hết phòng"
+  },
+  "overview": {
+    "en": "Overview",
+    "ja": "概要",
+    "vi": "Tổng quan"
+  },
+  "viewing": {
+    "en": "Viewing checklist",
+    "ja": "内見チェック",
+    "vi": "Kiểm tra khi xem"
+  },
+  "costs": {
+    "en": "Costs",
+    "ja": "費用",
+    "vi": "Chi phí"
+  },
+  "travel": {
+    "en": "Travel",
+    "ja": "移動",
+    "vi": "Đi lại"
+  },
+  "photos": {
+    "en": "Photos & files",
+    "ja": "写真・ファイル",
+    "vi": "Ảnh và tệp"
+  },
+  "back": {
+    "en": "Back to apartments",
+    "ja": "物件一覧に戻る",
+    "vi": "Về danh sách căn hộ"
+  },
+  "room": {
+    "en": "Room number",
+    "ja": "部屋番号",
+    "vi": "Số phòng"
+  },
+  "address": {
+    "en": "Address",
+    "ja": "住所",
+    "vi": "Địa chỉ"
+  },
+  "status": {
+    "en": "Status",
+    "ja": "状態",
+    "vi": "Trạng thái"
+  },
+  "viewingAt": {
+    "en": "Viewing date and time",
+    "ja": "内見日時",
+    "vi": "Ngày giờ xem nhà"
+  },
+  "rentStart": {
+    "en": "Rent commencement",
+    "ja": "家賃発生日",
+    "vi": "Ngày bắt đầu tính thuê"
+  },
+  "handoverDate": {
+    "en": "Key handover",
+    "ja": "鍵の受取日",
+    "vi": "Ngày nhận khóa"
+  },
+  "moveOutDate": {
+    "en": "Assumed move-out date",
+    "ja": "想定退去日",
+    "vi": "Ngày ra khỏi nhà giả định"
+  },
+  "agentName": {
+    "en": "Agent / contact",
+    "ja": "担当者",
+    "vi": "Người liên hệ"
+  },
+  "agentEmail": {
+    "en": "Contact email",
+    "ja": "メール",
+    "vi": "Email liên hệ"
+  },
+  "agentPhone": {
+    "en": "Contact phone",
+    "ja": "電話番号",
+    "vi": "Điện thoại"
+  },
+  "mapUrl": {
+    "en": "Google Maps URL",
+    "ja": "Google マップのURL",
+    "vi": "URL Google Maps"
+  },
+  "listingUrls": {
+    "en": "Listing links, one per line",
+    "ja": "掲載リンク（1行に1件）",
+    "vi": "Liên kết tin đăng, mỗi dòng một liên kết"
+  },
+  "advantages": {
+    "en": "What works well",
+    "ja": "良い点",
+    "vi": "Ưu điểm"
+  },
+  "disadvantages": {
+    "en": "What needs thought",
+    "ja": "気になる点",
+    "vi": "Điểm cần cân nhắc"
+  },
+  "rejectionReason": {
+    "en": "Reason for rejection",
+    "ja": "見送りの理由",
+    "vi": "Lý do loại"
+  },
+  "prepare": {
+    "en": "Prepare for viewing",
+    "ja": "内見に備える",
+    "vi": "Chuẩn bị xem nhà"
+  },
+  "prepared": {
+    "en": "Available offline",
+    "ja": "オフラインで利用可能",
+    "vi": "Có thể dùng ngoại tuyến"
+  },
+  "viewingMode": {
+    "en": "Start viewing",
+    "ja": "内見を始める",
+    "vi": "Bắt đầu xem nhà"
+  },
+  "exitViewing": {
+    "en": "Exit viewing mode",
+    "ja": "内見モードを終了",
+    "vi": "Thoát chế độ xem nhà"
+  },
+  "saved": {
+    "en": "Saved",
+    "ja": "保存済み",
+    "vi": "Đã lưu"
+  },
+  "saving": {
+    "en": "Saving",
+    "ja": "保存中",
+    "vi": "Đang lưu"
+  },
+  "localSaved": {
+    "en": "Saved on this device",
+    "ja": "この端末に保存済み",
+    "vi": "Đã lưu trên thiết bị"
+  },
+  "retryNeeded": {
+    "en": "Retry needed",
+    "ja": "再試行が必要",
+    "vi": "Cần thử lại"
+  },
+  "conflict": {
+    "en": "Resolve a conflict",
+    "ja": "競合を解決",
+    "vi": "Giải quyết xung đột"
+  },
+  "syncIssues": {
+    "en": "Changes needing attention",
+    "ja": "確認が必要な変更",
+    "vi": "Thay đổi cần kiểm tra"
+  },
+  "syncIssuesHelp": {
+    "en": "These drafts have not been saved to the server. Review the reason for each change, then correct it or retry.",
+    "ja": "これらの下書きはサーバーに保存されていません。各変更の理由を確認し、修正するか再試行してください。",
+    "vi": "Các bản nháp này chưa được lưu lên máy chủ. Xem lý do của từng thay đổi, rồi sửa hoặc thử lại."
+  },
+  "offline": {
+    "en": "Offline",
+    "ja": "オフライン",
+    "vi": "Ngoại tuyến"
+  },
+  "online": {
+    "en": "Connected",
+    "ja": "接続中",
+    "vi": "Đã kết nối"
+  },
+  "retry": {
+    "en": "Retry",
+    "ja": "再試行",
+    "vi": "Thử lại"
+  },
+  "unanswered": {
+    "en": "Not checked",
+    "ja": "未確認",
+    "vi": "Chưa kiểm tra"
+  },
+  "not_checked": {
+    "en": "Not checked",
+    "ja": "未確認",
+    "vi": "Chưa kiểm tra"
+  },
+  "not_applicable": {
+    "en": "Not applicable",
+    "ja": "対象外",
+    "vi": "Không áp dụng"
+  },
+  "yes": {
+    "en": "Yes",
+    "ja": "はい",
+    "vi": "Có"
+  },
+  "no": {
+    "en": "No",
+    "ja": "いいえ",
+    "vi": "Không"
+  },
+  "unknown": {
+    "en": "Unknown",
+    "ja": "不明",
+    "vi": "Chưa rõ"
+  },
+  "answered": {
+    "en": "Checked",
+    "ja": "確認済み",
+    "vi": "Đã kiểm tra"
+  },
+  "information": {
+    "en": "Information",
+    "ja": "参考情報",
+    "vi": "Thông tin"
+  },
+  "preference": {
+    "en": "Preference",
+    "ja": "希望条件",
+    "vi": "Ưu tiên"
+  },
+  "requirement": {
+    "en": "Requirement",
+    "ja": "必須条件",
+    "vi": "Bắt buộc"
+  },
+  "requirements": {
+    "en": "Requirements",
+    "ja": "必須条件",
+    "vi": "Yêu cầu"
+  },
+  "unresolved": {
+    "en": "Unresolved questions",
+    "ja": "未解決の質問",
+    "vi": "Câu hỏi chưa giải quyết"
+  },
+  "noApplicable": {
+    "en": "No applicable checks",
+    "ja": "対象の確認項目なし",
+    "vi": "Không có mục áp dụng"
+  },
+  "journeysMissing": {
+    "en": "Journey setup incomplete",
+    "ja": "移動シナリオが未設定",
+    "vi": "Chưa cấu hình hành trình"
+  },
+  "notes": {
+    "en": "Notes",
+    "ja": "メモ",
+    "vi": "Ghi chú"
+  },
+  "source": {
+    "en": "Source",
+    "ja": "情報源",
+    "vi": "Nguồn"
+  },
+  "sourceUrl": {
+    "en": "Source link",
+    "ja": "情報源リンク",
+    "vi": "Liên kết nguồn"
+  },
+  "observedAt": {
+    "en": "Observed / confirmed on",
+    "ja": "確認日",
+    "vi": "Ngày quan sát / xác nhận"
+  },
+  "listing": {
+    "en": "Listing",
+    "ja": "掲載情報",
+    "vi": "Tin đăng"
+  },
+  "agent": {
+    "en": "Agent statement",
+    "ja": "担当者の説明",
+    "vi": "Lời môi giới"
+  },
+  "observation": {
+    "en": "Direct observation",
+    "ja": "現地で確認",
+    "vi": "Quan sát trực tiếp"
+  },
+  "document": {
+    "en": "Document",
+    "ja": "書類",
+    "vi": "Tài liệu"
+  },
+  "estimate": {
+    "en": "Estimate",
+    "ja": "見積もり・推定",
+    "vi": "Ước tính"
+  },
+  "documentType": {
+    "en": "Document type",
+    "ja": "書類の種類",
+    "vi": "Loại tài liệu"
+  },
+  "contract": {
+    "en": "Contract",
+    "ja": "契約書",
+    "vi": "Hợp đồng"
+  },
+  "quote": {
+    "en": "Quote",
+    "ja": "見積書",
+    "vi": "Báo giá"
+  },
+  "other": {
+    "en": "Other",
+    "ja": "その他",
+    "vi": "Khác"
+  },
+  "documentReference": {
+    "en": "Document name / reference",
+    "ja": "書類名・参照箇所",
+    "vi": "Tên / tham chiếu tài liệu"
+  },
+  "suitability": {
+    "en": "Suitability assessment",
+    "ja": "適合の評価",
+    "vi": "Đánh giá phù hợp"
+  },
+  "unassessed": {
+    "en": "Unassessed",
+    "ja": "未評価",
+    "vi": "Chưa đánh giá"
+  },
+  "meets": {
+    "en": "Meets my needs",
+    "ja": "条件を満たす",
+    "vi": "Đáp ứng nhu cầu"
+  },
+  "unmet": {
+    "en": "Does not meet my needs",
+    "ja": "条件を満たさない",
+    "vi": "Không đáp ứng"
+  },
+  "reviewNeeded": {
+    "en": "Review after preference changes",
+    "ja": "条件変更後に再評価",
+    "vi": "Cần xem lại sau đổi tiêu chí"
+  },
+  "history": {
+    "en": "Change history",
+    "ja": "変更履歴",
+    "vi": "Lịch sử thay đổi"
+  },
+  "noHistory": {
+    "en": "No previous changes.",
+    "ja": "変更履歴はありません。",
+    "vi": "Chưa có thay đổi trước đó."
+  },
+  "lastUpdated": {
+    "en": "Last updated",
+    "ja": "最終更新",
+    "vi": "Cập nhật lần cuối"
+  },
+  "answer": {
+    "en": "Answer",
+    "ja": "回答",
+    "vi": "Câu trả lời"
+  },
+  "L": {
+    "en": "Listing screening",
+    "ja": "掲載情報の確認",
+    "vi": "Sàng lọc tin đăng"
+  },
+  "A": {
+    "en": "Ask the agent",
+    "ja": "担当者に確認",
+    "vi": "Hỏi môi giới"
+  },
+  "V": {
+    "en": "In-person viewing",
+    "ja": "内見で確認",
+    "vi": "Xem trực tiếp"
+  },
+  "S": {
+    "en": "Before signing",
+    "ja": "契約前に確認",
+    "vi": "Trước khi ký"
+  },
+  "chooseApartments": {
+    "en": "Choose apartments to compare",
+    "ja": "比較する物件を選ぶ",
+    "vi": "Chọn căn hộ để so sánh"
+  },
+  "compareHelp": {
+    "en": "Choose two to four apartments. Every answer follows the same checklist.",
+    "ja": "2〜4件を選択。同じ項目で比較できます。",
+    "vi": "Chọn từ hai tới bốn căn hộ, đối chiếu cùng tiêu chí."
+  },
+  "selectedCount": {
+    "en": "Selected",
+    "ja": "選択中",
+    "vi": "Đã chọn"
+  },
+  "selectCompare": {
+    "en": "Select for comparison",
+    "ja": "比較に追加",
+    "vi": "Chọn để so sánh"
+  },
+  "removeCompare": {
+    "en": "Remove from comparison",
+    "ja": "比較から外す",
+    "vi": "Bỏ khỏi so sánh"
+  },
+  "emptyCompare": {
+    "en": "A clearer choice, side by side.",
+    "ja": "並べると、違いが見えてきます。",
+    "vi": "Đặt cạnh nhau để dễ lựa chọn."
+  },
+  "emptyCompareText": {
+    "en": "Select at least two apartments from your shortlist.",
+    "ja": "一覧から2件以上の物件を選んでください。",
+    "vi": "Chọn ít nhất hai căn hộ trong danh sách."
+  },
+  "comparisonLimit": {
+    "en": "Compare up to four apartments at once.",
+    "ja": "同時に比較できるのは4件までです。",
+    "vi": "So sánh tối đa bốn căn hộ cùng lúc."
+  },
+  "noMatchingChecks": {
+    "en": "No checks match these filters.",
+    "ja": "条件に合う項目はありません。",
+    "vi": "Không có mục phù hợp bộ lọc."
+  },
+  "addQuestion": {
+    "en": "Add question",
+    "ja": "質問を追加",
+    "vi": "Thêm câu hỏi"
+  },
+  "question": {
+    "en": "Question",
+    "ja": "質問",
+    "vi": "Câu hỏi"
+  },
+  "responsible": {
+    "en": "Responsible contact",
+    "ja": "確認先・担当者",
+    "vi": "Người phụ trách"
+  },
+  "open": {
+    "en": "Open",
+    "ja": "未解決",
+    "vi": "Chưa giải quyết"
+  },
+  "resolved": {
+    "en": "Resolved",
+    "ja": "解決済み",
+    "vi": "Đã giải quyết"
+  },
+  "resolve": {
+    "en": "Mark resolved",
+    "ja": "解決済みにする",
+    "vi": "Đánh dấu đã giải quyết"
+  },
+  "reopen": {
+    "en": "Reopen",
+    "ja": "再開",
+    "vi": "Mở lại"
+  },
+  "resolution": {
+    "en": "Resolution and evidence",
+    "ja": "回答と根拠",
+    "vi": "Kết quả và bằng chứng"
+  },
+  "noQuestions": {
+    "en": "Nothing left hanging.",
+    "ja": "未解決の質問はありません。",
+    "vi": "Không có câu hỏi còn bỏ ngỏ."
+  },
+  "noQuestionsText": {
+    "en": "Keep agent follow-ups and uncertainties here, linked to an apartment.",
+    "ja": "担当者への質問や不明点を物件に紐づけて記録できます。",
+    "vi": "Lưu câu hỏi cho môi giới và điều chưa rõ, gắn với từng căn hộ."
+  },
+  "chooseApartment": {
+    "en": "Choose an apartment",
+    "ja": "物件を選ぶ",
+    "vi": "Chọn căn hộ"
+  },
+  "linkedCriterion": {
+    "en": "Linked check",
+    "ja": "関連する確認項目",
+    "vi": "Mục kiểm tra liên quan"
+  },
+  "none": {
+    "en": "None",
+    "ja": "なし",
+    "vi": "Không"
+  },
+  "sharedWarning": {
+    "en": "Changes here apply to every apartment in this collection.",
+    "ja": "変更はこのコレクションのすべての物件に反映されます。",
+    "vi": "Thay đổi áp dụng cho mọi căn hộ trong bộ sưu tập."
+  },
+  "editChecklist": {
+    "en": "Edit checklist",
+    "ja": "チェックリストを編集",
+    "vi": "Chỉnh sửa checklist"
+  },
+  "checklistManageHelp": {
+    "en": "Add, edit, reorder, archive or restore checks for this collection. Existing apartment answers are kept.",
+    "ja": "このコレクションの項目を追加・編集・並べ替え・非表示・復元できます。物件の既存の回答は保持されます。",
+    "vi": "Thêm, sửa, sắp xếp, lưu trữ hoặc khôi phục mục kiểm tra của bộ sưu tập này. Câu trả lời đã nhập cho căn hộ được giữ lại."
+  },
+  "addCriterion": {
+    "en": "Add a check",
+    "ja": "項目を追加",
+    "vi": "Thêm mục kiểm tra"
+  },
+  "label": {
+    "en": "Label",
+    "ja": "項目名",
+    "vi": "Tên mục"
+  },
+  "guidance": {
+    "en": "Input guidance",
+    "ja": "入力ガイド",
+    "vi": "Hướng dẫn nhập"
+  },
+  "type": {
+    "en": "Answer type",
+    "ja": "回答形式",
+    "vi": "Loại câu trả lời"
+  },
+  "boolean": {
+    "en": "Yes / No",
+    "ja": "はい・いいえ",
+    "vi": "Có / Không"
+  },
+  "text": {
+    "en": "Text",
+    "ja": "テキスト",
+    "vi": "Văn bản"
+  },
+  "number": {
+    "en": "Number",
+    "ja": "数値",
+    "vi": "Số"
+  },
+  "select": {
+    "en": "Single select",
+    "ja": "単一選択",
+    "vi": "Chọn một"
+  },
+  "unit": {
+    "en": "Unit",
+    "ja": "単位",
+    "vi": "Đơn vị"
+  },
+  "choices": {
+    "en": "Choices, one per line",
+    "ja": "選択肢（1行に1件）",
+    "vi": "Lựa chọn, mỗi dòng một mục"
+  },
+  "section": {
+    "en": "Section",
+    "ja": "セクション",
+    "vi": "Nhóm"
+  },
+  "importance": {
+    "en": "Importance",
+    "ja": "重要度",
+    "vi": "Mức quan trọng"
+  },
+  "stages": {
+    "en": "Checking stages",
+    "ja": "確認段階",
+    "vi": "Giai đoạn kiểm tra"
+  },
+  "moveUp": {
+    "en": "Move up",
+    "ja": "上に移動",
+    "vi": "Di chuyển lên"
+  },
+  "moveDown": {
+    "en": "Move down",
+    "ja": "下に移動",
+    "vi": "Di chuyển xuống"
+  },
+  "showArchived": {
+    "en": "Show archived",
+    "ja": "非表示の項目を表示",
+    "vi": "Hiện mục lưu trữ"
+  },
+  "enabled": {
+    "en": "Enabled",
+    "ja": "有効",
+    "vi": "Đã bật"
+  },
+  "disabled": {
+    "en": "Disabled",
+    "ja": "無効",
+    "vi": "Đã tắt"
+  },
+  "budget": {
+    "en": "Monthly housing budget (JPY)",
+    "ja": "月額住居予算（円）",
+    "vi": "Ngân sách nhà ở tháng (JPY)"
+  },
+  "minArea": {
+    "en": "Minimum floor area (m²)",
+    "ja": "最低面積（m²）",
+    "vi": "Diện tích tối thiểu (m²)"
+  },
+  "maxWalkMinutes": {
+    "en": "Preferred station walk (minutes)",
+    "ja": "希望の駅徒歩時間（分）",
+    "vi": "Đi bộ tới ga mong muốn (phút)"
+  },
+  "workDestination": {
+    "en": "Work destination",
+    "ja": "通勤先",
+    "vi": "Nơi làm việc"
+  },
+  "moveInDate": {
+    "en": "Target move-in date",
+    "ja": "希望入居日",
+    "vi": "Ngày chuyển vào dự kiến"
+  },
+  "futonWidth": {
+    "en": "Futon width (m)",
+    "ja": "布団の幅（m）",
+    "vi": "Chiều rộng đệm (m)"
+  },
+  "futonLength": {
+    "en": "Futon length (m)",
+    "ja": "布団の長さ（m）",
+    "vi": "Chiều dài đệm (m)"
+  },
+  "permanentDesk": {
+    "en": "A permanent desk is needed",
+    "ja": "常設デスクが必要",
+    "vi": "Cần bàn cố định"
+  },
+  "preferDirect": {
+    "en": "Prefer a direct journey",
+    "ja": "直通経路を希望",
+    "vi": "Ưu tiên đi thẳng"
+  },
+  "allowanceAmount": {
+    "en": "Possible allowance (JPY/month)",
+    "ja": "見込みの手当（円/月）",
+    "vi": "Trợ cấp dự kiến (JPY/tháng)"
+  },
+  "allowanceRadius": {
+    "en": "Eligibility radius (km)",
+    "ja": "対象半径（km）",
+    "vi": "Bán kính xét trợ cấp (km)"
+  },
+  "applyPreset": {
+    "en": "Use my Japan-search preset",
+    "ja": "日本の住まい探し設定を適用",
+    "vi": "Dùng cấu hình tìm nhà Nhật"
+  },
+  "presetHelp": {
+    "en": "Uses the preferences from your brief. No apartment answers or benefits are confirmed.",
+    "ja": "依頼の希望条件を設定します。物件の回答や手当の適用は確定しません。",
+    "vi": "Dùng tiêu chí trong yêu cầu. Không xác nhận câu trả lời hoặc trợ cấp cho căn hộ."
+  },
+  "invite": {
+    "en": "Invite by email",
+    "ja": "メールで招待",
+    "vi": "Mời qua email"
+  },
+  "email": {
+    "en": "Email",
+    "ja": "メール",
+    "vi": "Email"
+  },
+  "role": {
+    "en": "Role",
+    "ja": "権限",
+    "vi": "Vai trò"
+  },
+  "owner": {
+    "en": "Owner",
+    "ja": "所有者",
+    "vi": "Chủ sở hữu"
+  },
+  "editor": {
+    "en": "Editor",
+    "ja": "編集者",
+    "vi": "Người sửa"
+  },
+  "viewer": {
+    "en": "Viewer",
+    "ja": "閲覧者",
+    "vi": "Người xem"
+  },
+  "revoke": {
+    "en": "Revoke access",
+    "ja": "アクセスを取り消す",
+    "vi": "Thu hồi quyền"
+  },
+  "resend": {
+    "en": "Resend invitation",
+    "ja": "招待を再送",
+    "vi": "Gửi lại lời mời"
+  },
+  "pending": {
+    "en": "Pending",
+    "ja": "保留中",
+    "vi": "Đang chờ"
+  },
+  "sent": {
+    "en": "Sent",
+    "ja": "送信済み",
+    "vi": "Đã gửi"
+  },
+  "failed": {
+    "en": "Delivery failed",
+    "ja": "送信失敗",
+    "vi": "Gửi thất bại"
+  },
+  "local": {
+    "en": "Local preview, not emailed",
+    "ja": "ローカル確認用・未送信",
+    "vi": "Xem cục bộ, chưa gửi email"
+  },
+  "accepted": {
+    "en": "Accepted",
+    "ja": "参加済み",
+    "vi": "Đã chấp nhận"
+  },
+  "revoked": {
+    "en": "Revoked",
+    "ja": "取り消し済み",
+    "vi": "Đã thu hồi"
+  },
+  "expired": {
+    "en": "Expired",
+    "ja": "期限切れ",
+    "vi": "Hết hạn"
+  },
+  "copyInvite": {
+    "en": "Copy invitation link",
+    "ja": "招待リンクをコピー",
+    "vi": "Sao chép liên kết mời"
+  },
+  "connectGmail": {
+    "en": "Connect Gmail to send",
+    "ja": "Gmailを接続して送信",
+    "vi": "Kết nối Gmail để gửi"
+  },
+  "acceptInvite": {
+    "en": "Accept invitation",
+    "ja": "招待を受ける",
+    "vi": "Chấp nhận lời mời"
+  },
+  "inviteDescription": {
+    "en": "Sign in with the invited email address to join this collection.",
+    "ja": "招待先のメールアドレスでログインして参加してください。",
+    "vi": "Đăng nhập đúng email được mời để tham gia bộ sưu tập."
+  },
+  "signOut": {
+    "en": "Sign out",
+    "ja": "ログアウト",
+    "vi": "Đăng xuất"
+  },
+  "language": {
+    "en": "Language",
+    "ja": "言語",
+    "vi": "Ngôn ngữ"
+  },
+  "theme": {
+    "en": "Appearance",
+    "ja": "表示",
+    "vi": "Giao diện"
+  },
+  "switchToLight": {
+    "en": "Switch to light mode",
+    "ja": "ライトモードに切り替える",
+    "vi": "Chuyển sang chế độ sáng"
+  },
+  "switchToDark": {
+    "en": "Switch to dark mode",
+    "ja": "ダークモードに切り替える",
+    "vi": "Chuyển sang chế độ tối"
+  },
+  "system": {
+    "en": "System",
+    "ja": "システム",
+    "vi": "Theo hệ thống"
+  },
+  "light": {
+    "en": "Light",
+    "ja": "ライト",
+    "vi": "Sáng"
+  },
+  "dark": {
+    "en": "Dark",
+    "ja": "ダーク",
+    "vi": "Tối"
+  },
+  "account": {
+    "en": "Account",
+    "ja": "アカウント",
+    "vi": "Tài khoản"
+  },
+  "viewOnly": {
+    "en": "You have view-only access.",
+    "ja": "閲覧のみのアクセスです。",
+    "vi": "Bạn chỉ có quyền xem."
+  },
+  "deleteCollection": {
+    "en": "Delete collection",
+    "ja": "コレクションを削除",
+    "vi": "Xóa bộ sưu tập"
+  },
+  "deleteWarning": {
+    "en": "This removes access for everyone. Type the collection name to confirm.",
+    "ja": "全員のアクセスを削除します。確認のため名前を入力してください。",
+    "vi": "Mọi thành viên sẽ mất quyền truy cập. Nhập tên bộ sưu tập để xác nhận."
+  },
+  "knownCharges": {
+    "en": "Known charges",
+    "ja": "判明している費用",
+    "vi": "Các khoản đã biết"
+  },
+  "completeTotal": {
+    "en": "Calculated total",
+    "ja": "計算済み合計",
+    "vi": "Tổng đã tính"
+  },
+  "monthlyHousing": {
+    "en": "Monthly housing",
+    "ja": "月額の住居費",
+    "vi": "Nhà ở hằng tháng"
+  },
+  "upfront": {
+    "en": "Upfront personal cash",
+    "ja": "初期の本人支払い",
+    "vi": "Tiền cá nhân trả ban đầu"
+  },
+  "total24": {
+    "en": "24-month expense",
+    "ja": "24か月の費用",
+    "vi": "Chi phí 24 tháng"
+  },
+  "net24": {
+    "en": "After confirmed benefits",
+    "ja": "確認済みの手当適用後",
+    "vi": "Sau trợ cấp đã xác nhận"
+  },
+  "deposits": {
+    "en": "Refundable deposits",
+    "ja": "返金対象の敷金",
+    "vi": "Đặt cọc có thể hoàn"
+  },
+  "holds": {
+    "en": "Temporary holds",
+    "ja": "一時預り金",
+    "vi": "Tiền tạm giữ"
+  },
+  "missingCharges": {
+    "en": "Missing or unreviewed information",
+    "ja": "未確認・未入力の情報",
+    "vi": "Thông tin thiếu hoặc chưa xem xét"
+  },
+  "disputedCharges": {
+    "en": "Possible duplicate charges",
+    "ja": "重複の可能性がある費用",
+    "vi": "Khoản có thể bị trùng"
+  },
+  "dueAfter": {
+    "en": "Due if staying longer",
+    "ja": "延長する場合の費用",
+    "vi": "Phải trả nếu ở lâu hơn"
+  },
+  "assumptions": {
+    "en": "Assumptions",
+    "ja": "計算の前提",
+    "vi": "Giả định"
+  },
+  "addCost": {
+    "en": "Add a charge",
+    "ja": "費用を追加",
+    "vi": "Thêm khoản phí"
+  },
+  "addBenefit": {
+    "en": "Add a benefit",
+    "ja": "手当を追加",
+    "vi": "Thêm trợ cấp"
+  },
+  "addAdjustment": {
+    "en": "Add a discount / exemption",
+    "ja": "割引・免除を追加",
+    "vi": "Thêm giảm giá / miễn phí"
+  },
+  "addPayment": {
+    "en": "Record payment",
+    "ja": "支払いを記録",
+    "vi": "Ghi thanh toán"
+  },
+  "amount": {
+    "en": "Amount (JPY)",
+    "ja": "金額（円）",
+    "vi": "Số tiền (JPY)"
+  },
+  "frequencyUnit": {
+    "en": "Frequency",
+    "ja": "頻度",
+    "vi": "Tần suất"
+  },
+  "once": {
+    "en": "Once",
+    "ja": "一度",
+    "vi": "Một lần"
+  },
+  "monthly": {
+    "en": "Monthly",
+    "ja": "毎月",
+    "vi": "Hằng tháng"
+  },
+  "annual": {
+    "en": "Annual",
+    "ja": "毎年",
+    "vi": "Hằng năm"
+  },
+  "renewal": {
+    "en": "At renewal",
+    "ja": "更新時",
+    "vi": "Khi gia hạn"
+  },
+  "phase": {
+    "en": "Payment phase",
+    "ja": "支払段階",
+    "vi": "Giai đoạn trả"
+  },
+  "recurring": {
+    "en": "Recurring",
+    "ja": "定期",
+    "vi": "Định kỳ"
+  },
+  "move_out": {
+    "en": "At move-out",
+    "ja": "退去時",
+    "vi": "Khi ra khỏi nhà"
+  },
+  "treatment": {
+    "en": "Cost treatment",
+    "ja": "費用の扱い",
+    "vi": "Phân loại chi phí"
+  },
+  "expense": {
+    "en": "Nonrefundable expense",
+    "ja": "返金なしの費用",
+    "vi": "Chi phí không hoàn lại"
+  },
+  "deposit": {
+    "en": "Refundable deposit",
+    "ja": "返金対象の敷金",
+    "vi": "Đặt cọc có thể hoàn"
+  },
+  "hold": {
+    "en": "Temporary hold",
+    "ja": "一時預り",
+    "vi": "Tạm giữ"
+  },
+  "payer": {
+    "en": "Payer",
+    "ja": "支払者",
+    "vi": "Bên trả"
+  },
+  "personal": {
+    "en": "Personal",
+    "ja": "本人",
+    "vi": "Cá nhân"
+  },
+  "employer": {
+    "en": "Employer",
+    "ja": "勤務先",
+    "vi": "Công ty"
+  },
+  "payee": {
+    "en": "Payee",
+    "ja": "支払先",
+    "vi": "Bên nhận"
+  },
+  "confirmed": {
+    "en": "Confirmed",
+    "ja": "確認済み",
+    "vi": "Đã xác nhận"
+  },
+  "compatible": {
+    "en": "Confirmed compatible with lease / other benefits",
+    "ja": "契約・他の手当との併用を確認済み",
+    "vi": "Đã xác nhận được kết hợp hợp đồng / trợ cấp khác"
+  },
+  "startDate": {
+    "en": "Start date",
+    "ja": "開始日",
+    "vi": "Ngày bắt đầu"
+  },
+  "endDate": {
+    "en": "End date (exclusive)",
+    "ja": "終了日（当日を含まない）",
+    "vi": "Ngày kết thúc (không tính ngày này)"
+  },
+  "dueDate": {
+    "en": "Due date",
+    "ja": "支払期日",
+    "vi": "Hạn trả"
+  },
+  "costId": {
+    "en": "Applies to charge",
+    "ja": "対象の費用",
+    "vi": "Áp dụng cho khoản"
+  },
+  "coverageDate": {
+    "en": "Rental period being paid",
+    "ja": "支払い対象の期間開始日",
+    "vi": "Ngày đầu kỳ thuê được trả"
+  },
+  "paidAt": {
+    "en": "Payment date",
+    "ja": "支払日",
+    "vi": "Ngày thanh toán"
+  },
+  "full": {
+    "en": "Full exemption for the selected period",
+    "ja": "選択期間の全額免除",
+    "vi": "Miễn toàn bộ trong kỳ chọn"
+  },
+  "duplicateGroup": {
+    "en": "Potential duplicate group",
+    "ja": "重複の可能性があるグループ",
+    "vi": "Nhóm có thể trùng"
+  },
+  "duplicateResolved": {
+    "en": "Duplication has been resolved",
+    "ja": "重複を解決済み",
+    "vi": "Đã giải quyết trùng lặp"
+  },
+  "costsReviewed": {
+    "en": "All charges have been reviewed, including non-applicable ones",
+    "ja": "対象外も含め、すべての費用を確認した",
+    "vi": "Đã xem xét tất cả khoản, kể cả không áp dụng"
+  },
+  "quoteTotal": {
+    "en": "Agent's quoted total (JPY)",
+    "ja": "担当者の見積合計（円）",
+    "vi": "Tổng môi giới báo (JPY)"
+  },
+  "formula": {
+    "en": "Amount calculation",
+    "ja": "金額の計算",
+    "vi": "Cách tính tiền"
+  },
+  "fixed": {
+    "en": "Fixed amount",
+    "ja": "固定金額",
+    "vi": "Số tiền cố định"
+  },
+  "rent_multiple": {
+    "en": "Multiple of rent",
+    "ja": "家賃の倍数",
+    "vi": "Bội số tiền thuê"
+  },
+  "percentage": {
+    "en": "Percentage of bases",
+    "ja": "基準額の割合",
+    "vi": "Phần trăm cơ sở"
+  },
+  "factor": {
+    "en": "Multiplier / percentage",
+    "ja": "倍数・割合",
+    "vi": "Hệ số / phần trăm"
+  },
+  "bases": {
+    "en": "Calculation bases",
+    "ja": "計算の基準",
+    "vi": "Cơ sở tính"
+  },
+  "taxTreatment": {
+    "en": "Tax treatment",
+    "ja": "税の扱い",
+    "vi": "Thuế"
+  },
+  "inclusive": {
+    "en": "Tax included",
+    "ja": "税込み",
+    "vi": "Đã gồm thuế"
+  },
+  "exclusive": {
+    "en": "Tax additional",
+    "ja": "税別",
+    "vi": "Chưa gồm thuế"
+  },
+  "taxRate": {
+    "en": "Tax rate (%)",
+    "ja": "税率（%）",
+    "vi": "Thuế suất (%)"
+  },
+  "newScenario": {
+    "en": "Add journey scenario",
+    "ja": "移動シナリオを追加",
+    "vi": "Thêm hành trình"
+  },
+  "scenario": {
+    "en": "Journey scenario",
+    "ja": "移動シナリオ",
+    "vi": "Hành trình"
+  },
+  "person": {
+    "en": "Person",
+    "ja": "移動する人",
+    "vi": "Người đi"
+  },
+  "purpose": {
+    "en": "Purpose",
+    "ja": "目的",
+    "vi": "Mục đích"
+  },
+  "work": {
+    "en": "Work commute",
+    "ja": "通勤",
+    "vi": "Đi làm"
+  },
+  "partner_home": {
+    "en": "Visit from home",
+    "ja": "自宅から来訪",
+    "vi": "Đến từ nhà"
+  },
+  "partner_work": {
+    "en": "Visit from work",
+    "ja": "職場から来訪",
+    "vi": "Đến từ chỗ làm"
+  },
+  "custom": {
+    "en": "Custom",
+    "ja": "その他",
+    "vi": "Tùy chỉnh"
+  },
+  "origin": {
+    "en": "Arrival origin",
+    "ja": "往路の出発地",
+    "vi": "Nơi xuất phát lượt đến"
+  },
+  "destination": {
+    "en": "Destination",
+    "ja": "目的地",
+    "vi": "Điểm đến"
+  },
+  "returnDestination": {
+    "en": "Return destination",
+    "ja": "復路の目的地",
+    "vi": "Điểm về"
+  },
+  "frequency": {
+    "en": "Journeys per period",
+    "ja": "期間あたりの回数",
+    "vi": "Số lần mỗi kỳ"
+  },
+  "week": {
+    "en": "Week",
+    "ja": "週",
+    "vi": "Tuần"
+  },
+  "outboundRoute": {
+    "en": "Arrival route",
+    "ja": "往路",
+    "vi": "Đường đến"
+  },
+  "returnRoute": {
+    "en": "Return route",
+    "ja": "復路",
+    "vi": "Đường về"
+  },
+  "outboundMinutes": {
+    "en": "Arrival duration (minutes)",
+    "ja": "往路の時間（分）",
+    "vi": "Thời gian đến (phút)"
+  },
+  "returnMinutes": {
+    "en": "Return duration (minutes)",
+    "ja": "復路の時間（分）",
+    "vi": "Thời gian về (phút)"
+  },
+  "outboundFare": {
+    "en": "Outbound fare (JPY)",
+    "ja": "往路の運賃（円）",
+    "vi": "Giá lượt đi (JPY)"
+  },
+  "returnFare": {
+    "en": "Return fare (JPY)",
+    "ja": "復路の運賃（円）",
+    "vi": "Giá lượt về (JPY)"
+  },
+  "transfers": {
+    "en": "transfers",
+    "ja": "回",
+    "vi": "lần chuyển"
+  },
+  "taxiFare": {
+    "en": "Taxi fare per journey (JPY)",
+    "ja": "1回のタクシー代（円）",
+    "vi": "Taxi mỗi lượt (JPY)"
+  },
+  "bookingSurcharge": {
+    "en": "Taxi booking / pickup surcharge (JPY)",
+    "ja": "予約・迎車料金（円）",
+    "vi": "Phí đặt / đón taxi (JPY)"
+  },
+  "reimbursed": {
+    "en": "Reimbursement per journey (JPY)",
+    "ja": "1回の精算額（円）",
+    "vi": "Hoàn trả mỗi lượt (JPY)"
+  },
+  "reimbursementConfirmed": {
+    "en": "Reimbursement confirmed",
+    "ja": "精算額を確認済み",
+    "vi": "Đã xác nhận hoàn trả"
+  },
+  "travelHelp": {
+    "en": "Record arrival and return separately. Frequencies belong to the shared search.",
+    "ja": "往路と復路を別々に記録します。頻度は共有の検索条件です。",
+    "vi": "Ghi đường đến và về riêng. Tần suất thuộc tiêu chí tìm kiếm chung."
+  },
+  "noScenarios": {
+    "en": "Set up the journeys that matter.",
+    "ja": "必要な移動を設定しましょう。",
+    "vi": "Cấu hình những hành trình quan trọng."
+  },
+  "noScenariosText": {
+    "en": "Add a workplace, a partner's journey, or another regular destination in preferences.",
+    "ja": "設定で通勤先やパートナーの経路などを追加できます。",
+    "vi": "Thêm nơi làm việc, hành trình của người yêu hoặc điểm thường đến trong tiêu chí."
+  },
+  "upload": {
+    "en": "Upload files",
+    "ja": "ファイルを追加",
+    "vi": "Tải tệp lên"
+  },
+  "addLink": {
+    "en": "Add an external link",
+    "ja": "外部リンクを追加",
+    "vi": "Thêm liên kết ngoài"
+  },
+  "fileHelp": {
+    "en": "JPEG, PNG, WebP or PDF. Up to 20 MB each.",
+    "ja": "JPEG・PNG・WebP・PDF。1件20 MBまで。",
+    "vi": "JPEG, PNG, WebP hoặc PDF. Tối đa 20 MB mỗi tệp."
+  },
+  "noFiles": {
+    "en": "Keep the details you will want to revisit.",
+    "ja": "あとで見返したい情報を残しましょう。",
+    "vi": "Lưu những chi tiết muốn xem lại."
+  },
+  "noFilesText": {
+    "en": "Attach a floor plan, viewing photo, or document link.",
+    "ja": "間取り図、内見写真、書類リンクを追加できます。",
+    "vi": "Đính kèm sơ đồ, ảnh xem nhà hoặc liên kết tài liệu."
+  },
+  "notOffline": {
+    "en": "Not available offline",
+    "ja": "オフラインでは利用不可",
+    "vi": "Không có ngoại tuyến"
+  },
+  "url": {
+    "en": "Link",
+    "ja": "リンク",
+    "vi": "Liên kết"
+  },
+  "fileName": {
+    "en": "File name",
+    "ja": "ファイル名",
+    "vi": "Tên tệp"
+  },
+  "queued": {
+    "en": "Waiting to upload",
+    "ja": "アップロード待ち",
+    "vi": "Đang chờ tải lên"
+  },
+  "conflictHelp": {
+    "en": "Someone saved a different version. Review both before replacing an answer.",
+    "ja": "別の内容が保存されました。両方を確認してから選んでください。",
+    "vi": "Có người đã lưu phiên bản khác. Xem cả hai trước khi thay câu trả lời."
+  },
+  "serverVersion": {
+    "en": "Saved version",
+    "ja": "保存されている内容",
+    "vi": "Phiên bản đã lưu"
+  },
+  "localVersion": {
+    "en": "Your draft",
+    "ja": "自分の下書き",
+    "vi": "Bản nháp của bạn"
+  },
+  "keepServer": {
+    "en": "Use saved version",
+    "ja": "保存済みを使う",
+    "vi": "Dùng bản đã lưu"
+  },
+  "keepMine": {
+    "en": "Save my draft",
+    "ja": "自分の下書きを保存",
+    "vi": "Lưu bản nháp của tôi"
+  },
+  "exportDrafts": {
+    "en": "Export drafts",
+    "ja": "下書きを書き出す",
+    "vi": "Xuất bản nháp"
+  },
+  "unsavedWarning": {
+    "en": "Some changes are only on this device. Export them before signing out, or cancel.",
+    "ja": "未同期の変更があります。ログアウト前に書き出すか、キャンセルしてください。",
+    "vi": "Một số thay đổi chỉ ở thiết bị. Xuất trước khi đăng xuất hoặc hủy."
+  },
+  "loading": {
+    "en": "Loading your workspace",
+    "ja": "ワークスペースを読み込み中",
+    "vi": "Đang tải không gian"
+  },
+  "error": {
+    "en": "Something could not be saved. Your input is still here.",
+    "ja": "保存できませんでした。入力内容は保持されています。",
+    "vi": "Chưa lưu được. Nội dung bạn nhập vẫn còn."
+  },
+  "notFound": {
+    "en": "This collection is no longer available to your account.",
+    "ja": "このアカウントからは利用できません。",
+    "vi": "Tài khoản không còn quyền truy cập bộ sưu tập này."
+  },
+  "tryAgain": {
+    "en": "Try again",
+    "ja": "もう一度試す",
+    "vi": "Thử lại"
+  },
+  "copied": {
+    "en": "Link copied",
+    "ja": "リンクをコピーしました",
+    "vi": "Đã sao chép liên kết"
+  },
+  "sample": {
+    "en": "Sample collection",
+    "ja": "サンプル",
+    "vi": "Bộ sưu tập mẫu"
+  },
+  "rent": {
+    "en": "Rent",
+    "ja": "家賃",
+    "vi": "Tiền thuê"
+  },
+  "management": {
+    "en": "Management fees",
+    "ja": "管理費",
+    "vi": "Phí quản lý"
+  },
+  "keyMoney": {
+    "en": "Key money",
+    "ja": "礼金",
+    "vi": "Tiền lễ"
+  },
+  "lock": {
+    "en": "Lock replacement",
+    "ja": "鍵交換",
+    "vi": "Thay khóa"
+  },
+  "internet": {
+    "en": "Internet",
+    "ja": "インターネット",
+    "vi": "Internet"
+  },
+  "internetSetup": {
+    "en": "Internet setup",
+    "ja": "回線工事",
+    "vi": "Lắp internet"
+  },
+  "bicycleParking": {
+    "en": "Home bicycle parking",
+    "ja": "自宅の駐輪場",
+    "vi": "Đỗ xe đạp ở nhà"
+  },
+  "stationParking": {
+    "en": "Station bicycle parking",
+    "ja": "駅の駐輪場",
+    "vi": "Đỗ xe đạp ở ga"
+  },
+  "unreviewedCharges": {
+    "en": "The complete quote has not been reviewed.",
+    "ja": "見積もり全体が未確認です。",
+    "vi": "Chưa xem xét toàn bộ báo giá."
+  },
+  "collectionMoveInDate": {
+    "en": "Using the collection's target move-in date.",
+    "ja": "検索条件の希望入居日を使っています。",
+    "vi": "Đang dùng ngày chuyển vào dự kiến chung."
+  },
+  "frequencyOrDate": {
+    "en": "Add a journey frequency and rent start date.",
+    "ja": "移動頻度と家賃開始日を入力してください。",
+    "vi": "Thêm tần suất và ngày bắt đầu thuê."
+  },
+  "month": {
+    "en": "Month",
+    "ja": "月",
+    "vi": "Tháng"
+  },
+  "amountSource": {
+    "en": "Amount from shared checklist",
+    "ja": "共有リストの金額を使用",
+    "vi": "Số tiền từ danh sách chung"
+  },
+  "accountRecovery": {
+    "en": "Download your drafts before switching accounts. Continuing clears this account’s local data.",
+    "ja": "アカウントを切り替える前に下書きを保存してください。続行すると現在の端末データを削除します。",
+    "vi": "Tải bản nháp trước khi đổi tài khoản. Tiếp tục sẽ xóa dữ liệu cục bộ của tài khoản này."
+  },
+  "continueAccount": {
+    "en": "Continue with new account",
+    "ja": "新しいアカウントで続行",
+    "vi": "Tiếp tục với tài khoản mới"
+  },
+  "minutes": {
+    "en": "minutes",
+    "ja": "分",
+    "vi": "phút"
+  },
+  "burners": {
+    "en": "burners",
+    "ja": "口",
+    "vi": "bếp"
+  },
+  "year": {
+    "en": "year",
+    "ja": "年",
+    "vi": "năm"
+  },
+  "days": {
+    "en": "days",
+    "ja": "日",
+    "vi": "ngày"
+  },
+  "unknownFormula": {
+    "en": "Unknown formula or tax",
+    "ja": "計算式・税額が未確認",
+    "vi": "Công thức hoặc thuế chưa rõ"
+  },
+  "moveOutNotAssumed": {
+    "en": "Move-out date is not assumed",
+    "ja": "退去日を設定していません",
+    "vi": "Chưa giả định ngày chuyển đi"
+  },
+  "unconfirmedBenefit": {
+    "en": "Unconfirmed benefit",
+    "ja": "未確認の手当",
+    "vi": "Trợ cấp chưa xác nhận"
+  },
+  "refund": {
+    "en": "Refund",
+    "ja": "返金",
+    "vi": "Hoàn tiền"
+  },
+  "payment": {
+    "en": "Payment",
+    "ja": "支払い",
+    "vi": "Thanh toán"
+  },
+  "payroll": {
+    "en": "Payroll deduction",
+    "ja": "給与天引き",
+    "vi": "Khấu trừ lương"
+  },
+  "paymentType": {
+    "en": "Settlement type",
+    "ja": "精算区分",
+    "vi": "Loại thanh toán"
+  },
+  "costEvidence": {
+    "en": "Charge evidence",
+    "ja": "費用の根拠",
+    "vi": "Bằng chứng chi phí"
+  },
+  "outsider": {
+    "en": "Uninvited account",
+    "ja": "未参加アカウント",
+    "vi": "Tài khoản chưa được mời"
+  },
+  "includeTaxi": {
+    "en": "Include this taxi amount in each journey",
+    "ja": "各往復の計算にこのタクシー料金を含める",
+    "vi": "Tính khoản taxi này cho mỗi hành trình"
+  },
+  "taxiTotalHelp": {
+    "en": "The checklist taxi amount includes any booking or pickup surcharge. Leave this off when the taxi is only an alternative route.",
+    "ja": "チェックリストのタクシー料金には予約・迎車料金を含めます。代替ルートとして記録しただけの場合はオフにしてください。",
+    "vi": "Khoản taxi trong danh sách đã gồm phí đặt xe hoặc đón khách. Tắt nếu taxi chỉ là phương án thay thế."
+  },
+  "fullExemption": {
+    "en": "Full exemption",
+    "ja": "全額免除",
+    "vi": "Miễn toàn bộ"
+  },
+  "endExclusive": {
+    "en": "End date excluded",
+    "ja": "終了日を含まない",
+    "vi": "Không tính ngày kết thúc"
+  },
+  "privacyPolicy": {
+    "en": "Privacy policy",
+    "ja": "プライバシーポリシー",
+    "vi": "Chính sách quyền riêng tư"
+  },
+  "termsOfUse": {
+    "en": "Terms of use",
+    "ja": "利用規約",
+    "vi": "Điều khoản sử dụng"
+  },
+  "serviceInformation": {
+    "en": "Service information",
+    "ja": "サービス情報",
+    "vi": "Thông tin dịch vụ"
+  },
+  "delete": {
+    "en": "Delete",
+    "ja": "削除",
+    "vi": "Xóa"
+  },
+  "undo": {
+    "en": "Undo",
+    "ja": "元に戻す",
+    "vi": "Hoàn tác"
+  },
+  "deletedCost": {
+    "en": "Deleted",
+    "ja": "削除しました",
+    "vi": "Đã xóa"
+  },
+  "rentPlusManagement": {
+    "en": "Rent + management fee",
+    "ja": "家賃＋管理費",
+    "vi": "Tiền thuê + phí quản lý"
+  },
+  "enterRentStart": {
+    "en": "Enter the rent start date below to calculate",
+    "ja": "下の家賃開始日を入力すると計算されます",
+    "vi": "Nhập ngày bắt đầu thuê bên dưới để tính"
+  },
+  "costCalculation": {
+    "en": "Cost estimates and dates",
+    "ja": "費用の見積もりと日程",
+    "vi": "Ước tính chi phí và ngày"
+  },
+  "costCalculationHelp": {
+    "en": "Enter your own 24-month expense estimate. It is saved as entered, without automatic calculation. Monthly housing is rent + management fee; optional records below are reference only.",
+    "ja": "24か月の費用見積もりを入力してください。自動計算せず、入力した金額を保存します。月額住居費は家賃＋管理費です。下の任意の記録は参照用です。",
+    "vi": "Tự nhập ước tính chi phí 24 tháng. Số tiền được lưu nguyên trạng, không tự động tính. Tổng nhà ở hàng tháng là tiền thuê + phí quản lý; các bản ghi tùy chọn bên dưới chỉ để tham khảo."
+  },
+  "costReduction": {
+    "en": "Cost reduction",
+    "ja": "費用の減額",
+    "vi": "Khoản giảm chi phí"
+  },
+  "optionalCosts": {
+    "en": "Costs (optional)",
+    "ja": "費用の記録（任意）",
+    "vi": "Chi phí (tùy chọn)"
+  },
+  "optionalCostsHelp": {
+    "en": "Reference records only. These are excluded from all automatic totals.",
+    "ja": "参照用の記録です。自動計算の合計には含まれません。",
+    "vi": "Chỉ là bản ghi tham khảo. Không tính vào bất kỳ tổng tự động nào."
+  },
+  "expense24": {
+    "en": "24-month expense estimate (JPY)",
+    "ja": "24か月の費用見積もり（円）",
+    "vi": "Ước tính chi phí 24 tháng (JPY)"
+  },
+  "manualEstimate": {
+    "en": "Your entered estimate",
+    "ja": "入力した見積もり",
+    "vi": "Ước tính bạn nhập"
+  },
+  "fieldFilled": {
+    "en": "Filled",
+    "ja": "入力済み",
+    "vi": "Đã điền"
+  },
+  "fieldEmpty": {
+    "en": "Empty",
+    "ja": "未入力",
+    "vi": "Chưa điền"
+  },
+  "exportPdf": {
+    "en": "Export PDF",
+    "ja": "PDFを書き出す",
+    "vi": "Xuất PDF"
+  },
+  "generatingPdf": {
+    "en": "Generating PDF…",
+    "ja": "PDFを作成中…",
+    "vi": "Đang tạo PDF…"
+  },
+  "pdfExportError": {
+    "en": "PDF could not be generated. Please try Export PDF again.",
+    "ja": "PDFを作成できませんでした。もう一度書き出してください。",
+    "vi": "Không thể tạo PDF. Hãy thử Xuất PDF lại."
+  },
+  "propertyReport": {
+    "en": "Property report",
+    "ja": "物件レポート",
+    "vi": "Báo cáo căn hộ"
+  },
+  "comparisonReport": {
+    "en": "Property comparison",
+    "ja": "物件比較",
+    "vi": "So sánh căn hộ"
+  },
+  "exportedAt": {
+    "en": "Exported",
+    "ja": "書き出し日時",
+    "vi": "Đã xuất"
+  },
+  "pdfLocalDraft": {
+    "en": "Includes locally saved changes awaiting synchronization.",
+    "ja": "未同期のローカル保存内容を含みます。",
+    "vi": "Bao gồm thay đổi đã lưu trên thiết bị đang chờ đồng bộ."
+  },
+  "pdfConflict": {
+    "en": "Includes local changes with conflicts or failed synchronization. Review before relying on this report.",
+    "ja": "競合または同期失敗のあるローカル変更を含みます。内容を確認してください。",
+    "vi": "Bao gồm thay đổi cục bộ có xung đột hoặc đồng bộ thất bại. Hãy kiểm tra báo cáo."
+  },
+  "pdfOffline": {
+    "en": "Exported from the offline copy.",
+    "ja": "オフラインのデータから書き出しました。",
+    "vi": "Xuất từ bản sao ngoại tuyến."
+  },
+  "pdfFiles": {
+    "en": "Files and links (attachments are not embedded)",
+    "ja": "ファイルとリンク（添付内容は含まれません）",
+    "vi": "Tệp và liên kết (không nhúng tệp đính kèm)"
+  },
+  "pdfReferenceRecords": {
+    "en": "Reference records - excluded from automatic totals",
+    "ja": "参考記録 - 自動計算には含まれません",
+    "vi": "Bản ghi tham khảo - không tính vào tổng tự động"
+  },
+  "pdfFilters": {
+    "en": "Applied checklist filters",
+    "ja": "適用中のチェックリスト絞り込み",
+    "vi": "Bộ lọc danh sách đang áp dụng"
+  },
+  "pdfNoFilters": {
+    "en": "All active checklist rows",
+    "ja": "すべての有効なチェック項目",
+    "vi": "Tất cả mục kiểm tra đang hoạt động"
+  },
+  "pdfPage": {
+    "en": "Page",
+    "ja": "ページ",
+    "vi": "Trang"
+  },
+  "pdfUnconfirmed": {
+    "en": "Unconfirmed",
+    "ja": "未確認",
+    "vi": "Chưa xác nhận"
+  },
+  "cost": {
+    "en": "Charge",
+    "ja": "費用",
+    "vi": "Khoản phí"
+  },
+  "benefit": {
+    "en": "Benefit",
+    "ja": "補助",
+    "vi": "Khoản hỗ trợ"
+  },
+  "adjustment": {
+    "en": "Adjustment",
+    "ja": "調整",
+    "vi": "Điều chỉnh"
+  },
+  "costNotEntered": {
+    "en": "Not entered",
+    "ja": "未入力",
+    "vi": "Chưa nhập"
+  },
+  "missing": {
+    "en": "Missing",
+    "ja": "未入力の項目",
+    "vi": "Còn thiếu"
+  },
+  "enterCosts": {
+    "en": "Enter costs",
+    "ja": "費用を入力",
+    "vi": "Nhập chi phí"
+  },
+  "viewCosts": {
+    "en": "View costs",
+    "ja": "費用を確認",
+    "vi": "Xem chi phí"
+  },
+  "addressMissing": {
+    "en": "Address not entered",
+    "ja": "住所は未入力",
+    "vi": "Chưa nhập địa chỉ"
+  },
+  "viewingNotScheduled": {
+    "en": "Not scheduled",
+    "ja": "未予約",
+    "vi": "Chưa lên lịch"
+  },
+  "clearFilters": {
+    "en": "Clear filters",
+    "ja": "絞り込みを解除",
+    "vi": "Xóa bộ lọc"
+  },
+  "clearSelection": {
+    "en": "Clear selection",
+    "ja": "選択を解除",
+    "vi": "Bỏ chọn"
+  },
+  "selectOneMore": {
+    "en": "Select one more to compare",
+    "ja": "比較する物件をもう1件選択",
+    "vi": "Chọn thêm một căn để so sánh"
+  },
+  "loadFailed": {
+    "en": "Could not load this workspace",
+    "ja": "ワークスペースを読み込めませんでした",
+    "vi": "Không thể tải không gian làm việc"
+  },
+  "retryWorkspace": {
+    "en": "Check your connection and retry. Your saved drafts are kept.",
+    "ja": "接続を確認し、再試行してください。保存済みの下書きは保持されています。",
+    "vi": "Kiểm tra kết nối và thử lại. Bản nháp đã lưu vẫn được giữ."
+  },
+  "offlineWorkspaceMissing": {
+    "en": "This collection is not saved on this device yet. Connect to load it.",
+    "ja": "このコレクションは端末に未保存です。接続して読み込んでください。",
+    "vi": "Bộ sưu tập chưa được lưu trên thiết bị này. Kết nối để tải."
+  },
+  "unsavedFormWarning": {
+    "en": "Leave without saving these form changes?",
+    "ja": "フォームの変更を保存せずに移動しますか？",
+    "vi": "Rời đi mà không lưu thay đổi trong biểu mẫu?"
+  },
+  "unsavedFormChanges": {
+    "en": "Unsaved changes",
+    "ja": "未保存の変更",
+    "vi": "Thay đổi chưa lưu"
+  },
+  "enterExpenseEstimate": {
+    "en": "Enter your 24-month estimate below",
+    "ja": "下に24か月の見積もりを入力してください",
+    "vi": "Nhập ước tính 24 tháng bên dưới"
+  },
+  "otherHousingCosts": {
+    "en": "Other housing costs",
+    "ja": "その他の住居費",
+    "vi": "Các chi phí nhà ở khác"
+  },
+  "checkingUpdates": {
+    "en": "Checking updates",
+    "ja": "更新を確認中",
+    "vi": "Đang kiểm tra cập nhật"
+  },
+  "disqualified": {
+    "en": "Disqualified",
+    "ja": "対象外",
+    "vi": "Đã loại"
+  },
+  "notViewed": {
+    "en": "Not Viewed",
+    "ja": "未内見",
+    "vi": "Chưa xem"
+  },
+  "viewingStatus": {
+    "en": "Viewing status",
+    "ja": "内見状況",
+    "vi": "Trạng thái xem nhà"
+  },
+  "archived": {
+    "en": "Archived",
+    "ja": "アーカイブ済み",
+    "vi": "Đã lưu trữ"
+  },
+  "reorder": {
+    "en": "Reorder",
+    "ja": "並べ替え",
+    "vi": "Sắp xếp"
+  },
+  "reorderProperty": {
+    "en": "Reorder property",
+    "ja": "物件を並べ替え",
+    "vi": "Sắp xếp căn hộ"
+  },
+  "reorderHelp": {
+    "en": "Drag Reorder to change the order. Keyboard: Space to pick up, arrows to move, Space to save, Escape to cancel.",
+    "ja": "「並べ替え」をドラッグして順序を変更できます。キーボード：スペースで選択、矢印で移動、スペースで保存、Escで取消。",
+    "vi": "Kéo nút Sắp xếp để đổi thứ tự. Bàn phím: Space để chọn, phím mũi tên để di chuyển, Space để lưu, Escape để hủy."
+  },
+  "reorderPickedUp": {
+    "en": "Ready to move",
+    "ja": "移動開始",
+    "vi": "Đã chọn để di chuyển"
+  },
+  "reorderMoved": {
+    "en": "Position",
+    "ja": "位置",
+    "vi": "Vị trí"
+  },
+  "reorderSaved": {
+    "en": "Order saved",
+    "ja": "順序を保存しました",
+    "vi": "Đã lưu thứ tự"
+  },
+  "previousDateAnswer": {
+    "en": "Previous answer (kept in Notes when you choose a date)",
+    "ja": "以前の回答（日付を選ぶとメモに保存されます）",
+    "vi": "Câu trả lời trước (được giữ trong Ghi chú khi bạn chọn ngày)"
+  },
+  "reorderCancelled": {
+    "en": "Move cancelled",
+    "ja": "移動を取り消しました",
+    "vi": "Đã hủy di chuyển"
+  },
+  "collectionActionsOnline": {
+    "en": "Connect to create, archive, or restore collections.",
+    "ja": "コレクションの作成・非表示・復元には接続が必要です。",
+    "vi": "Cần kết nối mạng để tạo, lưu trữ hoặc khôi phục bộ sưu tập."
+  },
+  "collectionArchived": {
+    "en": "Collection archived. Restore it from Show archived.",
+    "ja": "コレクションを非表示にしました。「非表示の項目を表示」から復元できます。",
+    "vi": "Đã lưu trữ bộ sưu tập. Bạn có thể khôi phục từ Hiện mục lưu trữ."
+  },
+  "collectionRestored": {
+    "en": "Collection restored.",
+    "ja": "コレクションを復元しました。",
+    "vi": "Đã khôi phục bộ sưu tập."
+  },
+  "noArchivedCollections": {
+    "en": "No archived collections",
+    "ja": "非表示のコレクションはありません",
+    "vi": "Chưa có bộ sưu tập lưu trữ"
+  },
+  "noArchivedCollectionsText": {
+    "en": "Archived collections appear here. Their apartments and checklist are kept.",
+    "ja": "非表示のコレクションはここに表示されます。物件とチェックリストは保持されます。",
+    "vi": "Bộ sưu tập đã lưu trữ sẽ hiện ở đây. Căn hộ và checklist vẫn được giữ nguyên."
+  }
+}

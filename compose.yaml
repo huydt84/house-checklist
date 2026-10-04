@@ -1,0 +1,17 @@
+name: house-checklist
+services:
+  postgres:
+    image: postgres:17-alpine
+    ports: ["127.0.0.1:55433:5432"]
+    environment:
+      POSTGRES_USER: house
+      POSTGRES_PASSWORD: house_local
+      POSTGRES_DB: house_local
+    volumes: ["house-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U house -d house_local"]
+      interval: 2s
+      timeout: 3s
+      retries: 25
+volumes:
+  house-data:
