@@ -134,7 +134,7 @@ function reportText(node) {
       .map(([, v]) => reportText(v)),
   ].join("\n");
 }
-test("PDFs include saved loft facts for layouts", () => {
+test("PDFs include saved loft facts, plain building years, dates and monthly amounts", () => {
   const snapshot = fixture();
   snapshot.criteria = [
     {
@@ -150,6 +150,29 @@ test("PDFs include saved loft facts for layouts", () => {
     value: "1K",
     hasLoft,
   }));
+  for (const [key, value] of [
+    ["A05", 1992],
+    ["A06", "2026-11"],
+    ["H01", 42000],
+  ]) {
+    snapshot.criteria.push({
+      ...criterionTemplates.find((c) => c.key === key),
+      id: key,
+      sectionId: "section",
+    });
+    snapshot.answers.push({
+      apartmentId: "a",
+      criterionId: key,
+      state: "answered",
+      value,
+    });
+  }
+  snapshot.answers.push({
+    apartmentId: "b",
+    criterionId: "A06",
+    state: "answered",
+    value: "2026-10-19",
+  });
   const report = buildPdfReport({
     snapshot,
     apartmentIds: ["a", "b"],
@@ -159,6 +182,10 @@ test("PDFs include saved loft facts for layouts", () => {
   const output = reportText(report.document.content);
   assert.ok(output.includes("Có loft"));
   assert.ok(output.includes("Không có loft"));
+  for (const value of ["\n1992\n", "11/2026", "19/10/2026", "42.000 ¥"])
+    assert.ok(output.includes(value), value);
+  assert.ok(!output.includes("/Tháng"));
+  assert.ok(!output.includes("1.992"));
 });
 test("property PDFs omit empty data while retaining zero, No, exemptions, evidence and draft state", () => {
   const snapshot = fixture();

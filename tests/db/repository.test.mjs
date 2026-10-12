@@ -27,6 +27,142 @@ const cmd = (type, target, payload = {}, extra = {}) => ({
 });
 const edit = (type, target, payload, extra = {}, user = owner) =>
   mutate(cid, user, cmd(type, target, payload, extra));
+test("move-in migration retains calendar precision, archives prose and publishes changes once", async () => {
+  const db = await pool().connect();
+  try {
+    await db.query("BEGIN");
+    const section = (
+      await db.query("SELECT section_id FROM criteria WHERE id=$1", [
+        definition.id,
+      ])
+    ).rows[0].section_id;
+    const cases = [
+      [
+        "Currently vacant. Earliest listed move-in date: 2026-10-19.",
+        "2026-10-19",
+      ],
+      ["Move-in expected in late November 2026.", "2026-11"],
+      ["2026-11", "2026-11"],
+      ["Currently vacant; immediate move-in advertised.", null],
+      ["2026-02-29", null],
+      ["2026-13", null],
+      ["Between 2026-10-19 and 2026-11-19", null],
+    ];
+    const criterionId = randomUUID();
+    await db.query(
+      "INSERT INTO criteria(id,collection_id,section_id,data) VALUES($1,$2,$3,$4)",
+      [criterionId, cid, section, { key: "A06", type: "text" }],
+    );
+    const ids = [];
+    for (const [value] of cases) {
+      const id = randomUUID();
+      const apartmentId = randomUUID();
+      await db.query(
+        "INSERT INTO apartments(id,collection_id,data) VALUES($1,$2,$3)",
+        [apartmentId, cid, { name: "Legacy date" }],
+      );
+      ids.push(id);
+      await db.query(
+        "INSERT INTO answers(id,collection_id,apartment_id,criterion_id,data,updated_by) VALUES($1,$2,$3,$4,$5,$6)",
+        [
+          id,
+          cid,
+          apartmentId,
+          criterionId,
+          {
+            state: "answered",
+            value,
+            notes: "Confirm with agent",
+            source: "listing",
+          },
+          owner.id,
+        ],
+      );
+    }
+    const yearId = randomUUID(),
+      yearAnswer = randomUUID();
+    await db.query(
+      "INSERT INTO criteria(id,collection_id,section_id,data) VALUES($1,$2,$3,$4)",
+      [yearId, cid, section, { key: "A05", type: "number", unit: "year" }],
+    );
+    await db.query(
+      "INSERT INTO answers(id,collection_id,apartment_id,criterion_id,data,updated_by) VALUES($1,$2,$3,$4,$5,$6)",
+      [
+        yearAnswer,
+        cid,
+        apt.id,
+        yearId,
+        {
+          state: "answered",
+          value: 1992,
+          notes: "Built in March; renovated in 2018.",
+        },
+        owner.id,
+      ],
+    );
+    const sql = await readFile(
+      new URL(
+        "../../migrations/1791808940311_checklist-dates-and-building-years.sql",
+        import.meta.url,
+      ),
+      "utf8",
+    );
+    await db.query(sql);
+    assert.equal(
+      (await db.query("SELECT data FROM criteria WHERE id=$1", [criterionId]))
+        .rows[0].data.type,
+      "date",
+    );
+    for (const [index, [original, value]] of cases.entries()) {
+      const answer = (
+        await db.query("SELECT data, revision FROM answers WHERE id=$1", [
+          ids[index],
+        ])
+      ).rows[0];
+      assert.equal(answer.data.value, value);
+      assert.equal(answer.data.state, value ? "answered" : "not_checked");
+      assert.equal(answer.data.notes, "Confirm with agent");
+      assert.equal(answer.data.source, "listing");
+      assert.equal(answer.data.legacyMoveInAnswer.value, original);
+      const events = (
+        await db.query("SELECT payload FROM events WHERE record_id=$1", [
+          ids[index],
+        ])
+      ).rows;
+      assert.equal(events.length, 1);
+      assert.equal(events[0].payload.value, value);
+      assert.equal(events[0].payload.revision, answer.revision);
+    }
+    const year = (
+      await db.query("SELECT data FROM answers WHERE id=$1", [yearAnswer])
+    ).rows[0].data;
+    assert.equal(year.value, 1992);
+    assert.equal(year.notes, "renovated in 2018.");
+    assert.equal(
+      year.legacyBuildingYearAnswer.notes,
+      "Built in March; renovated in 2018.",
+    );
+    const before = (
+      await db.query(
+        "SELECT sequence, checklist_revision FROM collections WHERE id=$1",
+        [cid],
+      )
+    ).rows[0];
+    await db.query(sql);
+    assert.deepEqual(
+      (
+        await db.query(
+          "SELECT sequence, checklist_revision FROM collections WHERE id=$1",
+          [cid],
+        )
+      ).rows[0],
+      before,
+    );
+  } finally {
+    await db.query("ROLLBACK");
+    db.release();
+  }
+});
 test("numeric housing fee migration preserves descriptions and evidence, converts explicit yen amounts and publishes idempotent changes", async () => {
   const db = await pool().connect();
   try {

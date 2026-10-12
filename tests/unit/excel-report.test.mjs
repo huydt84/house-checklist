@@ -26,8 +26,8 @@ function fixture() {
       ["A02", "Area", "number", "m²"],
       ["A03", "Layout", "select"],
       ["A04", "Pets", "boolean"],
-      ["A05", "Excluded", "number"],
-      ["A06", "Move-in date", "text"],
+      ["A05", "Building year", "number", "year"],
+      ["A06", "Move-in date", "date"],
       ["A07", "Recorded text", "text"],
       ["H01", "Rent", "number", "JPY/month"],
       ["H02", "Management", "number", "JPY/month"],
@@ -81,6 +81,13 @@ function fixture() {
       { apartmentId: "a", criterionId: "A04", state: "answered", value: false },
       { apartmentId: "b", criterionId: "A04", state: "answered", value: true },
       { apartmentId: "a", criterionId: "A05", state: "not_applicable" },
+      { apartmentId: "b", criterionId: "A05", state: "answered", value: 1992 },
+      {
+        apartmentId: "b",
+        criterionId: "A06",
+        state: "answered",
+        value: "2026-11",
+      },
       {
         apartmentId: "a",
         criterionId: "A06",
@@ -145,11 +152,13 @@ test("Excel files preserve numeric costs, missing answers, evidence, dates and l
     "Not checked",
   ]);
   assert.deepEqual(find("A04 · Pets"), ["A04 · Pets", "No", "Yes"]);
-  assert.deepEqual(find("A05 · Excluded"), [
-    "A05 · Excluded",
+  assert.deepEqual(find("A05 · Building year"), [
+    "A05 · Building year",
     "Not applicable",
-    "Not checked",
+    1992,
   ]);
+  assert.equal(find("H01 · Rent (¥)")[1], 45000);
+  assert.equal(find("A06 · Move-in date")[2], "11/2026");
   assert.equal(find("A03 · Layout")[1], "Other · 2DK · No loft");
   assert.equal(
     find("A06 · Move-in date")[1].toISOString(),

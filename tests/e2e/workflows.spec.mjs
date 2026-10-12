@@ -135,7 +135,7 @@ test("quick creation, canonical values, cost fixture and responsive comparison w
   ).toBeTruthy();
   expect(errors).toEqual([]);
 });
-test("move-in date picker preserves previous text and saves and clears dates across screen sizes", async ({
+test("move-in date picker saves full dates or months and clears them across screen sizes", async ({
   page,
 }, testInfo) => {
   await login(page);
@@ -149,7 +149,6 @@ test("move-in date picker preserves previous text and saves and clears dates acr
   ).json();
   const apartment = snapshot.apartments.find((a) => a.name === name);
   const criterion = snapshot.criteria.find((c) => c.key === "A06");
-  const legacy = "Available after the current tenant leaves";
   const response = await page.request.post(
     `/api/collections/${cid}/mutations`,
     {
@@ -163,7 +162,7 @@ test("move-in date picker preserves previous text and saves and clears dates acr
         criterionId: criterion.id,
         payload: {
           state: "answered",
-          value: legacy,
+          value: "2026-10-19",
           notes: "Agent confirmation pending",
         },
       },
@@ -175,7 +174,7 @@ test("move-in date picker preserves previous text and saves and clears dates acr
   const card = page.getByTestId("check-A06");
   const input = card.getByLabel("Answer", { exact: true });
   await expect(input).toHaveAttribute("type", "date");
-  await expect(card).toContainText(legacy);
+  await expect(input).toHaveValue("2026-10-19");
   for (const width of [320, 390, 1440, 1920]) {
     await page.setViewportSize({ width, height: 900 });
     await input.fill("2026-11-15");
@@ -186,7 +185,7 @@ test("move-in date picker preserves previous text and saves and clears dates acr
     await expect(card).toHaveAttribute("data-answer-state", "answered");
     await card.locator(".evidence summary").click();
     await expect(card.getByLabel("Notes", { exact: true })).toHaveValue(
-      `Agent confirmation pending\n\n${legacy}`,
+      "Agent confirmation pending",
     );
     await card.locator(".evidence summary").click();
     await input.scrollIntoViewIfNeeded();
@@ -198,6 +197,28 @@ test("move-in date picker preserves previous text and saves and clears dates acr
     await page.screenshot({
       path: testInfo.outputPath(`move-in-date-${width}.png`),
     });
+    await card
+      .getByRole("combobox", { name: "Date format", exact: true })
+      .click();
+    await page
+      .getByRole("option", { name: "Month and year", exact: true })
+      .click();
+    await expect(input).toHaveValue("2026-11");
+    await input.fill("2026-12");
+    await expect(page.locator(".save-status")).toHaveText("Saved");
+    await page.reload();
+    await expect(input).toHaveValue("2026-12");
+    await expect(
+      card.getByRole("combobox", { name: "Date format", exact: true }),
+    ).toContainText("Month and year");
+    await card
+      .getByRole("combobox", { name: "Date format", exact: true })
+      .click();
+    await page
+      .getByRole("option", { name: "Day, month and year", exact: true })
+      .click();
+    await expect(input).toHaveValue("");
+    await input.fill("2026-11-15");
     await input.fill("");
     await expect(page.locator(".save-status")).toHaveText("Saved");
     await page.reload();
@@ -223,7 +244,7 @@ test("move-in date picker preserves previous text and saves and clears dates acr
     (a) => a.apartmentId === apartment.id && a.criterionId === criterion.id,
   );
   expect(answer.value).toBeNull();
-  expect(answer.notes).toBe(`Agent confirmation pending\n\n${legacy}`);
+  expect(answer.notes).toBe("Agent confirmation pending");
 });
 test("checklist input retains its value and filled surface after clicking inside the card", async ({
   page,

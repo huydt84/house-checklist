@@ -97,7 +97,7 @@ test("the default 113 checks produce 115 typed, translated definitions without e
       (out, c) => ((out[c.type] = (out[c.type] || 0) + 1), out),
       {},
     ),
-    { select: 4, number: 33, text: 63, boolean: 15 },
+    { select: 4, number: 33, text: 62, boolean: 15, date: 1 },
   );
   for (const c of criterionTemplates) {
     for (const locale of ["en", "ja", "vi"]) {
