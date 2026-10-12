@@ -34,10 +34,10 @@
   {
     "key": "A06",
     "section": "A",
-    "type": "text",
+    "type": "date",
     "unit": null,
-    "label": "Earliest availability versus the desired move-in date",
-    "guidance": ""
+    "label": "Move-in date",
+    "guidance": "Enter the available date, or just the month and year if the day is unknown."
   },
   {
     "key": "A07",

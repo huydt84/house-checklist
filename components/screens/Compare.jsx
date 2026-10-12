@@ -10,10 +10,12 @@ import {
   completion,
   answerNotes,
 } from "../../lib/domain.mjs";
-import { apartmentCosts, calculateTravel } from "../../lib/calculations.mjs";
-import { journeyFor } from "../../lib/domain.mjs";
 import PdfExport from "../PdfExport";
-import { comparisonRows } from "../../lib/comparison.mjs";
+import ExcelExport from "../ExcelExport";
+import {
+  comparisonRows,
+  comparisonSummaryRows,
+} from "../../lib/comparison.mjs";
 import { Value } from "../AnswerControl";
 export default function Compare() {
   const {
@@ -69,22 +71,27 @@ export default function Compare() {
         </RouteLink>
       </div>
     );
-  const costsById = new Map(
-    apartments.map((a) => [a.id, apartmentCosts(snapshot, a.id)]),
-  );
   const filters = { section, stage, required, unanswered, questions };
   const rows = comparisonRows(
     snapshot,
     apartments.map((a) => a.id),
     filters,
   );
+  const mobileRows = comparisonRows(
+    snapshot,
+    [firstId, secondId].filter(Boolean),
+    filters,
+  );
   const aptOptions = snapshot.apartments.filter((a) => !a.archived);
-  const metrics = [
-    ["monthlyHousing", (c) => c.monthly],
-    ["upfront", (c) => c.upfront],
-    ["total24", (c) => c.expense],
-    ["deposits", (c) => c.deposits],
-  ];
+  const summaryRows = comparisonSummaryRows(
+    snapshot,
+    apartments.map((a) => a.id),
+  );
+  const pairApartments = pair.map((index) => apartments[index]).filter(Boolean);
+  const mobileSummaryRows = comparisonSummaryRows(
+    snapshot,
+    pairApartments.map((a) => a.id),
+  );
   const cell = (apt, row) => {
     const a = findAnswer(snapshot, apt.id, row.criterion.id, row.scenarioId);
     return (
@@ -126,6 +133,11 @@ export default function Compare() {
         title={t(locale, "compare")}
         description={t(locale, "compareHelp")}
       >
+        <ExcelExport
+          apartmentIds={apartments.map((a) => a.id)}
+          filters={filters}
+          disabled={apartments.length < 2}
+        />
         <PdfExport
           kind="comparison"
           apartmentIds={apartments.map((a) => a.id)}
@@ -220,60 +232,49 @@ export default function Compare() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="comparison-section">
-                  <th colSpan={apartments.length + 1}>
-                    {t(locale, "costs")} · {t(locale, "knownCharges")}
-                  </th>
-                </tr>
-                {metrics.map(([label, fn]) => (
-                  <tr key={label}>
-                    <th scope="row">{t(locale, label)}</th>
-                    {apartments.map((a) => (
+                {!!summaryRows.length && (
+                  <tr className="comparison-section">
+                    <th colSpan={apartments.length + 1}>
+                      {t(locale, "costs")} · {t(locale, "knownCharges")}
+                    </th>
+                  </tr>
+                )}
+                {summaryRows.map((row) => (
+                  <tr key={row.kind === "cost" ? row.label : row.scenario.id}>
+                    <th scope="row">
+                      {row.kind === "cost" ? (
+                        t(locale, row.label)
+                      ) : (
+                        <>
+                          {row.scenario.person} · {row.scenario.name}
+                          <small>
+                            {row.scenario.frequency} /{" "}
+                            {t(locale, row.scenario.frequencyUnit)}
+                          </small>
+                        </>
+                      )}
+                    </th>
+                    {apartments.map((a, index) => (
                       <td key={a.id}>
-                        {costValue(a, label, fn(costsById.get(a.id)))}
+                        {row.kind === "cost" ? (
+                          costValue(a, row.label, row.values[index])
+                        ) : (
+                          <>
+                            {money(row.values[index], locale)}
+                            <small>{t(locale, row.basis[index])}</small>
+                          </>
+                        )}
                       </td>
                     ))}
                   </tr>
                 ))}
-                {snapshot.scenarios
-                  .filter((s) => !s.archived)
-                  .map((s) => (
-                    <tr key={s.id}>
-                      <th scope="row">
-                        {s.person} · {s.name}
-                        <small>
-                          {s.frequency ?? "—"} / {t(locale, s.frequencyUnit)}
-                        </small>
-                      </th>
-                      {apartments.map((a) => {
-                        const result = calculateTravel({
-                          scenario: s,
-                          journey: journeyFor(snapshot, a.id, s),
-                          startDate:
-                            a.rentStart ||
-                            snapshot.collection.settings.moveInDate,
-                        });
-                        return (
-                          <td key={a.id}>
-                            {money(result.monthly, locale)}
-                            <small>
-                              {t(
-                                locale,
-                                result.missing.length
-                                  ? "knownCharges"
-                                  : "monthly",
-                              )}
-                            </small>
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  ))}
-                <tr className="comparison-section">
-                  <th colSpan={apartments.length + 1}>
-                    {t(locale, "checklist")}
-                  </th>
-                </tr>
+                {!!rows.length && (
+                  <tr className="comparison-section">
+                    <th colSpan={apartments.length + 1}>
+                      {t(locale, "checklist")}
+                    </th>
+                  </tr>
+                )}
                 {rows.map((row) => (
                   <tr key={`${row.criterion.id}:${row.scenarioId}`}>
                     <th scope="row">
@@ -291,6 +292,9 @@ export default function Compare() {
                 ))}
               </tbody>
             </table>
+            {!rows.length && (
+              <p className="empty-filter">{t(locale, "noMatchingChecks")}</p>
+            )}
           </div>
           <div className="mobile-compare">
             <div className="pair-picker">
@@ -323,70 +327,44 @@ export default function Compare() {
                 </div>
               ))}
             </div>
-            {metrics.map(([label, fn]) => (
-              <article className="mobile-comparison-row" key={label}>
+            {mobileSummaryRows.map((row) => (
+              <article
+                className="mobile-comparison-row"
+                key={row.kind === "cost" ? row.label : row.scenario.id}
+              >
                 <h3>
-                  {t(locale, label)}{" "}
+                  {row.kind === "cost"
+                    ? t(locale, row.label)
+                    : `${row.scenario.person} · ${row.scenario.name}`}{" "}
                   <small>
                     {t(
                       locale,
-                      label === "total24"
-                        ? "manualEstimate"
-                        : label === "monthlyHousing"
-                          ? "rentPlusManagement"
-                          : "knownCharges",
+                      row.kind === "journey"
+                        ? "monthly"
+                        : row.label === "total24"
+                          ? "manualEstimate"
+                          : row.label === "monthlyHousing"
+                            ? "rentPlusManagement"
+                            : "knownCharges",
                     )}
                   </small>
                 </h3>
-                {pair.map((idx, i) => {
-                  const apt = apartments[Math.min(idx, apartments.length - 1)];
-                  return (
-                    <div key={i}>
-                      <span>{apt.name}</span>
-                      {costValue(apt, label, fn(costsById.get(apt.id)))}
-                    </div>
-                  );
-                })}
+                {pairApartments.map((apt, i) => (
+                  <div key={i}>
+                    <span>{apt.name}</span>
+                    {row.kind === "cost" ? (
+                      costValue(apt, row.label, row.values[i])
+                    ) : (
+                      <>
+                        <strong>{money(row.values[i], locale)}</strong>
+                        <small>{t(locale, row.basis[i])}</small>
+                      </>
+                    )}
+                  </div>
+                ))}
               </article>
             ))}
-            {snapshot.scenarios
-              .filter((s) => !s.archived)
-              .map((scenario) => (
-                <article
-                  className="mobile-comparison-row"
-                  key={`travel-${scenario.id}`}
-                >
-                  <h3>
-                    {scenario.person} · {scenario.name}
-                    <small>
-                      {t(locale, "travel")} · {t(locale, "monthly")}
-                    </small>
-                  </h3>
-                  {pair.map((idx, i) => {
-                    const apt = apartments[idx];
-                    const result = calculateTravel({
-                      scenario,
-                      journey: journeyFor(snapshot, apt.id, scenario),
-                      startDate:
-                        apt.rentStart ||
-                        snapshot.collection.settings.moveInDate,
-                    });
-                    return (
-                      <div key={i}>
-                        <span>{apt.name}</span>
-                        <strong>{money(result.monthly, locale)}</strong>
-                        <small>
-                          {t(
-                            locale,
-                            result.missing.length ? "knownCharges" : "monthly",
-                          )}
-                        </small>
-                      </div>
-                    );
-                  })}
-                </article>
-              ))}
-            {rows.map((row) => (
+            {mobileRows.map((row) => (
               <article
                 className="mobile-comparison-row"
                 key={`${row.criterion.id}:${row.scenarioId}`}
@@ -410,10 +388,10 @@ export default function Compare() {
                 })}
               </article>
             ))}
+            {!mobileRows.length && (
+              <p className="empty-filter">{t(locale, "noMatchingChecks")}</p>
+            )}
           </div>
-          {!rows.length && (
-            <p className="empty-filter">{t(locale, "noMatchingChecks")}</p>
-          )}
         </>
       )}
     </>

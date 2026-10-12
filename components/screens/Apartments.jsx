@@ -158,7 +158,8 @@ export default function Apartments() {
                       aria-label={`${t(locale, "selectCompare")}: ${a.name}`}
                       checked={selected.includes(a.id)}
                       disabled={
-                        !selected.includes(a.id) && selected.length === 4
+                        a.archived ||
+                        (!selected.includes(a.id) && selected.length === 4)
                       }
                       onChange={() => toggleCompare(a.id)}
                     />

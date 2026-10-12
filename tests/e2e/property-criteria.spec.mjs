@@ -3,6 +3,140 @@ import { randomUUID } from "node:crypto";
 import { t } from "../../lib/i18n.mjs";
 
 let collection, endpoint, apartment, fixture;
+test("overview station access shares saved answers with Travel and keeps journeys separate", async ({
+  page,
+}, testInfo) => {
+  test.setTimeout(90000);
+  await page.request.post("/api/profile", { data: { locale: "en" } });
+  await page.evaluate(() => localStorage.setItem("house-language", "en"));
+  await page.reload();
+  await page.getByRole("tab", { name: "Overview", exact: true }).click();
+  const overview = page.getByRole("region", { name: "Travel", exact: true });
+  await expect(
+    overview.getByRole("button", { name: "Add journey scenario", exact: true }),
+  ).toBeEnabled();
+  const createScenario = async (name, person) => {
+    const response = await page.request.post(`${endpoint}/mutations`, {
+      data: {
+        id: randomUUID(),
+        targetId: randomUUID(),
+        type: "scenario.put",
+        expectedRevision: 0,
+        payload: {
+          name,
+          person,
+          purpose: "work",
+          origin: "Apartment",
+          destination: "Office",
+          returnDestination: "Apartment",
+          frequency: 5,
+          frequencyUnit: "week",
+        },
+      },
+    });
+    expect(response.ok()).toBe(true);
+    return (await response.json()).record;
+  };
+  const first = await createScenario("Office commute", "Alice");
+  const second = await createScenario("Office commute", "Bob");
+  await page.reload();
+  await overview.getByRole("combobox").click();
+  await page
+    .getByRole("option", {
+      name: `${first.person} · ${first.name}`,
+      exact: true,
+    })
+    .click();
+  const duration = page
+    .getByTestId("check-B02.duration")
+    .getByRole("spinbutton");
+  const distance = page
+    .getByTestId("check-B02.distance")
+    .getByRole("spinbutton");
+  const route = page.getByTestId("check-B01").getByRole("textbox");
+  await expect(duration).toHaveValue("");
+  await expect(distance).toHaveValue("");
+  await duration.fill("8");
+  await distance.fill("640");
+  await route.fill("Apartment → Kiyosumi-Shirakawa station, Hanzomon line");
+  await expect(page.locator(".save-status")).toHaveText("Saved");
+  const savedValues = async (scenarioId) => {
+    const saved = await (await page.request.get(endpoint)).json();
+    return ["B02.duration", "B02.distance", "B01"].map(
+      (key) =>
+        saved.answers.find(
+          (a) =>
+            a.scenarioId === scenarioId &&
+            a.criterionId === fixture.criteria.find((c) => c.key === key).id,
+        )?.value,
+    );
+  };
+  await expect
+    .poll(() => savedValues(first.id))
+    .toEqual([8, 640, "Apartment → Kiyosumi-Shirakawa station, Hanzomon line"]);
+  await overview.getByRole("combobox").click();
+  await page
+    .getByRole("option", {
+      name: `${second.person} · ${second.name}`,
+      exact: true,
+    })
+    .click();
+  await expect(duration).toHaveValue("");
+  await expect(distance).toHaveValue("");
+  await duration.fill("0");
+  await distance.fill("0");
+  await expect.poll(() => savedValues(second.id)).toEqual([0, 0, undefined]);
+  await page.getByRole("tab", { name: "Travel", exact: true }).click();
+  await expect(duration).toHaveValue("0");
+  await expect(distance).toHaveValue("0");
+  await duration.fill("12");
+  await expect.poll(async () => (await savedValues(second.id))[0]).toBe(12);
+  await page.getByRole("tab", { name: "Overview", exact: true }).click();
+  await expect(duration).toHaveValue("12");
+  await overview.getByRole("combobox").click();
+  await page
+    .getByRole("option", {
+      name: `${first.person} · ${first.name}`,
+      exact: true,
+    })
+    .click();
+  await expect(duration).toHaveValue("8");
+  await expect(distance).toHaveValue("640");
+  await expect(route).toHaveValue(
+    "Apartment → Kiyosumi-Shirakawa station, Hanzomon line",
+  );
+  for (const [width, locale, theme] of [
+    [320, "ja", "light"],
+    [390, "vi", "dark"],
+    [1440, "en", "light"],
+    [1920, "vi", "light"],
+  ]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.request.post("/api/profile", { data: { locale } });
+    await page.evaluate(
+      ({ locale, theme }) => {
+        localStorage.setItem("house-language", locale);
+        localStorage.setItem("house-theme", theme);
+      },
+      { locale, theme },
+    );
+    await page.reload();
+    await expect(duration).toHaveValue("8");
+    await expect(distance).toHaveValue("640");
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+    if (width < 700) await page.setViewportSize({ width, height: 1600 });
+    await page
+      .getByRole("region", { name: t(locale, "travel"), exact: true })
+      .screenshot({
+        path: testInfo.outputPath(`overview-travel-${width}.png`),
+      });
+  }
+  await page.request.post("/api/profile", { data: { locale: "en" } });
+});
 test("bicycle parking availability and monthly numeric fee persist in the viewing checklist and costs", async ({
   page,
 }, testInfo) => {

@@ -25,7 +25,7 @@ async function downloadReport(page, testInfo, name) {
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Export PDF", exact: true }).click();
   const file = await download;
-  expect(file.suggestedFilename()).toMatch(/\.pdf$/);
+  expect(file.suggestedFilename()).toMatch(/_\d{2}-\d{2}-\d{2}-\d{3}\.pdf$/);
   const path = testInfo.outputPath(`${name}.pdf`);
   await file.saveAs(path);
   const bytes = await readFile(path);
@@ -83,6 +83,8 @@ async function fixtures(page, count) {
   }
   if (count === 4)
     for (const [key, value] of [
+      ["A02", 0],
+      ["G05", true],
       ["H01", 45000],
       ["H02", 5000],
     ]) {
@@ -204,6 +206,7 @@ test("comparison PDF downloads all four selected properties, honors filters and 
     expect(report.text).toContain("50,000");
     expect(report.text).toContain("1,200,000");
     expect(report.text).toContain("A02");
+    expect(report.text).not.toContain("A03");
     expect(report.text).not.toContain("C01");
     expect(report.text).toContain("Unknown");
     expect(report.text).toContain("Not checked");

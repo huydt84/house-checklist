@@ -39,7 +39,7 @@ import AnswerControl from "../AnswerControl";
 import RenameDialog from "../RenameDialog";
 import ApartmentStateControls from "../ApartmentStateControls";
 import Costs from "./Costs";
-import Travel from "./Travel";
+import Travel, { TravelOverview } from "./Travel";
 import Files from "./Files";
 import { CriteriaSearchField, CriteriaSearchResults } from "../CriteriaSearch";
 const canonical = ["A02", "A03", "A05", "H01", "H02"];
@@ -311,6 +311,7 @@ export default function Apartment({ id }) {
                 );
               })}
             </div>
+            <TravelOverview apartmentId={id} />
             <div className="summary-notes">
               {["advantages", "disadvantages", "rejectionReason"]
                 .filter((key) => apt[key])

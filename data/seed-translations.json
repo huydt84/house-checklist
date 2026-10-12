@@ -42,11 +42,11 @@
   "A06": {
     "ja": {
       "label": "入居可能日",
-      "guidance": "最短入居可能日と希望入居日を比較します。"
+      "guidance": "入居可能な日付を入力します。日が不明な場合は年月のみを入力します。"
     },
     "vi": {
       "label": "Ngày có thể chuyển vào",
-      "guidance": "So sánh ngày nhận nhà sớm nhất với ngày chuyển vào mong muốn."
+      "guidance": "Nhập ngày có thể chuyển vào, hoặc chỉ tháng và năm nếu chưa rõ ngày."
     }
   },
   "A07": {

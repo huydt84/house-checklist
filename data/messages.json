@@ -1924,6 +1924,31 @@
     "ja": "未入力",
     "vi": "Chưa điền"
   },
+  "exportExcel": {
+    "en": "Export Excel",
+    "ja": "Excelを書き出す",
+    "vi": "Xuất Excel"
+  },
+  "generatingExcel": {
+    "en": "Generating Excel…",
+    "ja": "Excelを作成中…",
+    "vi": "Đang tạo Excel…"
+  },
+  "excelExportError": {
+    "en": "Excel could not be generated. Please try Export Excel again.",
+    "ja": "Excelを作成できませんでした。もう一度書き出してください。",
+    "vi": "Không thể tạo Excel. Hãy thử Xuất Excel lại."
+  },
+  "exportContinued": {
+    "en": "Continued",
+    "ja": "続き",
+    "vi": "Tiếp theo"
+  },
+  "exportBasis": {
+    "en": "Basis",
+    "ja": "算出根拠",
+    "vi": "Cơ sở tính"
+  },
   "exportPdf": {
     "en": "Export PDF",
     "ja": "PDFを書き出す",
@@ -2149,11 +2174,6 @@
     "ja": "順序を保存しました",
     "vi": "Đã lưu thứ tự"
   },
-  "previousDateAnswer": {
-    "en": "Previous answer (kept in Notes when you choose a date)",
-    "ja": "以前の回答（日付を選ぶとメモに保存されます）",
-    "vi": "Câu trả lời trước (được giữ trong Ghi chú khi bạn chọn ngày)"
-  },
   "reorderCancelled": {
     "en": "Move cancelled",
     "ja": "移動を取り消しました",
@@ -2183,5 +2203,25 @@
     "en": "Archived collections appear here. Their apartments and checklist are kept.",
     "ja": "非表示のコレクションはここに表示されます。物件とチェックリストは保持されます。",
     "vi": "Bộ sưu tập đã lưu trữ sẽ hiện ở đây. Căn hộ và checklist vẫn được giữ nguyên."
+  },
+  "date": {
+    "en": "Date",
+    "ja": "日付",
+    "vi": "Ngày"
+  },
+  "datePrecision": {
+    "en": "Date format",
+    "ja": "日付の形式",
+    "vi": "Định dạng ngày"
+  },
+  "fullDate": {
+    "en": "Day, month and year",
+    "ja": "年月日",
+    "vi": "Ngày, tháng và năm"
+  },
+  "monthYear": {
+    "en": "Month and year",
+    "ja": "年月",
+    "vi": "Tháng và năm"
   }
 }

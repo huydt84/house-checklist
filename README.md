@@ -4,6 +4,19 @@ A private rental-search workspace for shortlists, in-person viewing notes, share
 
 Live application: [House Checklist](https://house-checklist-three.vercel.app/). Google sign-in, the dedicated Neon database, and private Blob storage are connected. See [deployment status](docs/deployment/status.md) for live checks and the separate Gmail permission state.
 
+## Excel exports
+
+On Compare, select two to four apartments and click **Export Excel**. The `.xlsx`
+file includes all selected apartments, the active checklist filters, cost and
+journey summaries, recorded answers, notes, and evidence. The mobile pair selector
+does not limit the export. Numbers and recognized dates remain typed cells, and
+missing answers and incomplete totals keep their labels.
+
+Exports use the active English, Japanese, or Vietnamese language. Owners,
+editors, and viewers can export locally saved changes. Pending synchronization
+and conflicts are labeled. After the offline shell is installed, Excel export
+works offline. The file is generated on the device.
+
 ## PDF exports
 
 Use **Export PDF** in a property header or on Compare. Property reports include

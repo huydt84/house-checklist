@@ -18,6 +18,56 @@ import {
   resolveAmount,
 } from "../../lib/calculations.mjs";
 import messages from "../../data/messages.json" with { type: "json" };
+test("checklist values show calendar years and omit redundant monthly units", () => {
+  for (const locale of ["en", "ja", "vi"]) {
+    assert.equal(
+      formatValue(
+        { state: "answered", value: 1992 },
+        { type: "number", unit: "year" },
+        locale,
+      ),
+      "1992",
+    );
+    assert.equal(
+      formatValue(
+        { state: "answered", value: 0 },
+        { type: "number", unit: "JPY/month" },
+        locale,
+      ),
+      "0 ¥",
+    );
+  }
+});
+test("date answers accept real calendar dates or months, never prose or invented days", () => {
+  const criterion = { type: "date" };
+  for (const value of ["2026-10-19", "2026-11", "2028-02-29"]) {
+    const saved = normalizeAnswer(
+      { state: "answered", value },
+      criterion,
+      null,
+      1,
+    );
+    assert.equal(saved.value, value);
+    assert.equal(saved.state, "answered");
+  }
+  for (const value of [
+    "Vacant; immediate move-in",
+    "2026-02-29",
+    "2026-13",
+    "2026-00",
+    "2026-04-31",
+    "2026-11-01T00:00:00Z",
+  ]) {
+    assert.throws(
+      () => normalizeAnswer({ state: "answered", value }, criterion, null, 1),
+      { code: "INVALID_DATE" },
+    );
+  }
+  assert.equal(
+    normalizeAnswer({ state: "answered", value: "" }, criterion, null, 1).state,
+    "not_checked",
+  );
+});
 // These public contracts own calculation and seed proof; database tests own authorization and concurrency.
 test("layout answers accept an optional boolean loft fact without changing the room type", () => {
   const criterion = criterionTemplates.find((c) => c.key === "A03");

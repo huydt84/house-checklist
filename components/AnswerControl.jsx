@@ -32,7 +32,13 @@ import {
   meaningful,
   layoutAnswer,
 } from "../lib/domain.mjs";
-import { t, errorText, dateLabel, unitLabel } from "../lib/i18n.mjs";
+import {
+  t,
+  errorText,
+  dateLabel,
+  unitLabel,
+  checklistValueLabel,
+} from "../lib/i18n.mjs";
 import { request, queueFile, downloadBlob } from "../lib/client-store.mjs";
 export function Value({ answer, criterion, locale }) {
   const state = answerState(answer, criterion);
@@ -60,10 +66,7 @@ export function Value({ answer, criterion, locale }) {
     );
   return (
     <span className="answer-value">
-      {criterion.type === "number"
-        ? new Intl.NumberFormat(locale).format(answer.value)
-        : answer.value}
-      {criterion.unit && ` ${unitLabel(criterion.unit, locale)}`}
+      {checklistValueLabel(answer.value, criterion, locale)}
     </span>
   );
 }
@@ -93,10 +96,6 @@ export default function AnswerControl({
   };
   const existing = findAnswer(snapshot, apartmentId, criterion.id, scenarioId);
   const simplified = simplifiedChecklist(criterion);
-  // Date answers stay strings so existing collections and offline drafts remain compatible.
-  const moveInDate =
-    criterion.type === "text" &&
-    (criterion.sourceKey || criterion.key) === "A06";
   const [draft, setDraft] = useState(
       existing || {
         state: "not_checked",
@@ -108,15 +107,17 @@ export default function AnswerControl({
     [history, setHistory] = useState(null),
     [question, setQuestion] = useState(false),
     [q, setQ] = useState("");
+  const [emptyDatePrecision, setEmptyDatePrecision] = useState("date");
+  const datePrecision = draft.value
+    ? draft.value.length === 7
+      ? "month"
+      : "date"
+    : emptyDatePrecision;
   const focused = useRef(false),
     composing = useRef(false),
     pendingSaves = useRef(0),
     latest = useRef(draft);
   latest.current = draft;
-  const previousDateText =
-    moveInDate && draft.value && !/^\d{4}-\d{2}-\d{2}$/.test(draft.value)
-      ? draft.value
-      : "";
   useEffect(() => {
     // Leaving an input does not acknowledge its asynchronous local save.
     // An older snapshot can arrive while that save is still in flight.
@@ -255,6 +256,39 @@ export default function AnswerControl({
                       .map((c) => ({ value: c.id, label: textFor(c, locale) })),
                   ]}
                 />
+              ) : criterion.type === "date" ? (
+                <div className="form-grid">
+                  <SelectField
+                    label={t(locale, "datePrecision")}
+                    value={datePrecision}
+                    options={[
+                      { value: "date", label: t(locale, "fullDate") },
+                      { value: "month", label: t(locale, "monthYear") },
+                    ]}
+                    onChange={(precision) => {
+                      setEmptyDatePrecision(precision);
+                      const value =
+                        precision === "month"
+                          ? draft.value?.slice(0, 7) || ""
+                          : "";
+                      void change({
+                        value,
+                        state: value ? "answered" : "not_checked",
+                      });
+                    }}
+                  />
+                  <Field
+                    label={t(locale, "answer")}
+                    type={datePrecision}
+                    value={draft.value}
+                    onChange={(value) =>
+                      change({
+                        value,
+                        state: value ? "answered" : "not_checked",
+                      })
+                    }
+                  />
+                </div>
               ) : (
                 <Field
                   label={
@@ -264,32 +298,29 @@ export default function AnswerControl({
                         ? `${t(locale, "answer")} · ${unitLabel(criterion.unit, locale)}`
                         : t(locale, "answer")
                   }
-                  type={
-                    moveInDate
-                      ? "date"
-                      : criterion.type === "number"
-                        ? "number"
-                        : "textarea"
-                  }
-                  value={previousDateText ? "" : draft.value}
-                  hint={
-                    previousDateText
-                      ? `${t(locale, "previousDateAnswer")}: ${previousDateText}`
-                      : undefined
-                  }
+                  type={criterion.type === "number" ? "number" : "textarea"}
+                  value={draft.value}
                   onChange={(value) =>
                     change({
                       value,
                       state: value === "" ? "not_checked" : "answered",
-                      ...(previousDateText && {
-                        notes: [draft.notes, previousDateText]
-                          .filter(Boolean)
-                          .join("\n\n"),
-                      }),
                     })
                   }
-                  min={criterion.type === "number" ? 0 : undefined}
-                  step={criterion.type === "number" ? "any" : undefined}
+                  min={
+                    criterion.unit === "year"
+                      ? 1000
+                      : criterion.type === "number"
+                        ? 0
+                        : undefined
+                  }
+                  max={criterion.unit === "year" ? 9999 : undefined}
+                  step={
+                    criterion.unit === "year"
+                      ? 1
+                      : criterion.type === "number"
+                        ? "any"
+                        : undefined
+                  }
                   rows={compact ? 2 : 3}
                   {...inputEvents}
                 />

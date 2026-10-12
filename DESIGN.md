@@ -409,3 +409,15 @@ remain saved facts. The fee shares its answer with Costs. Existing collections
 receive definition changes through the normal change feed, preserving answers,
 custom labels, supporting fields, and archive state. Missing definitions are added
 without creating duplicates. No new visual tokens or components are introduced.
+
+## Overview travel
+
+The property Overview includes a Travel section after the core property fields.
+A journey selector shares its selection with the Travel tab. Compact answer
+controls edit station walking duration in minutes, walking distance in meters,
+and the stations, train lines, or bus stops used. They save the same journey
+answers as Travel, preserving unknown values and explicit zero. The two numeric
+fields sit side by side on desktop and stack on phones; the route spans the
+available width. Collections without journeys offer Add journey scenario, while
+archived criteria and disabled sections stay hidden. The scoped review is in
+`.impeccable/review/overview-travel-review.md`.

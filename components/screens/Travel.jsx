@@ -11,6 +11,70 @@ import {
   scenarioApplies,
 } from "../../lib/domain.mjs";
 import AnswerControl from "../AnswerControl";
+export function TravelOverview({ apartmentId }) {
+  const { locale, snapshot, editable } = useHouse();
+  const scenarios = snapshot.scenarios.filter((s) => !s.archived);
+  const [id, setId] = useRouteState("travelScenario", scenarios[0]?.id || "");
+  const scenario = scenarios.find((s) => s.id === id) || scenarios[0];
+  const active = activeCriteria(snapshot);
+  const criteria = ["B02.duration", "B02.distance", "B01"]
+    .map((key) => active.find((c) => c.key === key && c.scope === "journey"))
+    .filter(Boolean);
+  if (!criteria.length) return null;
+  return (
+    <section
+      className="overview-travel"
+      aria-labelledby="overview-travel-heading"
+    >
+      <h2 id="overview-travel-heading">{t(locale, "travel")}</h2>
+      {scenario ? (
+        <>
+          <SelectField
+            label={t(locale, "scenario")}
+            value={scenario.id}
+            onChange={setId}
+            options={scenarios.map((s) => ({
+              value: s.id,
+              label: `${s.person} · ${s.name}`,
+            }))}
+          />
+          <div className="canonical-grid">
+            {criteria
+              .filter((c) => scenarioApplies(c, scenario))
+              .map((c) => (
+                <div
+                  key={`${c.id}:${scenario.id}`}
+                  className={
+                    c.key === "B01" ? "overview-travel-route" : undefined
+                  }
+                >
+                  <AnswerControl
+                    apartmentId={apartmentId}
+                    criterion={c}
+                    scenarioId={scenario.id}
+                    compact
+                  />
+                </div>
+              ))}
+          </div>
+        </>
+      ) : (
+        <Empty
+          title={t(locale, "journeysMissing")}
+          description={t(locale, "noScenariosText")}
+          icon={<Train size={40} />}
+        >
+          <Button
+            disabled={!editable}
+            onClick={() => updateLocation({ scenarioEditor: "new" })}
+          >
+            {t(locale, "newScenario")}
+          </Button>
+        </Empty>
+      )}
+    </section>
+  );
+}
 export default function Travel({ apartmentId }) {
   const { locale, snapshot, save, editable } = useHouse();
   const scenarios = snapshot.scenarios.filter((s) => !s.archived),

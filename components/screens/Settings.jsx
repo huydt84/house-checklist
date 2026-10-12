@@ -459,9 +459,13 @@ function ChecklistSettings() {
                     label={t(locale, "type")}
                     value={v.type}
                     onChange={(x) => u("type", x)}
-                    options={["boolean", "text", "number", "select"].map(
-                      (value) => ({ value, label: t(locale, value) }),
-                    )}
+                    options={[
+                      "boolean",
+                      "text",
+                      "number",
+                      "select",
+                      "date",
+                    ].map((value) => ({ value, label: t(locale, value) }))}
                   />
                   <Field
                     label={t(locale, "unit")}

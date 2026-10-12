@@ -89,9 +89,31 @@ export default function Workspace() {
       ? "apartments"
       : "collections";
   const apartmentId = page === "apartments" ? route.get("apartment") : null;
-  const selected = [
-    ...new Set((route.get("selected") || "").split(",").filter(Boolean)),
-  ].slice(0, 4);
+  const selectionValue = route.get("selected") || "";
+  const selectionSnapshot = workspace?.snapshot;
+  const selectionReady =
+    selectionSnapshot?.collection.id === cid &&
+    (!route.get("collection") || route.get("collection") === cid);
+  const selected = [...new Set(selectionValue.split(",").filter(Boolean))]
+    .filter(
+      (id) =>
+        selectionReady &&
+        selectionSnapshot.apartments.some((a) => a.id === id && !a.archived),
+    )
+    .slice(0, 4);
+  useEffect(() => {
+    if (!selectionReady) return;
+    // Cached data can be missing a new property until synchronization finishes.
+    const archivedIds = new Set(
+      selectionSnapshot.apartments.filter((a) => a.archived).map((a) => a.id),
+    );
+    const next = selectionValue
+      .split(",")
+      .filter((id) => !archivedIds.has(id))
+      .join(",");
+    if (selectionValue !== next)
+      updateLocation({ selected: next }, { replace: true });
+  }, [selectionReady, selectionValue, selectionSnapshot]);
   const [loadFailed, setLoadFailed] = useState(false);
   const [syncFailed, setSyncFailed] = useState(false);
   const current = useRef(null),
@@ -397,6 +419,11 @@ export default function Workspace() {
     setFull(false);
   };
   const toggleCompare = (id) => {
+    if (
+      !selectionReady ||
+      !selectionSnapshot.apartments.some((a) => a.id === id && !a.archived)
+    )
+      return;
     const next = selected.includes(id)
       ? selected.filter((x) => x !== id)
       : selected.length < 4

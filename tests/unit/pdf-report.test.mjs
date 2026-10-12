@@ -90,6 +90,18 @@ function fixture() {
         value: 0,
         suitability: "meets",
         settingsRevision: 1,
+        source: "estimate",
+        sourceUrl: "https://example.com/global-export-source",
+        observedAt: "2026-10-12",
+        documentType: "quote",
+        documentReference: "Global document reference",
+      },
+      {
+        apartmentId: "a",
+        criterionId: "missing",
+        state: "not_checked",
+        source: "listing",
+        documentReference: "Metadata without an answer",
       },
       { apartmentId: "a", criterionId: "no", state: "answered", value: false },
       {
@@ -164,6 +176,7 @@ test("property PDFs omit empty data while retaining zero, No, exemptions, eviden
     pending: 1,
     conflicts: true,
     online: false,
+    generatedAt: "2026-10-12T16:00:00.123Z",
   });
   const output = reportText(report.document.content);
   for (const phrase of [
@@ -188,9 +201,30 @@ test("property PDFs omit empty data while retaining zero, No, exemptions, eviden
     "24-month expense",
     "No files",
     "No questions",
+    "Source:",
+    "Observed / confirmed on",
+    "Document type:",
+    "Document name / reference",
+    "Global document reference",
+    "Metadata without an answer",
+    "https://example.com/global-export-source",
   ])
     assert.ok(!output.includes(phrase), phrase);
   assert.equal(report.document.pageOrientation, "portrait");
+  assert.equal(
+    report.filename,
+    "house-checklist-東京-Tiếng-Việt-2026-10-13_01-00-00-123.pdf",
+  );
+  const next = buildPdfReport({
+    snapshot,
+    apartmentIds: ["a"],
+    kind: "property",
+    generatedAt: "2026-10-12T16:00:00.124Z",
+  });
+  assert.equal(
+    next.filename,
+    "house-checklist-東京-Tiếng-Việt-2026-10-13_01-00-00-124.pdf",
+  );
 });
 test("PDF entries preserve old descriptions and show assessments without inventing facts", () => {
   const snapshot = fixture();
@@ -288,6 +322,7 @@ test("PDF entries preserve old descriptions and show assessments without inventi
 });
 test("comparison PDFs export selected properties and honor filters while preserving visible gaps", () => {
   const snapshot = fixture();
+  snapshot.apartments[0].expense24 = 0;
   const report = buildPdfReport({
     snapshot,
     apartmentIds: ["b", "a"],
@@ -308,6 +343,15 @@ test("comparison PDFs export selected properties and honor filters while preserv
     assert.ok(output.includes(phrase), phrase);
   assert.ok(!output.includes("No field"));
   assert.ok(!output.includes("Empty field"));
+  for (const phrase of [
+    "Source:",
+    "Observed / confirmed on",
+    "Document type:",
+    "Document name / reference",
+    "Global document reference",
+    "https://example.com/global-export-source",
+  ])
+    assert.ok(!output.includes(phrase), phrase);
   const firstTable = report.document.content.find((n) => n.table);
   assert.ok(firstTable.table.body[1][1].text.startsWith("Second property"));
   assert.equal(report.document.pageOrientation, "landscape");
@@ -318,5 +362,6 @@ test("comparison PDFs export selected properties and honor filters while preserv
     filters: { section: "absent" },
   });
   assert.ok(reportText(empty.document.content).includes("No checks match"));
-  assert.ok(reportText(empty.document.content).includes("Monthly housing"));
+  assert.ok(reportText(empty.document.content).includes("24-month expense"));
+  assert.ok(!reportText(empty.document.content).includes("Monthly housing"));
 });
